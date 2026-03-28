@@ -1,0 +1,335 @@
+{
+  "common": {
+    "companyName": "VIETconsult",
+    "contact": "Contact",
+    "readMore": "Learn more",
+    "learnMore": "Read more"
+  },
+  "navigation": {
+    "home": "Welcome",
+    "aboutUs": "About us",
+    "partner": "Partner",
+    "advantages": "Advantages",
+    "qualitySeal": "Quality seal",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "titleLine1": "Comprehensive Solutions for",
+      "titleLine2": "Skilled Workers from Vietnam",
+      "subtitle": "From needs analysis in Germany through our own language school in Vietnam to long-term support in the company.",
+      "cta": "Contact us",
+      "ctaSecondary": "Discover Services"
+    },
+    "stats": {
+      "integration": "Sustainable Integration",
+      "candidates": "Carefully selected candidates",
+      "steps": "Steps to Integration"
+    },
+    "vision": {
+      "title": "Our Vision",
+      "subtitle": "Sustainable Recruitment with Responsibility",
+      "card1Title": "Sustainable Recruitment",
+      "card1Description": "We recruit qualified professionals from Vietnam focusing on long-term integration and successful collaboration.",
+      "card2Title": "Responsible Cooperation",
+      "card2Description": "Ethical recruitment according to international standards with fair and transparent processes for all parties.",
+      "card3Title": "Successful Integration",
+      "card3Description": "Comprehensive support from language training to integration in the German labor market."
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "From Recruitment to Integration",
+      "description": "We offer a holistic approach to attracting and integrating international professionals.",
+      "cta": "View All Services"
+    },
+    "benefits": {
+      "title": "Your Benefits",
+      "subtitle": "Why VIETconsult?",
+      "card1Title": "Time Savings",
+      "card1Description": "We handle the entire recruitment process and save you valuable time.",
+      "card2Title": "Long-term Value",
+      "card2Description": "Sustainable integration ensures long-term employee retention and success.",
+      "card3Title": "Personal Support",
+      "card3Description": "Individual care throughout the entire process for optimal results.",
+      "card4Title": "Success through Integration",
+      "card4Description": "Comprehensive support guarantees successful integration and satisfaction."
+    },
+    "partners": {
+      "title": "Our Partners",
+      "subtitle": "Together for Your Success",
+      "rating": "5.0 Stars",
+      "cta": "Meet Our Partners"
+    },
+    "process": {
+      "title": "4 Steps to Integration",
+      "subtitle": "Our Proven Process",
+      "step1Title": "Candidate Search",
+      "step1Description": "Targeted recruitment of qualified professionals in Vietnam",
+      "step2Title": "Language & Cultural Training",
+      "step2Description": "Intensive preparation in our own language school",
+      "step3Title": "Recognition",
+      "step3Description": "Support with professional recognition in Germany",
+      "step4Title": "Arrival in Germany",
+      "step4Description": "Assistance with relocation and company integration"
+    },
+    "infrastructure": {
+      "title": "Our Locations",
+      "subtitle": "Presence in Vietnam and Germany",
+      "vietnamTitle": "Vietnam",
+      "vietnamDescription": "Own recruitment offices and training centers in Ho Chi Minh City",
+      "germanyTitle": "Germany",
+      "germanyDescription": "Locations in Frankfurt, Hannover and Wilhelmshaven"
+    },
+    "specializedAreas": {
+      "title": "Our Specializations",
+      "subtitle": "Specialized recruitment for various industries",
+      "area1Title": "Healthcare & Medicine",
+      "area1Description": "Nurses, elderly care professionals, medical staff",
+      "area2Title": "Technology & Industry",
+      "area2Description": "Engineers, technicians, skilled workers for industry",
+      "area3Title": "Apprenticeship Program",
+      "area3Description": "Training programs for young Vietnamese talents"
+    },
+    "whyUs": {
+      "title": "Why VIETconsult?",
+      "subtitle": "Your Reliable Partner for International Professionals",
+      "point1": "Own language school in Vietnam",
+      "point2": "Long-standing experience since 2015",
+      "point3": "Legally compliant processes according to German standards",
+      "point4": "Comprehensive support from A to Z",
+      "point5": "Sustainable integration for long-term success",
+      "point6": "Locations in Vietnam and Germany"
+    },
+    "ctaBanner": {
+      "title": "Start Together Now",
+      "description": "Let's build a successful partnership together. Contact us for a non-binding initial consultation.",
+      "ctaPrimary": "Free Initial Consultation",
+      "ctaSecondary": "Learn About Locations"
+    }
+  },
+  "partner": {
+    "pageTitle": "Partner talentsCARE",
+    "pageSubtitle": "Our Strategic Partner for Training and Development",
+    "breadcrumb": "Partner",
+    "intro": {
+      "title": "talentsCARE - Your Partner for Professional Development",
+      "description": "talentsCARE is our strategic partner for continuous training and development of your Vietnamese professionals. Together we offer a comprehensive portfolio of training courses and seminars."
+    },
+    "services": {
+      "title": "Our Service Portfolio",
+      "subtitle": "Comprehensive Training Opportunities",
+      "service1": "Seminars",
+      "service2": "Training Courses",
+      "service3": "Workshops",
+      "service4": "Lectures",
+      "service5": "Webinars",
+      "service6": "Coaching",
+      "service7": "Training",
+      "service8": "Mentoring",
+      "service9": "Events"
+    },
+    "collaboration": {
+      "title": "Our Collaboration",
+      "description": "Through our close partnership with talentsCARE, we can not only provide you with qualified professionals, but also ensure their continuous development. This guarantees long-term success and satisfaction on both sides."
+    },
+    "cta": {
+      "title": "Learn More About talentsCARE",
+      "description": "Visit our partner's website for detailed information about the complete range of services.",
+      "button": "Visit talentsCARE Website"
+    }
+  },
+  "aboutUs": {
+    "pageTitle": "About Us",
+    "pageSubtitle": "Your Partner for Sustainable Recruitment",
+    "breadcrumb": "About Us",
+    "intro": {
+      "title": "Who We Are",
+      "description": "VIETconsult is your reliable partner for recruiting and integrating qualified professionals from Vietnam. Since 2015, we connect Vietnamese talents with German companies and create sustainable success stories."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "We build bridges between cultures and enable successful careers. Our goal is to connect German companies with highly qualified Vietnamese professionals while ensuring sustainable, long-term integration."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "A world where talents are borderless and everyone has the opportunity to reach their full potential – regardless of origin or location."
+    },
+    "values": {
+      "title": "Our Values",
+      "subtitle": "What Drives Us",
+      "value1Title": "Responsibility",
+      "value1Description": "We take responsibility for fair and transparent processes",
+      "value2Title": "Quality",
+      "value2Description": "Highest standards in recruitment and support",
+      "value3Title": "Sustainability",
+      "value3Description": "Long-term partnerships instead of short-term solutions",
+      "value4Title": "Integrity",
+      "value4Description": "Honesty and trust in all business relationships"
+    },
+    "whyVietnam": {
+      "title": "Why Vietnam?",
+      "subtitle": "A Country Full of Talents and Potential",
+      "reason1": "Highly motivated and well-educated professionals",
+      "reason2": "Strong work ethic and willingness to learn",
+      "reason3": "Cultural openness and adaptability",
+      "reason4": "Growing educational infrastructure",
+      "reason5": "Demographic advantage with young average age",
+      "reason6": "Close cooperation between Vietnam and Germany"
+    }
+  },
+  "advantages": {
+    "pageTitle": "Your Advantages",
+    "pageSubtitle": "Why VIETconsult is the right partner for you",
+    "breadcrumb": "Advantages",
+    "intro": {
+      "title": "What Sets Us Apart",
+      "description": "With VIETconsult, you get more than just recruitment services. We offer you a comprehensive service focused on long-term success."
+    },
+    "benefits": {
+      "title": "Our Core Advantages",
+      "subtitle": "What you can expect from us",
+      "benefit1Title": "Time Savings",
+      "benefit1Description": "We handle the entire recruitment process – from candidate search to integration. You can focus on your core business.",
+      "benefit2Title": "Cost Efficiency",
+      "benefit2Description": "Through our own infrastructure in Vietnam and years of experience, we offer you optimal value for money with no hidden costs.",
+      "benefit3Title": "Legal Security",
+      "benefit3Description": "All processes comply with German and international standards. We guarantee complete compliance and transparent documentation.",
+      "benefit4Title": "Sustainable Integration",
+      "benefit4Description": "Through comprehensive preparation and long-term support, we ensure high employee retention and satisfaction on both sides.",
+      "benefit5Title": "Own Language School",
+      "benefit5Description": "Our candidates are specifically prepared for the German labor market in Vietnam – professionally, linguistically, and culturally.",
+      "benefit6Title": "Personal Support",
+      "benefit6Description": "A dedicated contact person accompanies you through the entire process and is available even after placement."
+    },
+    "promise": {
+      "title": "Our Promise to You",
+      "description": "We are only satisfied when you are. That's why we continue to support you and your new employees even after successful placement, ensuring sustainable and successful collaboration."
+    },
+    "stats": {
+      "title": "Success in Numbers",
+      "stat1Value": "100%",
+      "stat1Label": "Legally Compliant Processes",
+      "stat2Value": "95%",
+      "stat2Label": "Successful Long-term Integration",
+      "stat3Value": "2015",
+      "stat3Label": "Successfully operating for over 10 years"
+    }
+  },
+  "qualitySeal": {
+    "pageTitle": "KDA Quality Seal",
+    "pageSubtitle": "Ethical Recruitment According to International Standards",
+    "breadcrumb": "Quality Seal",
+    "intro": {
+      "title": "What is the KDA Quality Seal?",
+      "description": "The KDA Quality Seal stands for fair and ethical recruitment of international professionals. As a certified company, we commit to the highest standards in recruitment and guarantee transparent, legally compliant processes."
+    },
+    "standards": {
+      "title": "Our Commitments",
+      "subtitle": "According to International Standards",
+      "standard1Title": "WHO Global Code of Practice",
+      "standard1Description": "Ethical recruitment of health professionals according to WHO guidelines",
+      "standard2Title": "ILO Conventions",
+      "standard2Description": "Compliance with the core labor standards of the International Labour Organization",
+      "standard3Title": "UN Guiding Principles",
+      "standard3Description": "Respect for human rights in all business processes",
+      "standard4Title": "Transparent Recruitment",
+      "standard4Description": "No hidden costs, fair contract conditions for all parties involved",
+      "standard5Title": "Quality Assurance",
+      "standard5Description": "Regular review and continuous improvement of our processes",
+      "standard6Title": "Complaint Management",
+      "standard6Description": "Accessible and transparent system for conflict resolution"
+    },
+    "compliance": {
+      "title": "Legally Compliant Processes",
+      "description": "All our recruitment processes comply with German and international regulations. We guarantee complete compliance and transparently document every step for all parties involved."
+    },
+    "complaint": {
+      "title": "Complaint Management",
+      "description": "As a KDA-certified company, we have a structured complaint procedure. Candidates and clients can contact us at any time.",
+      "downloadLabel": "Download complaint procedure",
+      "contactLabel": "Submit complaint"
+    }
+  },
+  "services": {
+    "pageTitle": "Our Services",
+    "pageSubtitle": "Comprehensive Support from A to Z",
+    "breadcrumb": "Services",
+    "intro": {
+      "title": "4 Steps to Successful Integration",
+      "description": "From the initial candidate search to long-term support in Germany – we accompany you through the entire process and ensure successful integration."
+    },
+    "recruitment": {
+      "title": "Recruitment & Selection",
+      "description": "Targeted candidate search and professional selection of qualified professionals in Vietnam",
+      "link": "/services/rekrutierung-auswahl"
+    },
+    "training": {
+      "title": "Language & Cultural Training",
+      "description": "Intensive preparation in our own language school with cultural training",
+      "link": "/services/sprach-kulturelle-bildung"
+    },
+    "recognition": {
+      "title": "Recognition",
+      "description": "Support with professional recognition and qualification in Germany",
+      "link": "/services/anerkennung"
+    },
+    "relocation": {
+      "title": "Relocation & Integration",
+      "description": "Assistance with arrival and long-term integration in the company",
+      "link": "/services/relocation-integration"
+    }
+  },
+  "contact": {
+    "pageTitle": "Contact",
+    "pageSubtitle": "We look forward to hearing from you",
+    "breadcrumb": "Contact",
+    "form": {
+      "title": "Contact Form",
+      "subtitle": "Send us your inquiry",
+      "nameLabel": "Name",
+      "namePlaceholder": "Your full name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "your.email@example.com",
+      "phoneLabel": "Phone",
+      "phonePlaceholder": "+49 123 456789",
+      "companyLabel": "Company",
+      "companyPlaceholder": "Your company",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Your message to us...",
+      "privacyLabel": "I agree to the processing of my data according to the privacy policy.",
+      "submitButton": "Send message"
+    },
+    "locations": {
+      "title": "Our Locations",
+      "subtitle": "We are here for you",
+      "frankfurtTitle": "Frankfurt (Headquarters)",
+      "frankfurtAddress": "Julius-Brecht-Str. 3, 60433 Frankfurt am Main",
+      "frankfurtPhone": "+49 69 8700746-80",
+      "hannoverTitle": "Hannover",
+      "hannoverAddress": "Grosser Hillen 22, 30559 Hannover",
+      "hannoverPhone": "+49 511 515291-80",
+      "wilhelmshavenTitle": "Wilhelmshaven",
+      "wilhelmshavenAddress": "Am Priel 9, 26388 Wilhelmshaven",
+      "wilhelmshavenPhone": "+49 4421 18142-00",
+      "vietnamTitle": "Vietnam (HDEU)",
+      "vietnamAddress": "Part 11, Floor 17, 72 Le Thanh Ton, Ben Nghe, District 1, HCMC"
+    },
+    "hotlines": {
+      "title": "Hotlines",
+      "subtitle": "Direct Contact",
+      "germanyLabel": "Germany",
+      "germanyPhone": "+49 175 3889388",
+      "vietnamLabel": "Vietnam",
+      "vietnamPhone": "+84 987 188 667"
+    }
+  },
+  "footer": {
+    "company": "Company",
+    "information": "Information",
+    "legal": "Legal",
+    "imprint": "Imprint",
+    "privacy": "Privacy",
+    "copyright": "© 2026 VIETconsult. All rights reserved."
+  }
+}

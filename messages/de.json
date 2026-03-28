@@ -1,0 +1,335 @@
+{
+  "common": {
+    "companyName": "VIETconsult",
+    "contact": "Kontakt",
+    "readMore": "Mehr erfahren",
+    "learnMore": "Weiterlesen"
+  },
+  "navigation": {
+    "home": "Willkommen",
+    "aboutUs": "Über uns",
+    "partner": "Partner",
+    "advantages": "Vorteile",
+    "qualitySeal": "Gütezeichen",
+    "services": "Services",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "hero": {
+      "titleLine1": "Ganzheitliche Lösungen für",
+      "titleLine2": "Fachkräfte aus Vietnam",
+      "subtitle": "Von der Bedarfsanalyse in Deutschland über die eigene Sprachschule in Vietnam bis zur langfristigen Begleitung im Betrieb.",
+      "cta": "Kontakt aufnehmen",
+      "ctaSecondary": "Services entdecken"
+    },
+    "stats": {
+      "integration": "Nachhaltige Integration",
+      "candidates": "Sorgfältig ausgewählte Kandidaten",
+      "steps": "Schritte bis zur Integration"
+    },
+    "vision": {
+      "title": "Unsere Vision",
+      "subtitle": "Nachhaltige Fachkräftegewinnung mit Verantwortung",
+      "card1Title": "Nachhaltige Fachkräftegewinnung",
+      "card1Description": "Wir rekrutieren qualifizierte Fachkräfte aus Vietnam mit Fokus auf langfristige Integration und erfolgreiche Zusammenarbeit.",
+      "card2Title": "Verantwortungsvolle Zusammenarbeit",
+      "card2Description": "Ethische Rekrutierung nach internationalen Standards mit fairem und transparentem Prozess für alle Beteiligten.",
+      "card3Title": "Erfolgreiche Integration",
+      "card3Description": "Umfassende Begleitung von der Sprachausbildung bis zur Integration im deutschen Arbeitsmarkt."
+    },
+    "services": {
+      "title": "Unsere Services",
+      "subtitle": "Von der Rekrutierung bis zur Integration",
+      "description": "Wir bieten einen ganzheitlichen Ansatz für die Gewinnung und Integration internationaler Fachkräfte.",
+      "cta": "Alle Services ansehen"
+    },
+    "benefits": {
+      "title": "Ihre Vorteile",
+      "subtitle": "Warum VIETconsult?",
+      "card1Title": "Zeitersparnis",
+      "card1Description": "Wir übernehmen den gesamten Rekrutierungsprozess und sparen Ihnen wertvolle Zeit.",
+      "card2Title": "Langfristiger Mehrwert",
+      "card2Description": "Nachhaltige Integration sorgt für langfristige Mitarbeiterbindung und Erfolg.",
+      "card3Title": "Persönliche Begleitung",
+      "card3Description": "Individuelle Betreuung während des gesamten Prozesses für optimale Ergebnisse.",
+      "card4Title": "Erfolg durch Integration",
+      "card4Description": "Umfassende Unterstützung garantiert erfolgreiche Integration und Zufriedenheit."
+    },
+    "partners": {
+      "title": "Unsere Partner",
+      "subtitle": "Gemeinsam für Ihren Erfolg",
+      "rating": "5.0 Sterne",
+      "cta": "Partner kennenlernen"
+    },
+    "process": {
+      "title": "4 Schritte zur Integration",
+      "subtitle": "Unser bewährter Prozess",
+      "step1Title": "Kandidatensuche",
+      "step1Description": "Gezielte Rekrutierung qualifizierter Fachkräfte in Vietnam",
+      "step2Title": "Sprach- & kulturelle Bildung",
+      "step2Description": "Intensive Vorbereitung in unserer eigenen Sprachschule",
+      "step3Title": "Anerkennung",
+      "step3Description": "Unterstützung bei der beruflichen Anerkennung in Deutschland",
+      "step4Title": "Ankunft in Deutschland",
+      "step4Description": "Begleitung bei Relocation und Integration im Unternehmen"
+    },
+    "infrastructure": {
+      "title": "Unsere Standorte",
+      "subtitle": "Präsenz in Vietnam und Deutschland",
+      "vietnamTitle": "Vietnam",
+      "vietnamDescription": "Eigene Rekrutierungsbüros und Trainingszentren in Ho-Chi-Minh-Stadt",
+      "germanyTitle": "Deutschland",
+      "germanyDescription": "Standorte in Frankfurt, Hannover und Wilhelmshaven"
+    },
+    "specializedAreas": {
+      "title": "Unsere Fachbereiche",
+      "subtitle": "Spezialisierte Rekrutierung für verschiedene Branchen",
+      "area1Title": "Pflege & Medizin",
+      "area1Description": "Pflegefachkräfte, Altenpfleger, medizinisches Personal",
+      "area2Title": "Technik & Industrie",
+      "area2Description": "Ingenieure, Techniker, Facharbeiter für die Industrie",
+      "area3Title": "Azubi-Programm",
+      "area3Description": "Ausbildungsprogramme für junge vietnamesische Talente"
+    },
+    "whyUs": {
+      "title": "Warum VIETconsult?",
+      "subtitle": "Ihr verlässlicher Partner für internationale Fachkräfte",
+      "point1": "Eigene Sprachschule in Vietnam",
+      "point2": "Langjährige Erfahrung seit 2015",
+      "point3": "Rechtssichere Prozesse nach deutschen Standards",
+      "point4": "Umfassende Betreuung von A bis Z",
+      "point5": "Nachhaltige Integration für langfristigen Erfolg",
+      "point6": "Standorte in Vietnam und Deutschland"
+    },
+    "ctaBanner": {
+      "title": "Jetzt gemeinsam starten",
+      "description": "Lassen Sie uns gemeinsam eine erfolgreiche Zusammenarbeit aufbauen. Kontaktieren Sie uns für ein unverbindliches Erstgespräch.",
+      "ctaPrimary": "Kostenloses Erstgespräch",
+      "ctaSecondary": "Mehr über Standorte"
+    }
+  },
+  "partner": {
+    "pageTitle": "Partner talentsCARE",
+    "pageSubtitle": "Unser strategischer Partner für Weiterbildung und Entwicklung",
+    "breadcrumb": "Partner",
+    "intro": {
+      "title": "talentsCARE - Ihr Partner für berufliche Entwicklung",
+      "description": "talentsCARE ist unser strategischer Partner für die kontinuierliche Weiterbildung und Entwicklung Ihrer vietnamesischen Fachkräfte. Gemeinsam bieten wir ein umfassendes Portfolio an Schulungen und Seminaren."
+    },
+    "services": {
+      "title": "Unser Service-Portfolio",
+      "subtitle": "Umfassende Weiterbildungsmöglichkeiten",
+      "service1": "Seminare",
+      "service2": "Schulungen",
+      "service3": "Workshops",
+      "service4": "Vorträge",
+      "service5": "Webinare",
+      "service6": "Coaching",
+      "service7": "Training",
+      "service8": "Mentoring",
+      "service9": "Events"
+    },
+    "collaboration": {
+      "title": "Unsere Zusammenarbeit",
+      "description": "Durch die enge Partnerschaft mit talentsCARE können wir Ihnen nicht nur qualifizierte Fachkräfte vermitteln, sondern auch deren kontinuierliche Weiterentwicklung sicherstellen. Dies garantiert langfristigen Erfolg und Zufriedenheit auf beiden Seiten."
+    },
+    "cta": {
+      "title": "Mehr über talentsCARE erfahren",
+      "description": "Besuchen Sie die Website unseres Partners für detaillierte Informationen über das gesamte Leistungsspektrum.",
+      "button": "Zur talentsCARE Website"
+    }
+  },
+  "aboutUs": {
+    "pageTitle": "Über uns",
+    "pageSubtitle": "Ihr Partner für nachhaltige Fachkräftegewinnung",
+    "breadcrumb": "Über uns",
+    "intro": {
+      "title": "Wer wir sind",
+      "description": "VIETconsult ist Ihr verlässlicher Partner für die Rekrutierung und Integration qualifizierter Fachkräfte aus Vietnam. Seit 2015 verbinden wir vietnamesische Talente mit deutschen Unternehmen und schaffen nachhaltige Erfolgsgeschichten."
+    },
+    "mission": {
+      "title": "Unsere Mission",
+      "description": "Wir schaffen Brücken zwischen Kulturen und ermöglichen erfolgreiche Karrieren. Unser Ziel ist es, deutsche Unternehmen mit hochqualifizierten vietnamesischen Fachkräften zu verbinden und dabei eine nachhaltige, langfristige Integration zu gewährleisten."
+    },
+    "vision": {
+      "title": "Unsere Vision",
+      "description": "Eine Welt, in der Talente grenzenlos sind und jeder die Möglichkeit hat, sein volles Potenzial zu entfalten – unabhängig von Herkunft oder Standort."
+    },
+    "values": {
+      "title": "Unsere Werte",
+      "subtitle": "Was uns antreibt",
+      "value1Title": "Verantwortung",
+      "value1Description": "Wir übernehmen Verantwortung für faire und transparente Prozesse",
+      "value2Title": "Qualität",
+      "value2Description": "Höchste Standards in Rekrutierung und Betreuung",
+      "value3Title": "Nachhaltigkeit",
+      "value3Description": "Langfristige Partnerschaften statt kurzfristige Lösungen",
+      "value4Title": "Integrität",
+      "value4Description": "Ehrlichkeit und Vertrauen in allen Geschäftsbeziehungen"
+    },
+    "whyVietnam": {
+      "title": "Warum Vietnam?",
+      "subtitle": "Ein Land voller Talente und Potenzial",
+      "reason1": "Hochmotivierte und gut ausgebildete Fachkräfte",
+      "reason2": "Starke Arbeitsmoral und Lernbereitschaft",
+      "reason3": "Kulturelle Offenheit und Anpassungsfähigkeit",
+      "reason4": "Wachsende Bildungsinfrastruktur",
+      "reason5": "Demografischer Vorteil mit jungem Durchschnittsalter",
+      "reason6": "Enge Zusammenarbeit zwischen Vietnam und Deutschland"
+    }
+  },
+  "advantages": {
+    "pageTitle": "Ihre Vorteile",
+    "pageSubtitle": "Warum VIETconsult der richtige Partner für Sie ist",
+    "breadcrumb": "Vorteile",
+    "intro": {
+      "title": "Was uns auszeichnet",
+      "description": "Bei VIETconsult erhalten Sie mehr als nur eine Personalvermittlung. Wir bieten Ihnen einen ganzheitlichen Service, der auf langfristigen Erfolg ausgerichtet ist."
+    },
+    "benefits": {
+      "title": "Unsere Kernvorteile",
+      "subtitle": "Was Sie von uns erwarten können",
+      "benefit1Title": "Zeitersparnis",
+      "benefit1Description": "Wir übernehmen den gesamten Rekrutierungsprozess – von der Kandidatensuche bis zur Integration. Sie können sich auf Ihr Kerngeschäft konzentrieren.",
+      "benefit2Title": "Kosteneffizienz",
+      "benefit2Description": "Durch unsere eigene Infrastruktur in Vietnam und langjährige Erfahrung bieten wir Ihnen optimale Preis-Leistungs-Verhältnisse ohne versteckte Kosten.",
+      "benefit3Title": "Rechtssicherheit",
+      "benefit3Description": "Alle Prozesse entsprechen deutschen und internationalen Standards. Wir garantieren vollständige Compliance und transparente Dokumentation.",
+      "benefit4Title": "Nachhaltige Integration",
+      "benefit4Description": "Durch umfassende Vorbereitung und langfristige Begleitung sorgen wir für hohe Mitarbeiterbindung und Zufriedenheit auf beiden Seiten.",
+      "benefit5Title": "Eigene Sprachschule",
+      "benefit5Description": "Unsere Kandidaten werden in Vietnam gezielt auf den deutschen Arbeitsmarkt vorbereitet – fachlich, sprachlich und kulturell.",
+      "benefit6Title": "Persönliche Betreuung",
+      "benefit6Description": "Ein fester Ansprechpartner begleitet Sie durch den gesamten Prozess und steht Ihnen auch nach der Vermittlung zur Verfügung."
+    },
+    "promise": {
+      "title": "Unser Versprechen an Sie",
+      "description": "Wir sind erst zufrieden, wenn Sie es sind. Deshalb begleiten wir Sie und Ihre neuen Mitarbeiter auch nach der erfolgreichen Vermittlung weiter und sorgen für eine nachhaltige, erfolgreiche Zusammenarbeit."
+    },
+    "stats": {
+      "title": "Erfolg in Zahlen",
+      "stat1Value": "100%",
+      "stat1Label": "Rechtssichere Prozesse",
+      "stat2Value": "95%",
+      "stat2Label": "Erfolgreiche Langzeitintegration",
+      "stat3Value": "2015",
+      "stat3Label": "Seit über 10 Jahren erfolgreich"
+    }
+  },
+  "qualitySeal": {
+    "pageTitle": "KDA-Gütezeichen",
+    "pageSubtitle": "Ethische Rekrutierung nach internationalen Standards",
+    "breadcrumb": "Gütezeichen",
+    "intro": {
+      "title": "Was ist das KDA-Gütezeichen?",
+      "description": "Das KDA-Gütezeichen steht für faire und ethische Anwerbung internationaler Fachkräfte. Als zertifiziertes Unternehmen verpflichten wir uns zu höchsten Standards in der Rekrutierung und garantieren transparente, rechtssichere Prozesse."
+    },
+    "standards": {
+      "title": "Unsere Verpflichtungen",
+      "subtitle": "Nach internationalen Standards",
+      "standard1Title": "WHO Global Code of Practice",
+      "standard1Description": "Ethische Anwerbung von Gesundheitsfachkräften nach WHO-Richtlinien",
+      "standard2Title": "ILO-Konventionen",
+      "standard2Description": "Einhaltung der Kernarbeitsnormen der Internationalen Arbeitsorganisation",
+      "standard3Title": "UN-Leitprinzipien",
+      "standard3Description": "Respektierung der Menschenrechte in allen Geschäftsprozessen",
+      "standard4Title": "Transparente Vermittlung",
+      "standard4Description": "Keine versteckten Kosten, faire Vertragsbedingungen für alle Beteiligten",
+      "standard5Title": "Qualitätssicherung",
+      "standard5Description": "Regelmäßige Überprüfung und kontinuierliche Verbesserung unserer Prozesse",
+      "standard6Title": "Beschwerdemanagement",
+      "standard6Description": "Zugängliches und transparentes System zur Konfliktlösung"
+    },
+    "compliance": {
+      "title": "Rechtssichere Prozesse",
+      "description": "Alle unsere Vermittlungsprozesse entsprechen den deutschen und internationalen Vorschriften. Wir garantieren vollständige Compliance und dokumentieren jeden Schritt transparent für alle Beteiligten."
+    },
+    "complaint": {
+      "title": "Beschwerdemanagement",
+      "description": "Als KDA-zertifiziertes Unternehmen verfügen wir über ein strukturiertes Beschwerdeverfahren. Kandidaten und Auftraggeber können sich jederzeit an uns wenden.",
+      "downloadLabel": "Beschwerdeverfahren herunterladen",
+      "contactLabel": "Beschwerde einreichen"
+    }
+  },
+  "services": {
+    "pageTitle": "Unsere Services",
+    "pageSubtitle": "Ganzheitliche Begleitung von A bis Z",
+    "breadcrumb": "Services",
+    "intro": {
+      "title": "4 Schritte zur erfolgreichen Integration",
+      "description": "Von der ersten Kandidatensuche bis zur langfristigen Begleitung in Deutschland – wir begleiten Sie durch den gesamten Prozess und sorgen für eine erfolgreiche Integration."
+    },
+    "recruitment": {
+      "title": "Rekrutierung & Auswahl",
+      "description": "Gezielte Kandidatensuche und professionelle Auswahl qualifizierter Fachkräfte in Vietnam",
+      "link": "/services/rekrutierung-auswahl"
+    },
+    "training": {
+      "title": "Sprach- & kulturelle Bildung",
+      "description": "Intensive Vorbereitung in unserer eigenen Sprachschule mit kulturellem Training",
+      "link": "/services/sprach-kulturelle-bildung"
+    },
+    "recognition": {
+      "title": "Anerkennung",
+      "description": "Unterstützung bei der beruflichen Anerkennung und Qualifikation in Deutschland",
+      "link": "/services/anerkennung"
+    },
+    "relocation": {
+      "title": "Relocation & Integration",
+      "description": "Begleitung bei der Einreise und langfristige Integration im Unternehmen",
+      "link": "/services/relocation-integration"
+    }
+  },
+  "contact": {
+    "pageTitle": "Kontakt",
+    "pageSubtitle": "Wir freuen uns auf Ihre Nachricht",
+    "breadcrumb": "Kontakt",
+    "form": {
+      "title": "Kontaktformular",
+      "subtitle": "Senden Sie uns Ihre Anfrage",
+      "nameLabel": "Name",
+      "namePlaceholder": "Ihr vollständiger Name",
+      "emailLabel": "E-Mail",
+      "emailPlaceholder": "ihre.email@beispiel.de",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "+49 123 456789",
+      "companyLabel": "Unternehmen",
+      "companyPlaceholder": "Ihr Unternehmen",
+      "messageLabel": "Nachricht",
+      "messagePlaceholder": "Ihre Nachricht an uns...",
+      "privacyLabel": "Ich stimme der Verarbeitung meiner Daten gemäß der Datenschutzerklärung zu.",
+      "submitButton": "Nachricht senden"
+    },
+    "locations": {
+      "title": "Unsere Standorte",
+      "subtitle": "Wir sind für Sie da",
+      "frankfurtTitle": "Frankfurt (Hauptsitz)",
+      "frankfurtAddress": "Julius-Brecht-Str. 3, 60433 Frankfurt am Main",
+      "frankfurtPhone": "+49 69 8700746-80",
+      "hannoverTitle": "Hannover",
+      "hannoverAddress": "Grosser Hillen 22, 30559 Hannover",
+      "hannoverPhone": "+49 511 515291-80",
+      "wilhelmshavenTitle": "Wilhelmshaven",
+      "wilhelmshavenAddress": "Am Priel 9, 26388 Wilhelmshaven",
+      "wilhelmshavenPhone": "+49 4421 18142-00",
+      "vietnamTitle": "Vietnam (HDEU)",
+      "vietnamAddress": "Part 11, Floor 17, 72 Le Thanh Ton, Ben Nghe, District 1, HCMC"
+    },
+    "hotlines": {
+      "title": "Hotlines",
+      "subtitle": "Direkter Kontakt",
+      "germanyLabel": "Deutschland",
+      "germanyPhone": "+49 175 3889388",
+      "vietnamLabel": "Vietnam",
+      "vietnamPhone": "+84 987 188 667"
+    }
+  },
+  "footer": {
+    "company": "Unternehmen",
+    "information": "Informationen",
+    "legal": "Rechtliches",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "copyright": "© 2026 VIETconsult. Alle Rechte vorbehalten."
+  }
+}

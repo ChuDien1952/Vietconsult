@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c:*)",
+      "Skill(web-frameworks)",
+      "Skill(frontend-design-pro)",
+      "Skill(ai-multimodal)",
+      "Skill(media-processing)",
+      "Skill(ui-styling)",
+      "SlashCommand(/scout codebase structure for VIETconsult website project)",
+      "SlashCommand(/scout:*)",
+      "Bash(dir /B)",
+      "Bash(powershell -Command \"Get-Date -Format ''yyyy-MM-dd''\")",
+      "Bash(mkdir:*)",
+      "Bash(node:*)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --skip-install)",
+      "Bash(npm install)",
+      "Bash(npm install:*)",
+      "Bash(npm run type-check:*)",
+      "Bash(npm run lint)",
+      "Bash(npm run build:*)",
+      "Bash(npm run dev:*)",
+      "Bash(npm audit:*)",
+      "Bash(dir /B:*)",
+      "Bash(curl:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}

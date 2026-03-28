@@ -1,0 +1,335 @@
+{
+  "common": {
+    "companyName": "VIETconsult",
+    "contact": "Liên hệ",
+    "readMore": "Tìm hiểu thêm",
+    "learnMore": "Đọc thêm"
+  },
+  "navigation": {
+    "home": "Trang chủ",
+    "aboutUs": "Về chúng tôi",
+    "partner": "Đối tác",
+    "advantages": "Ưu điểm",
+    "qualitySeal": "Chứng nhận chất lượng",
+    "services": "Dịch vụ",
+    "contact": "Liên hệ"
+  },
+  "home": {
+    "hero": {
+      "titleLine1": "Giải pháp toàn diện cho",
+      "titleLine2": "Lao động chuyên môn từ Việt Nam",
+      "subtitle": "Từ phân tích nhu cầu tại Đức qua trường ngôn ngữ riêng tại Việt Nam đến hỗ trợ dài hạn trong doanh nghiệp.",
+      "cta": "Liên hệ ngay",
+      "ctaSecondary": "Khám phá dịch vụ"
+    },
+    "stats": {
+      "integration": "Tích hợp bền vững",
+      "candidates": "Ứng viên được tuyển chọn kỹ lưỡng",
+      "steps": "Bước tích hợp"
+    },
+    "vision": {
+      "title": "Tầm nhìn",
+      "subtitle": "Tuyển dụng bền vững với trách nhiệm",
+      "card1Title": "Tuyển dụng bền vững",
+      "card1Description": "Chúng tôi tuyển dụng nhân lực có trình độ từ Việt Nam tập trung vào tích hợp dài hạn và hợp tác thành công.",
+      "card2Title": "Hợp tác có trách nhiệm",
+      "card2Description": "Tuyển dụng đạo đức theo tiêu chuẩn quốc tế với quy trình công bằng và minh bạch cho tất cả các bên.",
+      "card3Title": "Tích hợp thành công",
+      "card3Description": "Hỗ trợ toàn diện từ đào tạo ngôn ngữ đến tích hợp vào thị trường lao động Đức."
+    },
+    "services": {
+      "title": "Dịch vụ",
+      "subtitle": "Từ tuyển dụng đến tích hợp",
+      "description": "Chúng tôi cung cấp phương pháp toàn diện để thu hút và tích hợp nhân lực quốc tế.",
+      "cta": "Xem tất cả dịch vụ"
+    },
+    "benefits": {
+      "title": "Lợi ích",
+      "subtitle": "Tại sao chọn VIETconsult?",
+      "card1Title": "Tiết kiệm thời gian",
+      "card1Description": "Chúng tôi xử lý toàn bộ quy trình tuyển dụng và tiết kiệm thời gian quý báu cho bạn.",
+      "card2Title": "Giá trị dài hạn",
+      "card2Description": "Tích hợp bền vững đảm bảo giữ chân nhân viên và thành công lâu dài.",
+      "card3Title": "Hỗ trợ cá nhân",
+      "card3Description": "Chăm sóc cá nhân trong suốt quá trình để đạt kết quả tối ưu.",
+      "card4Title": "Thành công qua tích hợp",
+      "card4Description": "Hỗ trợ toàn diện đảm bảo tích hợp thành công và sự hài lòng."
+    },
+    "partners": {
+      "title": "Đối tác của chúng tôi",
+      "subtitle": "Cùng nhau vì thành công của bạn",
+      "rating": "5.0 Sao",
+      "cta": "Tìm hiểu về đối tác"
+    },
+    "process": {
+      "title": "4 Bước tích hợp",
+      "subtitle": "Quy trình đã được chứng minh",
+      "step1Title": "Tìm kiếm ứng viên",
+      "step1Description": "Tuyển dụng có mục tiêu các chuyên gia có trình độ tại Việt Nam",
+      "step2Title": "Đào tạo ngôn ngữ & văn hóa",
+      "step2Description": "Chuẩn bị chuyên sâu tại trường ngôn ngữ riêng của chúng tôi",
+      "step3Title": "Công nhận",
+      "step3Description": "Hỗ trợ công nhận nghề nghiệp tại Đức",
+      "step4Title": "Đến Đức",
+      "step4Description": "Hỗ trợ di chuyển và tích hợp vào doanh nghiệp"
+    },
+    "infrastructure": {
+      "title": "Địa điểm của chúng tôi",
+      "subtitle": "Có mặt tại Việt Nam và Đức",
+      "vietnamTitle": "Việt Nam",
+      "vietnamDescription": "Văn phòng tuyển dụng và trung tâm đào tạo riêng tại TP. Hồ Chí Minh",
+      "germanyTitle": "Đức",
+      "germanyDescription": "Văn phòng tại Frankfurt, Hannover và Wilhelmshaven"
+    },
+    "specializedAreas": {
+      "title": "Lĩnh vực chuyên môn",
+      "subtitle": "Tuyển dụng chuyên biệt cho các ngành khác nhau",
+      "area1Title": "Chăm sóc sức khỏe & Y tế",
+      "area1Description": "Điều dưỡng, chăm sóc người cao tuổi, nhân viên y tế",
+      "area2Title": "Kỹ thuật & Công nghiệp",
+      "area2Description": "Kỹ sư, kỹ thuật viên, công nhân lành nghề cho công nghiệp",
+      "area3Title": "Chương trình học nghề",
+      "area3Description": "Chương trình đào tạo cho tài năng trẻ Việt Nam"
+    },
+    "whyUs": {
+      "title": "Tại sao chọn VIETconsult?",
+      "subtitle": "Đối tác đáng tin cậy cho nhân lực quốc tế",
+      "point1": "Trường ngôn ngữ riêng tại Việt Nam",
+      "point2": "Kinh nghiệm lâu năm từ 2015",
+      "point3": "Quy trình tuân thủ pháp luật theo tiêu chuẩn Đức",
+      "point4": "Hỗ trợ toàn diện từ A đến Z",
+      "point5": "Tích hợp bền vững cho thành công lâu dài",
+      "point6": "Văn phòng tại Việt Nam và Đức"
+    },
+    "ctaBanner": {
+      "title": "Bắt đầu cùng nhau ngay bây giờ",
+      "description": "Hãy cùng nhau xây dựng quan hệ hợp tác thành công. Liên hệ với chúng tôi để được tư vấn miễn phí.",
+      "ctaPrimary": "Tư vấn miễn phí",
+      "ctaSecondary": "Tìm hiểu về văn phòng"
+    }
+  },
+  "partner": {
+    "pageTitle": "Đối tác talentsCARE",
+    "pageSubtitle": "Đối tác chiến lược cho đào tạo và phát triển",
+    "breadcrumb": "Đối tác",
+    "intro": {
+      "title": "talentsCARE - Đối tác phát triển nghề nghiệp của bạn",
+      "description": "talentsCARE là đối tác chiến lược của chúng tôi trong việc đào tạo và phát triển liên tục cho các chuyên gia Việt Nam của bạn. Cùng nhau, chúng tôi cung cấp danh mục toàn diện các khóa đào tạo và hội thảo."
+    },
+    "services": {
+      "title": "Danh mục dịch vụ",
+      "subtitle": "Cơ hội đào tạo toàn diện",
+      "service1": "Hội thảo",
+      "service2": "Khóa đào tạo",
+      "service3": "Workshop",
+      "service4": "Bài giảng",
+      "service5": "Webinar",
+      "service6": "Coaching",
+      "service7": "Training",
+      "service8": "Mentoring",
+      "service9": "Sự kiện"
+    },
+    "collaboration": {
+      "title": "Hợp tác của chúng tôi",
+      "description": "Thông qua quan hệ đối tác chặt chẽ với talentsCARE, chúng tôi không chỉ cung cấp cho bạn các chuyên gia có trình độ mà còn đảm bảo sự phát triển liên tục của họ. Điều này đảm bảo thành công và sự hài lòng lâu dài cho cả hai bên."
+    },
+    "cta": {
+      "title": "Tìm hiểu thêm về talentsCARE",
+      "description": "Truy cập trang web của đối tác để biết thông tin chi tiết về toàn bộ dịch vụ.",
+      "button": "Đến trang web talentsCARE"
+    }
+  },
+  "aboutUs": {
+    "pageTitle": "Về chúng tôi",
+    "pageSubtitle": "Đối tác của bạn cho tuyển dụng bền vững",
+    "breadcrumb": "Về chúng tôi",
+    "intro": {
+      "title": "Chúng tôi là ai",
+      "description": "VIETconsult là đối tác đáng tin cậy của bạn trong việc tuyển dụng và tích hợp các chuyên gia có trình độ từ Việt Nam. Từ năm 2015, chúng tôi kết nối tài năng Việt Nam với các doanh nghiệp Đức và tạo ra những câu chuyện thành công bền vững."
+    },
+    "mission": {
+      "title": "Sứ mệnh của chúng tôi",
+      "description": "Chúng tôi xây dựng cầu nối giữa các nền văn hóa và tạo điều kiện cho sự nghiệp thành công. Mục tiêu của chúng tôi là kết nối các doanh nghiệp Đức với các chuyên gia Việt Nam có trình độ cao đồng thời đảm bảo tích hợp bền vững, lâu dài."
+    },
+    "vision": {
+      "title": "Tầm nhìn của chúng tôi",
+      "description": "Một thế giới nơi tài năng không có biên giới và mọi người đều có cơ hội phát huy hết tiềm năng của mình – bất kể xuất xứ hay địa điểm."
+    },
+    "values": {
+      "title": "Giá trị cốt lõi",
+      "subtitle": "Những gì thúc đẩy chúng tôi",
+      "value1Title": "Trách nhiệm",
+      "value1Description": "Chúng tôi chịu trách nhiệm về quy trình công bằng và minh bạch",
+      "value2Title": "Chất lượng",
+      "value2Description": "Tiêu chuẩn cao nhất trong tuyển dụng và hỗ trợ",
+      "value3Title": "Bền vững",
+      "value3Description": "Quan hệ đối tác lâu dài thay vì giải pháp ngắn hạn",
+      "value4Title": "Chính trực",
+      "value4Description": "Trung thực và tin cậy trong mọi quan hệ kinh doanh"
+    },
+    "whyVietnam": {
+      "title": "Tại sao Việt Nam?",
+      "subtitle": "Một đất nước đầy tài năng và tiềm năng",
+      "reason1": "Lực lượng lao động có động lực cao và được đào tạo tốt",
+      "reason2": "Đạo đức làm việc mạnh mẽ và sẵn sàng học hỏi",
+      "reason3": "Cởi mở văn hóa và khả năng thích nghi",
+      "reason4": "Cơ sở hạ tầng giáo dục đang phát triển",
+      "reason5": "Lợi thế nhân khẩu học với độ tuổi trung bình trẻ",
+      "reason6": "Hợp tác chặt chẽ giữa Việt Nam và Đức"
+    }
+  },
+  "advantages": {
+    "pageTitle": "Ưu điểm của bạn",
+    "pageSubtitle": "Tại sao VIETconsult là đối tác phù hợp với bạn",
+    "breadcrumb": "Ưu điểm",
+    "intro": {
+      "title": "Điều gì làm chúng tôi khác biệt",
+      "description": "Với VIETconsult, bạn nhận được nhiều hơn là dịch vụ tuyển dụng. Chúng tôi cung cấp cho bạn dịch vụ toàn diện tập trung vào thành công lâu dài."
+    },
+    "benefits": {
+      "title": "Ưu điểm cốt lõi",
+      "subtitle": "Những gì bạn có thể mong đợi từ chúng tôi",
+      "benefit1Title": "Tiết kiệm thời gian",
+      "benefit1Description": "Chúng tôi xử lý toàn bộ quy trình tuyển dụng – từ tìm kiếm ứng viên đến tích hợp. Bạn có thể tập trung vào hoạt động kinh doanh cốt lõi.",
+      "benefit2Title": "Hiệu quả chi phí",
+      "benefit2Description": "Thông qua cơ sở hạ tầng riêng tại Việt Nam và nhiều năm kinh nghiệm, chúng tôi cung cấp cho bạn giá trị tối ưu mà không có chi phí ẩn.",
+      "benefit3Title": "An toàn pháp lý",
+      "benefit3Description": "Tất cả quy trình tuân thủ tiêu chuẩn Đức và quốc tế. Chúng tôi đảm bảo tuân thủ hoàn toàn và tài liệu minh bạch.",
+      "benefit4Title": "Tích hợp bền vững",
+      "benefit4Description": "Thông qua chuẩn bị toàn diện và hỗ trợ lâu dài, chúng tôi đảm bảo giữ chân nhân viên cao và sự hài lòng ở cả hai bên.",
+      "benefit5Title": "Trường ngôn ngữ riêng",
+      "benefit5Description": "Ứng viên của chúng tôi được chuẩn bị đặc biệt cho thị trường lao động Đức tại Việt Nam – về chuyên môn, ngôn ngữ và văn hóa.",
+      "benefit6Title": "Hỗ trợ cá nhân",
+      "benefit6Description": "Một người liên hệ chuyên trách đồng hành với bạn trong suốt quá trình và sẵn sàng hỗ trợ ngay cả sau khi tuyển dụng thành công."
+    },
+    "promise": {
+      "title": "Cam kết của chúng tôi với bạn",
+      "description": "Chúng tôi chỉ hài lòng khi bạn hài lòng. Đó là lý do tại sao chúng tôi tiếp tục hỗ trợ bạn và nhân viên mới của bạn ngay cả sau khi tuyển dụng thành công, đảm bảo sự hợp tác bền vững và thành công."
+    },
+    "stats": {
+      "title": "Thành công bằng con số",
+      "stat1Value": "100%",
+      "stat1Label": "Quy trình tuân thủ pháp luật",
+      "stat2Value": "95%",
+      "stat2Label": "Tích hợp dài hạn thành công",
+      "stat3Value": "2015",
+      "stat3Label": "Hoạt động thành công hơn 10 năm"
+    }
+  },
+  "qualitySeal": {
+    "pageTitle": "Chứng nhận chất lượng KDA",
+    "pageSubtitle": "Tuyển dụng có đạo đức theo tiêu chuẩn quốc tế",
+    "breadcrumb": "Chứng nhận chất lượng",
+    "intro": {
+      "title": "Chứng nhận chất lượng KDA là gì?",
+      "description": "Chứng nhận chất lượng KDA đại diện cho việc tuyển dụng công bằng và có đạo đức các chuyên gia quốc tế. Là công ty được chứng nhận, chúng tôi cam kết với các tiêu chuẩn cao nhất trong tuyển dụng và đảm bảo quy trình minh bạch, tuân thủ pháp luật."
+    },
+    "standards": {
+      "title": "Cam kết của chúng tôi",
+      "subtitle": "Theo tiêu chuẩn quốc tế",
+      "standard1Title": "Quy tắc ứng xử toàn cầu của WHO",
+      "standard1Description": "Tuyển dụng có đạo đức các chuyên gia y tế theo hướng dẫn của WHO",
+      "standard2Title": "Công ước ILO",
+      "standard2Description": "Tuân thủ các tiêu chuẩn lao động cốt lõi của Tổ chức Lao động Quốc tế",
+      "standard3Title": "Nguyên tắc hướng dẫn của Liên Hợp Quốc",
+      "standard3Description": "Tôn trọng quyền con người trong tất cả các quy trình kinh doanh",
+      "standard4Title": "Tuyển dụng minh bạch",
+      "standard4Description": "Không có chi phí ẩn, điều kiện hợp đồng công bằng cho tất cả các bên",
+      "standard5Title": "Đảm bảo chất lượng",
+      "standard5Description": "Xem xét thường xuyên và cải tiến liên tục quy trình của chúng tôi",
+      "standard6Title": "Quản lý khiếu nại",
+      "standard6Description": "Hệ thống giải quyết xung đột dễ tiếp cận và minh bạch"
+    },
+    "compliance": {
+      "title": "Quy trình tuân thủ pháp luật",
+      "description": "Tất cả các quy trình tuyển dụng của chúng tôi tuân thủ các quy định của Đức và quốc tế. Chúng tôi đảm bảo tuân thủ hoàn toàn và ghi chép minh bạch từng bước cho tất cả các bên liên quan."
+    },
+    "complaint": {
+      "title": "Quản lý khiếu nại",
+      "description": "Là công ty được chứng nhận KDA, chúng tôi có quy trình khiếu nại có cấu trúc. Ứng viên và khách hàng có thể liên hệ với chúng tôi bất cứ lúc nào.",
+      "downloadLabel": "Tải xuống quy trình khiếu nại",
+      "contactLabel": "Gửi khiếu nại"
+    }
+  },
+  "services": {
+    "pageTitle": "Dịch vụ của chúng tôi",
+    "pageSubtitle": "Hỗ trợ toàn diện từ A đến Z",
+    "breadcrumb": "Dịch vụ",
+    "intro": {
+      "title": "4 bước để tích hợp thành công",
+      "description": "Từ tìm kiếm ứng viên ban đầu đến hỗ trợ dài hạn tại Đức – chúng tôi đồng hành cùng bạn trong suốt quá trình và đảm bảo tích hợp thành công."
+    },
+    "recruitment": {
+      "title": "Tuyển dụng & Tuyển chọn",
+      "description": "Tìm kiếm ứng viên có mục tiêu và tuyển chọn chuyên nghiệp các chuyên gia có trình độ tại Việt Nam",
+      "link": "/services/rekrutierung-auswahl"
+    },
+    "training": {
+      "title": "Đào tạo ngôn ngữ & văn hóa",
+      "description": "Chuẩn bị chuyên sâu tại trường ngôn ngữ riêng với đào tạo văn hóa",
+      "link": "/services/sprach-kulturelle-bildung"
+    },
+    "recognition": {
+      "title": "Công nhận",
+      "description": "Hỗ trợ công nhận nghề nghiệp và bằng cấp tại Đức",
+      "link": "/services/anerkennung"
+    },
+    "relocation": {
+      "title": "Di chuyển & Tích hợp",
+      "description": "Hỗ trợ nhập cảnh và tích hợp dài hạn vào doanh nghiệp",
+      "link": "/services/relocation-integration"
+    }
+  },
+  "contact": {
+    "pageTitle": "Liên hệ",
+    "pageSubtitle": "Chúng tôi mong nhận được tin từ bạn",
+    "breadcrumb": "Liên hệ",
+    "form": {
+      "title": "Biểu mẫu liên hệ",
+      "subtitle": "Gửi yêu cầu của bạn cho chúng tôi",
+      "nameLabel": "Tên",
+      "namePlaceholder": "Họ và tên đầy đủ",
+      "emailLabel": "Email",
+      "emailPlaceholder": "email.cua.ban@vidu.com",
+      "phoneLabel": "Điện thoại",
+      "phonePlaceholder": "+84 123 456789",
+      "companyLabel": "Công ty",
+      "companyPlaceholder": "Công ty của bạn",
+      "messageLabel": "Tin nhắn",
+      "messagePlaceholder": "Tin nhắn của bạn cho chúng tôi...",
+      "privacyLabel": "Tôi đồng ý với việc xử lý dữ liệu của tôi theo chính sách bảo mật.",
+      "submitButton": "Gửi tin nhắn"
+    },
+    "locations": {
+      "title": "Địa điểm của chúng tôi",
+      "subtitle": "Chúng tôi ở đây để phục vụ bạn",
+      "frankfurtTitle": "Frankfurt (Trụ sở chính)",
+      "frankfurtAddress": "Julius-Brecht-Str. 3, 60433 Frankfurt am Main",
+      "frankfurtPhone": "+49 69 8700746-80",
+      "hannoverTitle": "Hannover",
+      "hannoverAddress": "Grosser Hillen 22, 30559 Hannover",
+      "hannoverPhone": "+49 511 515291-80",
+      "wilhelmshavenTitle": "Wilhelmshaven",
+      "wilhelmshavenAddress": "Am Priel 9, 26388 Wilhelmshaven",
+      "wilhelmshavenPhone": "+49 4421 18142-00",
+      "vietnamTitle": "Việt Nam (HDEU)",
+      "vietnamAddress": "Phần 11, Tầng 17, 72 Lê Thánh Tôn, Bến Nghé, Quận 1, TP.HCM"
+    },
+    "hotlines": {
+      "title": "Đường dây nóng",
+      "subtitle": "Liên hệ trực tiếp",
+      "germanyLabel": "Đức",
+      "germanyPhone": "+49 175 3889388",
+      "vietnamLabel": "Việt Nam",
+      "vietnamPhone": "+84 987 188 667"
+    }
+  },
+  "footer": {
+    "company": "Công ty",
+    "information": "Thông tin",
+    "legal": "Pháp lý",
+    "imprint": "Thông tin pháp lý",
+    "privacy": "Bảo mật",
+    "copyright": "© 2026 VIETconsult. Bảo lưu mọi quyền."
+  }
+}
