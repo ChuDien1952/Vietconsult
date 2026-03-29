@@ -1,4 +1,3 @@
-import { useTranslations } from 'next-intl'
 import {
   PageHeader,
   IntroSection,
@@ -6,6 +5,8 @@ import {
   ValuesSection,
   WhyVietnamSection,
 } from '@/components/sections/about-us/about-us-sections'
+
+export const dynamic = 'force-static'
 
 export default function AboutUsPage() {
   return (

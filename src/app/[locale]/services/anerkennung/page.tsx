@@ -1,3 +1,5 @@
+export const dynamic = 'force-static'
+
 import { useTranslations } from 'next-intl'
 
 export default function RecognitionPage() {

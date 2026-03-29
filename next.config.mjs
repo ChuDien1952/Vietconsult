@@ -5,9 +5,16 @@ const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts')
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  output: 'export',
+  basePath: process.env.NODE_ENV === 'production' ? '/Vietconsult' : '',
   images: {
-    formats: ['image/webp'],
-    deviceSizes: [640, 768, 1024, 1280, 1536],
+    unoptimized: true,
+  },
+  trailingSlash: true,
+  experimental: {
+    serverActions: {
+      bodySizeLimit: '2mb',
+    },
   },
 }
 

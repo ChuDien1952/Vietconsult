@@ -13,6 +13,8 @@ import {
   CTABannerSection,
 } from '@/components/sections/home/additional-sections'
 
+export const dynamic = 'force-static'
+
 export default function Home() {
   return (
     <div>

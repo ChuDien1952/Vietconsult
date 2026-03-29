@@ -12,23 +12,25 @@ export function generateStaticParams() {
 
 export default async function LocaleLayout({
   children,
-  params: { locale },
+  params,
 }: {
   children: React.ReactNode
   params: { locale: string }
 }) {
+  const { locale } = await params
+
   // Validate locale
   if (!locales.includes(locale as any)) {
     notFound()
   }
 
   // Get messages for the locale
-  const messages = await getMessages()
+  const messages = await getMessages({ locale })
 
   return (
     <html lang={locale}>
       <body className="font-body antialiased">
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider messages={messages} locale={locale}>
           <div className="flex min-h-screen flex-col">
             <Header />
             <main className="flex-1">{children}</main>

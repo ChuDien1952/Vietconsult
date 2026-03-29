@@ -23,7 +23,11 @@
       "Bash(npm audit:*)",
       "Bash(dir /B:*)",
       "Bash(curl:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nfeat: Complete VIETconsult website implementation - All phases (01-13)\n\n✨ Features:\n- Homepage with 10 animated sections (Hero, Vision, Services, Team, Benefits, Partners, Process, Infrastructure, Specialized Areas, CTA)\n- About Us page (Company intro, Mission, Values, Team, Why Vietnam)\n- Partner page (talentsCARE integration with 9 services)\n- Advantages page (6 core benefits with stats)\n- Quality Seal page (KDA Gütezeichen with 6 international standards)\n- Services overview page with 4 service categories\n- Contact page (Form, 4 locations, hotlines)\n- 4 service detail placeholder pages\n\n🌐 Internationalization:\n- Full i18n support (DE/EN/VI) with next-intl\n- Hierarchical translation structure\n- Language switcher component\n- URL-based locale routing (/de, /en, /vi)\n\n🎨 Design & UX:\n- Framer Motion animations (fadeInUp, stagger, scroll-triggered)\n- Responsive design (mobile-first, sm/md/lg/xl breakpoints)\n- Custom design tokens (primary-blue, primary-red, primary-gold, slate-gray)\n- shadcn/ui components (Card, Button, Input)\n- Lucide React icons\n\n🛠️ Tech Stack:\n- Next.js 14+ (App Router)\n- TypeScript (strict mode)\n- Tailwind CSS\n- next-intl v3+\n- Framer Motion\n- ESLint + Prettier\n\n📝 Documentation:\n- Project overview PDR\n- Code standards\n- Implementation plans (12 phases)\n- Code review reports\n\nAll tests passing: TypeScript ✓ ESLint ✓\nEOF\n)\")",
+      "Bash(git push:*)",
+      "Bash(git config:*)",
+      "Bash(git remote set-url:*)"
     ]
   }
 }
