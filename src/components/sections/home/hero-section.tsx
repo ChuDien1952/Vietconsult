@@ -3,7 +3,7 @@
 import { useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
-import { ArrowRight, Users, Award } from 'lucide-react'
+import { ArrowRight, Users, Award, TrendingUp } from 'lucide-react'
 import Link from 'next/link'
 import { useLocale } from 'next-intl'
 
@@ -12,7 +12,16 @@ const fadeInUp = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6 },
+    transition: { duration: 0.8 },
+  },
+}
+
+const fadeInLeft = {
+  hidden: { opacity: 0, x: -80 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.8 },
   },
 }
 
@@ -20,16 +29,16 @@ const staggerContainer = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { staggerChildren: 0.2 },
+    transition: { staggerChildren: 0.15, delayChildren: 0.3 },
   },
 }
 
 const scaleIn = {
-  hidden: { opacity: 0, scale: 0.8 },
+  hidden: { opacity: 0, scale: 0.9 },
   visible: {
     opacity: 1,
     scale: 1,
-    transition: { duration: 0.5 },
+    transition: { duration: 0.6 },
   },
 }
 
@@ -39,110 +48,184 @@ export function HeroSection() {
   const locale = useLocale()
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-blue-50 py-20 lg:py-32">
-      {/* Background decoration */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute right-0 top-0 h-96 w-96 rounded-full bg-blue-100/50 blur-3xl" />
-        <div className="absolute bottom-0 left-0 h-96 w-96 rounded-full bg-primary-gold/20 blur-3xl" />
+    <section className="relative min-h-screen overflow-hidden bg-gradient-dark">
+      {/* Geometric Background Elements */}
+      <div className="absolute inset-0 -z-10 overflow-hidden">
+        {/* Large geometric shapes */}
+        <div className="absolute -right-64 -top-64 h-[600px] w-[600px] rounded-full bg-primary-gold/10 blur-3xl" />
+        <div className="absolute -bottom-32 -left-32 h-[500px] w-[500px] rounded-full bg-primary-amber/5 blur-3xl" />
+
+        {/* Decorative curved shape */}
+        <svg
+          className="absolute right-0 top-0 h-full w-1/2 opacity-5"
+          viewBox="0 0 400 800"
+          fill="none"
+        >
+          <path
+            d="M0 0 Q200 400 0 800"
+            stroke="currentColor"
+            strokeWidth="2"
+            className="text-primary-gold"
+          />
+        </svg>
+
+        {/* Grid pattern overlay */}
+        <div
+          className="absolute inset-0 opacity-[0.02]"
+          style={{
+            backgroundImage: `linear-gradient(#FFBC00 1px, transparent 1px), linear-gradient(90deg, #FFBC00 1px, transparent 1px)`,
+            backgroundSize: '50px 50px'
+          }}
+        />
       </div>
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={staggerContainer}
-          className="mx-auto max-w-4xl text-center"
+        <div className="flex min-h-screen flex-col justify-center py-20 lg:py-32">
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={staggerContainer}
+            className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16"
+          >
+            {/* Left Column - Content */}
+            <div className="flex flex-col justify-center">
+              {/* Small label */}
+              <motion.div variants={fadeInLeft} className="mb-6">
+                <span className="inline-block rounded-full bg-primary-gold/10 px-4 py-2 text-sm font-semibold uppercase tracking-wider text-primary-gold">
+                  {t('label') || 'Fachkräfte aus Vietnam'}
+                </span>
+              </motion.div>
+
+              {/* Main Heading - Extra Large */}
+              <motion.h1
+                variants={fadeInLeft}
+                className="text-5xl font-bold leading-tight text-white sm:text-6xl lg:text-7xl xl:text-8xl"
+              >
+                <span className="block">{t('titleLine1')}</span>
+                <span className="mt-2 block bg-gradient-gold bg-clip-text text-transparent">
+                  {t('titleLine2')}
+                </span>
+              </motion.h1>
+
+              {/* Subtitle */}
+              <motion.p
+                variants={fadeInLeft}
+                className="mt-8 text-lg leading-relaxed text-gray-300 sm:text-xl lg:text-2xl"
+              >
+                {t('subtitle')}
+              </motion.p>
+
+              {/* CTA Buttons */}
+              <motion.div
+                variants={fadeInLeft}
+                className="mt-10 flex flex-col gap-4 sm:flex-row sm:gap-6"
+              >
+                <Button size="xl" asChild>
+                  <Link href={`/${locale}/kontakt`}>
+                    {t('cta')}
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Link>
+                </Button>
+                <Button variant="secondary" size="xl" asChild>
+                  <Link href={`/${locale}/services`}>{t('ctaSecondary')}</Link>
+                </Button>
+              </motion.div>
+
+              {/* Quick Stats - Inline */}
+              <motion.div
+                variants={fadeInLeft}
+                className="mt-12 flex flex-wrap gap-8 border-t border-white/10 pt-8"
+              >
+                <div>
+                  <p className="text-4xl font-bold text-primary-gold">100%</p>
+                  <p className="mt-1 text-sm text-gray-400">{tStats('integration')}</p>
+                </div>
+                <div>
+                  <p className="text-4xl font-bold text-primary-gold">1.200+</p>
+                  <p className="mt-1 text-sm text-gray-400">{tStats('candidates')}</p>
+                </div>
+                <div>
+                  <p className="text-4xl font-bold text-primary-gold">4</p>
+                  <p className="mt-1 text-sm text-gray-400">{tStats('steps')}</p>
+                </div>
+              </motion.div>
+            </div>
+
+            {/* Right Column - Visual Element with Stats Cards */}
+            <div className="relative flex items-center justify-center">
+              {/* Background hero image */}
+              <motion.div
+                variants={scaleIn}
+                className="relative h-full w-full rounded-2xl bg-gradient-to-br from-primary-navy/50 to-dark-charcoal/50 p-8 backdrop-blur-sm"
+              >
+                {/* Placeholder for professional image */}
+                <div className="relative h-full min-h-[400px] overflow-hidden rounded-xl bg-gradient-to-br from-primary-gold/20 to-primary-amber/10">
+                  <div className="flex h-full items-center justify-center">
+                    <div className="text-center">
+                      <Users className="mx-auto h-24 w-24 text-primary-gold opacity-50" />
+                      <p className="mt-4 text-sm text-gray-400">
+                        Professional team image here
+                        <br />
+                        <span className="text-xs">(Unsplash/Pexels)</span>
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Floating stats cards */}
+                  <motion.div
+                    variants={scaleIn}
+                    className="absolute right-4 top-4 rounded-lg bg-white p-4 shadow-2xl"
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary-gold/10">
+                        <Award className="h-6 w-6 text-primary-gold" />
+                      </div>
+                      <div>
+                        <p className="text-2xl font-bold text-gray-900">KDA</p>
+                        <p className="text-xs text-gray-600">Gütezeichen</p>
+                      </div>
+                    </div>
+                  </motion.div>
+
+                  <motion.div
+                    variants={scaleIn}
+                    className="absolute bottom-4 left-4 rounded-lg bg-dark-charcoal p-4 shadow-2xl"
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary-gold">
+                        <TrendingUp className="h-6 w-6 text-black" />
+                      </div>
+                      <div>
+                        <p className="text-2xl font-bold text-white">99%</p>
+                        <p className="text-xs text-gray-400">Erfolgsquote</p>
+                      </div>
+                    </div>
+                  </motion.div>
+                </div>
+              </motion.div>
+
+              {/* Decorative elements */}
+              <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full border-4 border-primary-gold/20" />
+              <div className="absolute -bottom-8 -left-8 h-24 w-24 rounded-full border-4 border-primary-amber/20" />
+            </div>
+          </motion.div>
+        </div>
+      </div>
+
+      {/* Bottom curve divider */}
+      <div className="absolute bottom-0 left-0 right-0">
+        <svg
+          className="w-full"
+          viewBox="0 0 1440 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
         >
-          {/* Main heading */}
-          <motion.h1
-            variants={fadeInUp}
-            className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl"
-          >
-            <span className="block">{t('titleLine1')}</span>
-            <span className="mt-2 block bg-gradient-to-r from-primary-blue to-blue-600 bg-clip-text text-transparent">
-              {t('titleLine2')}
-            </span>
-          </motion.h1>
-
-          {/* Subtitle */}
-          <motion.p
-            variants={fadeInUp}
-            className="mt-6 text-lg leading-8 text-slate-gray sm:text-xl"
-          >
-            {t('subtitle')}
-          </motion.p>
-
-          {/* CTA Buttons */}
-          <motion.div
-            variants={fadeInUp}
-            className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
-          >
-            <Button size="xl" asChild>
-              <Link href={`/${locale}/kontakt`}>
-                {t('cta')}
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-            <Button variant="outline" size="xl" asChild>
-              <Link href={`/${locale}/services`}>{t('ctaSecondary')}</Link>
-            </Button>
-          </motion.div>
-
-          {/* Stats */}
-          <motion.div
-            variants={fadeInUp}
-            className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-3"
-          >
-            <motion.div
-              variants={scaleIn}
-              className="flex flex-col items-center rounded-2xl bg-white p-6 shadow-lg"
-            >
-              <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary-blue/10">
-                <Award className="h-8 w-8 text-primary-blue" />
-              </div>
-              <p className="text-3xl font-bold text-gray-900">100%</p>
-              <p className="mt-2 text-sm text-slate-gray">
-                {tStats('integration')}
-              </p>
-            </motion.div>
-
-            <motion.div
-              variants={scaleIn}
-              className="flex flex-col items-center rounded-2xl bg-white p-6 shadow-lg"
-            >
-              <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary-gold/10">
-                <Users className="h-8 w-8 text-primary-gold" />
-              </div>
-              <p className="text-3xl font-bold text-gray-900">1.200+</p>
-              <p className="mt-2 text-sm text-slate-gray">
-                {tStats('candidates')}
-              </p>
-            </motion.div>
-
-            <motion.div
-              variants={scaleIn}
-              className="flex flex-col items-center rounded-2xl bg-white p-6 shadow-lg"
-            >
-              <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary-red/10">
-                <svg
-                  className="h-8 w-8 text-primary-red"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-              </div>
-              <p className="text-3xl font-bold text-gray-900">4</p>
-              <p className="mt-2 text-sm text-slate-gray">{tStats('steps')}</p>
-            </motion.div>
-          </motion.div>
-        </motion.div>
+          <path
+            d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0V120Z"
+            fill="white"
+          />
+        </svg>
       </div>
     </section>
   )

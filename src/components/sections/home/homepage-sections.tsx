@@ -21,7 +21,7 @@ export function VisionSection() {
   const t = useTranslations('home.vision')
 
   return (
-    <section className="bg-white py-16 lg:py-24">
+    <section className="bg-light-gray py-20 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
           initial="hidden"
@@ -30,10 +30,10 @@ export function VisionSection() {
           variants={fadeInUp}
           className="mx-auto max-w-2xl text-center"
         >
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-h3 font-bold tracking-tight text-dark-charcoal lg:text-h2">
             {t('title')}
           </h2>
-          <p className="mt-4 text-lg text-slate-gray">{t('subtitle')}</p>
+          <p className="mt-6 text-body-lg text-slate-gray">{t('subtitle')}</p>
         </motion.div>
 
         <motion.div
@@ -41,46 +41,46 @@ export function VisionSection() {
           whileInView="visible"
           viewport={{ once: true }}
           variants={stagger}
-          className="mx-auto mt-16 grid max-w-7xl grid-cols-1 gap-8 md:grid-cols-3"
+          className="mx-auto mt-20 grid max-w-7xl grid-cols-1 gap-8 md:grid-cols-3"
         >
           <motion.div variants={fadeInUp}>
-            <Card className="h-full">
+            <Card className="h-full border-3 border-black shadow-bold transition-all hover:shadow-bold-hover hover:translate-x-1 hover:translate-y-1">
               <CardHeader>
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary-blue/10">
-                  <Target className="h-6 w-6 text-primary-blue" />
+                <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-lg bg-primary-navy">
+                  <Target className="h-8 w-8 text-primary-gold" />
                 </div>
-                <CardTitle>{t('card1Title')}</CardTitle>
+                <CardTitle className="text-xl text-dark-charcoal">{t('card1Title')}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-slate-gray">{t('card1Description')}</p>
+                <p className="text-base text-slate-gray">{t('card1Description')}</p>
               </CardContent>
             </Card>
           </motion.div>
 
           <motion.div variants={fadeInUp}>
-            <Card className="h-full">
+            <Card className="h-full border-3 border-black shadow-bold transition-all hover:shadow-bold-hover hover:translate-x-1 hover:translate-y-1">
               <CardHeader>
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary-red/10">
-                  <Users className="h-6 w-6 text-primary-red" />
+                <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-lg bg-primary-red">
+                  <Users className="h-8 w-8 text-white" />
                 </div>
-                <CardTitle>{t('card2Title')}</CardTitle>
+                <CardTitle className="text-xl text-dark-charcoal">{t('card2Title')}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-slate-gray">{t('card2Description')}</p>
+                <p className="text-base text-slate-gray">{t('card2Description')}</p>
               </CardContent>
             </Card>
           </motion.div>
 
           <motion.div variants={fadeInUp}>
-            <Card className="h-full">
+            <Card className="h-full border-3 border-black shadow-bold transition-all hover:shadow-bold-hover hover:translate-x-1 hover:translate-y-1">
               <CardHeader>
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary-gold/10">
-                  <Award className="h-6 w-6 text-primary-gold" />
+                <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-lg bg-primary-gold">
+                  <Award className="h-8 w-8 text-black" />
                 </div>
-                <CardTitle>{t('card3Title')}</CardTitle>
+                <CardTitle className="text-xl text-dark-charcoal">{t('card3Title')}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-slate-gray">{t('card3Description')}</p>
+                <p className="text-base text-slate-gray">{t('card3Description')}</p>
               </CardContent>
             </Card>
           </motion.div>
@@ -96,25 +96,30 @@ export function ServicesOverviewSection() {
   const locale = useLocale()
 
   return (
-    <section className="bg-gradient-to-br from-primary-blue to-blue-700 py-16 lg:py-24">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <section className="relative overflow-hidden bg-gradient-dark py-20 lg:py-32">
+      {/* Geometric background */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute right-0 top-0 h-96 w-96 rounded-full bg-primary-gold blur-3xl" />
+        <div className="absolute bottom-0 left-0 h-96 w-96 rounded-full bg-primary-amber blur-3xl" />
+      </div>
+
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeInUp}
-          className="mx-auto max-w-2xl text-center"
+          className="mx-auto max-w-3xl text-center"
         >
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          <h2 className="text-h3 font-bold tracking-tight text-white lg:text-h2">
             {t('title')}
           </h2>
-          <p className="mt-4 text-lg text-blue-100">{t('subtitle')}</p>
-          <p className="mt-6 text-base text-blue-50">{t('description')}</p>
-          <div className="mt-10">
+          <p className="mt-6 text-body-lg text-gray-300">{t('subtitle')}</p>
+          <p className="mt-4 text-body text-gray-400">{t('description')}</p>
+          <div className="mt-12">
             <Button
-              size="lg"
-              variant="outline"
-              className="border-white bg-transparent text-white hover:bg-white hover:text-primary-blue"
+              size="xl"
+              variant="default"
               asChild
             >
               <Link href={`/${locale}/services`}>{t('cta')}</Link>
@@ -131,7 +136,7 @@ export function BenefitsSection() {
   const t = useTranslations('home.benefits')
 
   return (
-    <section className="bg-gray-50 py-16 lg:py-24">
+    <section className="bg-white py-20 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
           initial="hidden"
@@ -140,10 +145,10 @@ export function BenefitsSection() {
           variants={fadeInUp}
           className="mx-auto max-w-2xl text-center"
         >
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-h3 font-bold tracking-tight text-dark-charcoal lg:text-h2">
             {t('title')}
           </h2>
-          <p className="mt-4 text-lg text-slate-gray">{t('subtitle')}</p>
+          <p className="mt-6 text-body-lg text-slate-gray">{t('subtitle')}</p>
         </motion.div>
 
         <motion.div
@@ -151,45 +156,45 @@ export function BenefitsSection() {
           whileInView="visible"
           viewport={{ once: true }}
           variants={stagger}
-          className="mx-auto mt-16 grid max-w-7xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4"
+          className="mx-auto mt-20 grid max-w-7xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4"
         >
           <motion.div variants={fadeInUp}>
-            <div className="text-center">
-              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-blue-100">
-                <Clock className="h-8 w-8 text-primary-blue" />
+            <div className="group text-center transition-transform hover:-translate-y-2">
+              <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-primary-navy border-3 border-black shadow-bold group-hover:shadow-bold-hover group-hover:translate-x-1 group-hover:translate-y-1 transition-all">
+                <Clock className="h-10 w-10 text-primary-gold" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900">{t('card1Title')}</h3>
-              <p className="mt-2 text-sm text-slate-gray">{t('card1Description')}</p>
+              <h3 className="text-xl font-bold text-dark-charcoal">{t('card1Title')}</h3>
+              <p className="mt-3 text-base text-slate-gray">{t('card1Description')}</p>
             </div>
           </motion.div>
 
           <motion.div variants={fadeInUp}>
-            <div className="text-center">
-              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-amber-100">
-                <TrendingUp className="h-8 w-8 text-primary-gold" />
+            <div className="group text-center transition-transform hover:-translate-y-2">
+              <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-primary-gold border-3 border-black shadow-bold group-hover:shadow-bold-hover group-hover:translate-x-1 group-hover:translate-y-1 transition-all">
+                <TrendingUp className="h-10 w-10 text-black" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900">{t('card2Title')}</h3>
-              <p className="mt-2 text-sm text-slate-gray">{t('card2Description')}</p>
+              <h3 className="text-xl font-bold text-dark-charcoal">{t('card2Title')}</h3>
+              <p className="mt-3 text-base text-slate-gray">{t('card2Description')}</p>
             </div>
           </motion.div>
 
           <motion.div variants={fadeInUp}>
-            <div className="text-center">
-              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-purple-100">
-                <Users className="h-8 w-8 text-purple-600" />
+            <div className="group text-center transition-transform hover:-translate-y-2">
+              <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-primary-amber border-3 border-black shadow-bold group-hover:shadow-bold-hover group-hover:translate-x-1 group-hover:translate-y-1 transition-all">
+                <Users className="h-10 w-10 text-black" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900">{t('card3Title')}</h3>
-              <p className="mt-2 text-sm text-slate-gray">{t('card3Description')}</p>
+              <h3 className="text-xl font-bold text-dark-charcoal">{t('card3Title')}</h3>
+              <p className="mt-3 text-base text-slate-gray">{t('card3Description')}</p>
             </div>
           </motion.div>
 
           <motion.div variants={fadeInUp}>
-            <div className="text-center">
-              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-green-100">
-                <CheckCircle className="h-8 w-8 text-green-600" />
+            <div className="group text-center transition-transform hover:-translate-y-2">
+              <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-primary-red border-3 border-black shadow-bold group-hover:shadow-bold-hover group-hover:translate-x-1 group-hover:translate-y-1 transition-all">
+                <CheckCircle className="h-10 w-10 text-white" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900">{t('card4Title')}</h3>
-              <p className="mt-2 text-sm text-slate-gray">{t('card4Description')}</p>
+              <h3 className="text-xl font-bold text-dark-charcoal">{t('card4Title')}</h3>
+              <p className="mt-3 text-base text-slate-gray">{t('card4Description')}</p>
             </div>
           </motion.div>
         </motion.div>

@@ -29,7 +29,7 @@ export function PartnersSection() {
   const t = useTranslations('home.partners')
 
   return (
-    <section className="bg-white py-16 lg:py-24">
+    <section className="bg-light-gray py-20 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
           initial="hidden"
@@ -38,26 +38,26 @@ export function PartnersSection() {
           variants={fadeInUp}
           className="text-center"
         >
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-h3 font-bold tracking-tight text-dark-charcoal lg:text-h2">
             {t('title')}
           </h2>
-          <p className="mt-4 text-lg text-slate-gray">{t('subtitle')}</p>
+          <p className="mt-6 text-body-lg text-slate-gray">{t('subtitle')}</p>
 
           {/* Partner logos placeholder - will be added later */}
           <div className="mt-12 flex items-center justify-center gap-8">
-            <div className="flex items-center gap-2">
-              <div className="flex text-yellow-400">
+            <div className="flex items-center gap-3 rounded-lg border-3 border-black bg-white px-6 py-4 shadow-bold">
+              <div className="flex text-primary-gold">
                 {[...Array(5)].map((_, i) => (
                   <svg
                     key={i}
-                    className="h-5 w-5 fill-current"
+                    className="h-6 w-6 fill-current"
                     viewBox="0 0 20 20"
                   >
                     <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
                   </svg>
                 ))}
               </div>
-              <span className="ml-2 text-sm font-medium text-gray-700">
+              <span className="ml-2 text-base font-bold text-dark-charcoal">
                 {t('rating')}
               </span>
             </div>
@@ -96,7 +96,7 @@ export function ProcessSection() {
   ]
 
   return (
-    <section className="bg-gray-50 py-16 lg:py-24">
+    <section className="bg-white py-20 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
           initial="hidden"
@@ -105,10 +105,10 @@ export function ProcessSection() {
           variants={fadeInUp}
           className="mx-auto max-w-2xl text-center"
         >
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-h3 font-bold tracking-tight text-dark-charcoal lg:text-h2">
             {t('title')}
           </h2>
-          <p className="mt-4 text-lg text-slate-gray">{t('subtitle')}</p>
+          <p className="mt-6 text-body-lg text-slate-gray">{t('subtitle')}</p>
         </motion.div>
 
         <motion.div
@@ -116,38 +116,38 @@ export function ProcessSection() {
           whileInView="visible"
           viewport={{ once: true }}
           variants={stagger}
-          className="mx-auto mt-16 max-w-5xl"
+          className="mx-auto mt-20 max-w-5xl"
         >
           <div className="relative">
             {/* Timeline line */}
-            <div className="absolute left-4 top-0 hidden h-full w-0.5 bg-primary-blue/20 md:left-1/2 md:block md:-ml-px" />
+            <div className="absolute left-4 top-0 hidden h-full w-1 bg-primary-gold/20 md:left-1/2 md:block md:-ml-px" />
 
             {steps.map((step, index) => (
               <motion.div
                 key={step.number}
                 variants={fadeInUp}
-                className={`relative mb-12 md:mb-16 ${
+                className={`relative mb-16 md:mb-20 ${
                   index % 2 === 0 ? 'md:text-right' : 'md:ml-auto md:text-left'
                 } md:w-1/2`}
               >
-                <div className="flex items-start gap-4 md:gap-6">
+                <div className="flex items-start gap-6 md:gap-8">
                   {/* Number badge */}
                   <div
-                    className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-primary-blue text-xl font-bold text-white ${
+                    className={`flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full bg-primary-navy border-3 border-black shadow-bold text-2xl font-bold text-primary-gold ${
                       index % 2 === 0
-                        ? 'md:order-2 md:ml-auto md:mr-6'
-                        : 'md:order-1 md:ml-6'
+                        ? 'md:order-2 md:ml-auto md:mr-8'
+                        : 'md:order-1 md:ml-8'
                     }`}
                   >
                     {step.number}
                   </div>
 
                   {/* Content */}
-                  <div className={index % 2 === 0 ? 'md:pr-6' : 'md:pl-6'}>
-                    <h3 className="text-xl font-semibold text-gray-900">
+                  <div className={index % 2 === 0 ? 'md:pr-8' : 'md:pl-8'}>
+                    <h3 className="text-xl font-bold text-dark-charcoal lg:text-2xl">
                       {step.title}
                     </h3>
-                    <p className="mt-2 text-sm text-slate-gray">
+                    <p className="mt-3 text-base text-slate-gray">
                       {step.description}
                     </p>
                   </div>
@@ -166,7 +166,7 @@ export function InfrastructureSection() {
   const t = useTranslations('home.infrastructure')
 
   return (
-    <section className="bg-white py-16 lg:py-24">
+    <section className="bg-light-gray py-20 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
           initial="hidden"
@@ -175,10 +175,10 @@ export function InfrastructureSection() {
           variants={fadeInUp}
           className="mx-auto max-w-2xl text-center"
         >
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-h3 font-bold tracking-tight text-dark-charcoal lg:text-h2">
             {t('title')}
           </h2>
-          <p className="mt-4 text-lg text-slate-gray">{t('subtitle')}</p>
+          <p className="mt-6 text-body-lg text-slate-gray">{t('subtitle')}</p>
         </motion.div>
 
         <motion.div
@@ -186,22 +186,22 @@ export function InfrastructureSection() {
           whileInView="visible"
           viewport={{ once: true }}
           variants={stagger}
-          className="mx-auto mt-16 grid max-w-7xl grid-cols-1 gap-8 md:grid-cols-2"
+          className="mx-auto mt-20 grid max-w-7xl grid-cols-1 gap-8 md:grid-cols-2"
         >
           {/* Vietnam */}
           <motion.div variants={fadeInUp}>
-            <Card className="h-full">
+            <Card className="h-full border-3 border-black shadow-bold transition-all hover:shadow-bold-hover hover:translate-x-1 hover:translate-y-1">
               <CardHeader>
-                <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-lg bg-primary-red/10">
-                  <Building2 className="h-8 w-8 text-primary-red" />
+                <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-lg bg-primary-red border-2 border-black">
+                  <Building2 className="h-10 w-10 text-white" />
                 </div>
-                <CardTitle className="flex items-center gap-2">
-                  <MapPin className="h-5 w-5 text-primary-red" />
+                <CardTitle className="flex items-center gap-3 text-2xl text-dark-charcoal">
+                  <MapPin className="h-6 w-6 text-primary-red" />
                   {t('vietnamTitle')}
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-slate-gray">
+                <p className="text-base text-slate-gray">
                   {t('vietnamDescription')}
                 </p>
               </CardContent>
@@ -210,18 +210,18 @@ export function InfrastructureSection() {
 
           {/* Germany */}
           <motion.div variants={fadeInUp}>
-            <Card className="h-full">
+            <Card className="h-full border-3 border-black shadow-bold transition-all hover:shadow-bold-hover hover:translate-x-1 hover:translate-y-1">
               <CardHeader>
-                <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-lg bg-gray-900/10">
-                  <Building2 className="h-8 w-8 text-gray-900" />
+                <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-lg bg-primary-navy border-2 border-black">
+                  <Building2 className="h-10 w-10 text-primary-gold" />
                 </div>
-                <CardTitle className="flex items-center gap-2">
-                  <MapPin className="h-5 w-5 text-gray-900" />
+                <CardTitle className="flex items-center gap-3 text-2xl text-dark-charcoal">
+                  <MapPin className="h-6 w-6 text-primary-navy" />
                   {t('germanyTitle')}
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-slate-gray">
+                <p className="text-base text-slate-gray">
                   {t('germanyDescription')}
                 </p>
               </CardContent>
@@ -242,27 +242,27 @@ export function SpecializedAreasSection() {
       title: t('area1Title'),
       description: t('area1Description'),
       icon: Stethoscope,
-      color: 'text-red-600',
-      bgColor: 'bg-red-100',
+      bgColor: 'bg-primary-red',
+      iconColor: 'text-white',
     },
     {
       title: t('area2Title'),
       description: t('area2Description'),
       icon: Wrench,
-      color: 'text-blue-600',
-      bgColor: 'bg-blue-100',
+      bgColor: 'bg-primary-navy',
+      iconColor: 'text-primary-gold',
     },
     {
       title: t('area3Title'),
       description: t('area3Description'),
       icon: GraduationCap,
-      color: 'text-green-600',
-      bgColor: 'bg-green-100',
+      bgColor: 'bg-primary-amber',
+      iconColor: 'text-black',
     },
   ]
 
   return (
-    <section className="bg-gray-50 py-16 lg:py-24">
+    <section className="bg-white py-20 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
           initial="hidden"
@@ -271,10 +271,10 @@ export function SpecializedAreasSection() {
           variants={fadeInUp}
           className="mx-auto max-w-2xl text-center"
         >
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-h3 font-bold tracking-tight text-dark-charcoal lg:text-h2">
             {t('title')}
           </h2>
-          <p className="mt-4 text-lg text-slate-gray">{t('subtitle')}</p>
+          <p className="mt-6 text-body-lg text-slate-gray">{t('subtitle')}</p>
         </motion.div>
 
         <motion.div
@@ -282,21 +282,21 @@ export function SpecializedAreasSection() {
           whileInView="visible"
           viewport={{ once: true }}
           variants={stagger}
-          className="mx-auto mt-16 grid max-w-7xl grid-cols-1 gap-8 md:grid-cols-3"
+          className="mx-auto mt-20 grid max-w-7xl grid-cols-1 gap-8 md:grid-cols-3"
         >
           {areas.map((area, index) => (
             <motion.div key={index} variants={fadeInUp}>
-              <Card className="h-full transition-all hover:shadow-lg">
+              <Card className="h-full border-3 border-black shadow-bold transition-all hover:shadow-bold-hover hover:translate-x-1 hover:translate-y-1">
                 <CardHeader>
                   <div
-                    className={`mb-4 flex h-16 w-16 items-center justify-center rounded-lg ${area.bgColor}`}
+                    className={`mb-6 flex h-20 w-20 items-center justify-center rounded-lg ${area.bgColor} border-2 border-black`}
                   >
-                    <area.icon className={`h-8 w-8 ${area.color}`} />
+                    <area.icon className={`h-10 w-10 ${area.iconColor}`} />
                   </div>
-                  <CardTitle>{area.title}</CardTitle>
+                  <CardTitle className="text-xl text-dark-charcoal">{area.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-slate-gray">{area.description}</p>
+                  <p className="text-base text-slate-gray">{area.description}</p>
                 </CardContent>
               </Card>
             </motion.div>
@@ -321,7 +321,7 @@ export function WhyUsSection() {
   ]
 
   return (
-    <section className="bg-white py-16 lg:py-24">
+    <section className="bg-light-gray py-20 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
           initial="hidden"
@@ -330,10 +330,10 @@ export function WhyUsSection() {
           variants={fadeInUp}
           className="mx-auto max-w-2xl text-center"
         >
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-h3 font-bold tracking-tight text-dark-charcoal lg:text-h2">
             {t('title')}
           </h2>
-          <p className="mt-4 text-lg text-slate-gray">{t('subtitle')}</p>
+          <p className="mt-6 text-body-lg text-slate-gray">{t('subtitle')}</p>
         </motion.div>
 
         <motion.div
@@ -341,17 +341,17 @@ export function WhyUsSection() {
           whileInView="visible"
           viewport={{ once: true }}
           variants={stagger}
-          className="mx-auto mt-16 max-w-3xl"
+          className="mx-auto mt-20 max-w-4xl"
         >
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             {points.map((point, index) => (
               <motion.div
                 key={index}
                 variants={fadeInUp}
-                className="flex items-start gap-3"
+                className="flex items-start gap-4 rounded-lg border-3 border-black bg-white p-6 shadow-bold transition-all hover:shadow-bold-hover hover:translate-x-1 hover:translate-y-1"
               >
-                <CheckCircle2 className="mt-1 h-6 w-6 flex-shrink-0 text-green-600" />
-                <p className="text-base text-gray-700">{point}</p>
+                <CheckCircle2 className="mt-1 h-8 w-8 flex-shrink-0 text-primary-gold" />
+                <p className="text-base font-medium text-dark-charcoal">{point}</p>
               </motion.div>
             ))}
           </div>
@@ -367,10 +367,16 @@ export function CTABannerSection() {
   const locale = useLocale()
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-r from-primary-blue to-blue-700 py-16 lg:py-24">
+    <section className="relative overflow-hidden bg-gradient-dark py-24 lg:py-40">
       {/* Decorative background elements */}
-      <div className="absolute -left-20 -top-20 h-64 w-64 rounded-full bg-white/5 blur-3xl" />
-      <div className="absolute -bottom-20 -right-20 h-64 w-64 rounded-full bg-white/5 blur-3xl" />
+      <div className="absolute -left-32 -top-32 h-96 w-96 rounded-full bg-primary-gold/10 blur-3xl" />
+      <div className="absolute -bottom-32 -right-32 h-96 w-96 rounded-full bg-primary-amber/10 blur-3xl" />
+
+      {/* Grid pattern overlay */}
+      <div className="absolute inset-0 opacity-[0.02]" style={{
+        backgroundImage: `linear-gradient(#FFBC00 1px, transparent 1px), linear-gradient(90deg, #FFBC00 1px, transparent 1px)`,
+        backgroundSize: '50px 50px'
+      }} />
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
@@ -378,18 +384,17 @@ export function CTABannerSection() {
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeInUp}
-          className="mx-auto max-w-2xl text-center"
+          className="mx-auto max-w-3xl text-center"
         >
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          <h2 className="text-h3 font-bold tracking-tight text-white lg:text-h2">
             {t('title')}
           </h2>
-          <p className="mt-4 text-lg text-blue-100">{t('description')}</p>
+          <p className="mt-8 text-body-lg text-gray-300">{t('description')}</p>
 
-          <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
+          <div className="mt-12 flex flex-col justify-center gap-6 sm:flex-row">
             <Button
-              size="lg"
-              variant="outline"
-              className="border-white bg-white text-primary-blue hover:bg-blue-50"
+              size="xl"
+              variant="default"
               asChild
             >
               <Link href={`/${locale}/kontakt`}>
@@ -398,9 +403,8 @@ export function CTABannerSection() {
               </Link>
             </Button>
             <Button
-              size="lg"
-              variant="outline"
-              className="border-white bg-transparent text-white hover:bg-white/10"
+              size="xl"
+              variant="secondary"
               asChild
             >
               <Link href={`/${locale}/kontakt#standorte`}>

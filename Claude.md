@@ -892,4 +892,121 @@ npm run type-check
 
 ---
 
-*Document Version: 1.0 | Created: März 2026*
+## Design Redesign (2026-03-29)
+
+### Cập nhật theo phong cách talentscare.de
+
+**Color Palette Updated:**
+```css
+--primary-navy: #202C58      /* Dark navy (thay #1e40af) */
+--dark-charcoal: #1C1D20     /* Dark charcoal background */
+--primary-gold: #FFBC00      /* Warm gold (thay #f59e0b) */
+--warm-amber: #F0B849        /* Amber accent */
+--light-amber: #E8BF96       /* Light amber */
+--accent-red: #F00000        /* Bright red */
+```
+
+**Typography Updated:**
+```css
+/* Responsive Scale - talentscare.de style */
+hero: clamp(3rem, 6vw, 8.125rem)  /* 130px max */
+h1: clamp(2.5rem, 5vw, 7.5rem)     /* 120px max */
+h2: clamp(2rem, 4vw, 6.25rem)      /* 100px max */
+h3: clamp(1.5rem, 3vw, 5rem)       /* 80px max */
+```
+
+**Button Styles - Bold Shadow:**
+```css
+/* Primary Button (Yellow + Bold Shadow) */
+bg-primary-gold text-black
+border-3 border-black
+shadow-bold (5px 5px 0px black)
+hover:shadow-none hover:translate-y-1 hover:translate-x-1
+
+/* Secondary Button (Navy Outline) */
+border-2 border-primary-navy
+text-primary-navy
+hover:bg-primary-navy hover:text-white
+rounded-[25px]
+```
+
+**Hero Section - Redesigned:**
+- Dark gradient background (navy → charcoal)
+- Geometric shapes overlay (gold circles, curves, grid pattern)
+- Two-column layout (content left, visual right)
+- Extra large typography (up to 8xl)
+- Floating stat cards on image placeholder
+- Bottom curve SVG divider
+- Inline stats with gold numbers
+
+**Gradients:**
+```css
+gradient-hero: navy → gold (135deg)
+gradient-dark: charcoal → navy (180deg)
+gradient-gold: pure gold gradient (90deg)
+```
+
+**Components Updated - Phase 2:**
+- [x] Button component - bold shadow style
+- [x] Hero Section - dark background, geometric shapes
+- [x] Vision Section - light background, bold shadow cards
+- [x] Services Overview - dark gradient background
+- [x] Benefits Section - colorful icon badges with bold shadows
+- [x] Partners Section - enhanced rating badge
+- [x] Process Section - gold timeline with numbered badges
+- [x] Infrastructure Section - bold shadow cards for Vietnam/Germany
+- [x] Specialized Areas - red/navy/amber icon backgrounds
+- [x] Why Us Section - checkmark cards with borders
+- [x] CTA Banner - full dark gradient with large buttons
+- [x] Header/Navigation - uppercase links with gold underline animation, scroll-responsive background
+
+**Design Patterns Applied:**
+- Bold shadow style (5px 5px 0px black) on cards and buttons
+- Border-3 border-black on interactive elements
+- Hover effects: shadow removal + translate(1px, 1px)
+- Dark/light section alternation (dark → light → dark)
+- Navy/Gold/Red/Amber color accents throughout
+- Large responsive typography (h2, h3 scales)
+- Icon badges with border-2 border-black
+- Geometric background elements on dark sections
+
+**Images Placeholder:**
+Professional images từ Unsplash/Pexels:
+- Business teams
+- Vietnamese workers
+- German workplace
+- International collaboration
+- Healthcare/Technical workers
+
+**Deployment:**
+- GitHub Pages: https://chudien1952.github.io/Vietconsult
+- Auto-deploy via GitHub Actions
+- Static HTML export (3 languages × 12 pages = 36 pages)
+
+**Status - Phase 2 Complete:**
+- ✅ Design system complete
+- ✅ Hero Section redesigned
+- ✅ Button component updated
+- ✅ All homepage sections redesigned (10 sections)
+- ✅ Header/Navigation redesigned with scroll effect
+- ✅ Build test passing (36 static pages generated)
+- ⏳ About Us page sections (pending)
+- ⏳ Other page sections (pending)
+- ⏳ Professional images integration (pending)
+
+**Files Modified:**
+- `src/app/globals.css` - Color variables, spacing system
+- `tailwind.config.ts` - Design tokens, typography, shadows
+- `src/components/ui/button.tsx` - Bold shadow button styles
+- `src/components/sections/home/hero-section.tsx` - Complete redesign
+- `src/components/sections/home/homepage-sections.tsx` - Vision, Services, Benefits
+- `src/components/sections/home/additional-sections.tsx` - Partners, Process, Infrastructure, Specialized Areas, Why Us, CTA Banner
+- `src/components/layout/header.tsx` - Uppercase nav, gold underlines, scroll effect
+
+**References:**
+- Design analysis: `plans/reports/design-redesign-talentscare-style-2026-03-29.md`
+- talentscare.de: https://2025.10.29.talentscare.de/
+
+---
+
+*Document Version: 1.2 | Updated: 29 März 2026 | Homepage Redesign Complete*
