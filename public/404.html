@@ -5,25 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VIETconsult - Redirecting...</title>
   <script>
-    // Get the current path
-    const path = window.location.pathname;
+    (function() {
+      // Get the current path
+      const path = window.location.pathname;
+      const search = window.location.search;
+      const hash = window.location.hash;
 
-    // Check if we're at root
-    if (path === '/' || path === '') {
-      // Redirect to default locale (German)
-      window.location.href = '/de/';
-    } else {
+      // Check if we're at root
+      if (path === '/' || path === '') {
+        // Redirect to default locale (German)
+        window.location.replace('/de/' + search + hash);
+        return;
+      }
+
       // Check if path already has locale prefix
       const hasLocale = /^\/(de|en|vi)(\/|$)/.test(path);
 
       if (!hasLocale) {
         // Add /de/ prefix to the current path
-        window.location.href = '/de' + path;
+        // Ensure trailing slash
+        let newPath = path.endsWith('/') ? path : path + '/';
+        window.location.replace('/de' + newPath + search + hash);
       } else {
         // Path has locale but page not found, redirect to home
-        window.location.href = '/de/';
+        window.location.replace('/de/' + search + hash);
       }
-    }
+    })();
   </script>
   <style>
     body {
