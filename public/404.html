@@ -7,16 +7,14 @@
   <script>
     // Get the current path
     const path = window.location.pathname;
-    const basePath = '/Vietconsult';
 
-    // Check if we're at root or base path
-    if (path === '/' || path === basePath || path === basePath + '/') {
+    // Check if we're at root
+    if (path === '/' || path === '') {
       // Redirect to default locale (German)
-      window.location.href = basePath + '/de/';
+      window.location.href = '/de/';
     } else {
-      // For other 404s, try to redirect to the same path with /de/ prefix
-      const newPath = path.replace(basePath, basePath + '/de');
-      window.location.href = newPath;
+      // For other 404s, redirect to German locale
+      window.location.href = '/de/';
     }
   </script>
   <style>
@@ -55,7 +53,7 @@
     <p>Redirecting to VIETconsult...</p>
   </div>
   <noscript>
-    <p>If you are not redirected automatically, <a href="/Vietconsult/de/" style="color: #FFBC00;">click here</a>.</p>
+    <p>If you are not redirected automatically, <a href="/de/" style="color: #FFBC00;">click here</a>.</p>
   </noscript>
 </body>
 </html>

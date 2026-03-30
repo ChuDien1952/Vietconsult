@@ -6,7 +6,6 @@ const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts')
 const nextConfig = {
   reactStrictMode: true,
   output: 'export',
-  basePath: process.env.NODE_ENV === 'production' ? '/Vietconsult' : '',
   images: {
     unoptimized: true,
   },
