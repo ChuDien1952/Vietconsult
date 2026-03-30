@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useTranslations, useLocale } from 'next-intl'
 import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
@@ -38,9 +39,13 @@ export function Header() {
         {/* Logo */}
         <div className="flex lg:flex-1">
           <Link href={`/${locale}`} className="-m-1.5 p-1.5 transition-transform hover:scale-105">
-            <img
+            <Image
               src="/logo-vietconsult.svg"
               alt="VIETconsult Logo"
+              width={300}
+              height={60}
+              priority
+              unoptimized
               className="h-12 w-auto sm:h-14"
             />
           </Link>
