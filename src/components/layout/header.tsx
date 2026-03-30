@@ -40,13 +40,12 @@ export function Header() {
         <div className="flex lg:flex-1">
           <Link href={`/${locale}`} className="-m-1.5 p-1.5 transition-transform hover:scale-105">
             <Image
-              src="/Logo_Vietconsult.png"
+              src="/logo-vietconsult.svg"
               alt="VIETconsult Logo"
-              width={200}
-              height={50}
+              width={250}
+              height={60}
               priority
-              unoptimized
-              className="h-10 w-auto sm:h-12"
+              className="h-12 w-auto sm:h-14"
             />
           </Link>
         </div>
