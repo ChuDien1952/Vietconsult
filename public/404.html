@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIETconsult - Redirecting...</title>
+  <script>
+    // Get the current path
+    const path = window.location.pathname;
+    const basePath = '/Vietconsult';
+
+    // Check if we're at root or base path
+    if (path === '/' || path === basePath || path === basePath + '/') {
+      // Redirect to default locale (German)
+      window.location.href = basePath + '/de/';
+    } else {
+      // For other 404s, try to redirect to the same path with /de/ prefix
+      const newPath = path.replace(basePath, basePath + '/de');
+      window.location.href = newPath;
+    }
+  </script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #202C58 0%, #1C1D20 100%);
+      color: white;
+    }
+    .loader {
+      text-align: center;
+    }
+    .spinner {
+      border: 4px solid rgba(255, 188, 0, 0.3);
+      border-top: 4px solid #FFBC00;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 20px;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="loader">
+    <div class="spinner"></div>
+    <p>Redirecting to VIETconsult...</p>
+  </div>
+  <noscript>
+    <p>If you are not redirected automatically, <a href="/Vietconsult/de/" style="color: #FFBC00;">click here</a>.</p>
+  </noscript>
+</body>
+</html>
