@@ -43,8 +43,8 @@ export function Header() {
             <Image
               src={`${basePath}/Logo_Vietconsult.svg`}
               alt="VIETconsult Logo"
-              width={300}
-              height={60}
+              width={340}
+              height={74}
               priority
               unoptimized
               className="h-12 w-auto sm:h-14"
