@@ -13,6 +13,7 @@ export function Header() {
   const locale = useLocale()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const basePath = process.env.NODE_ENV === 'production' ? '/Vietconsult' : ''
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,7 +41,7 @@ export function Header() {
         <div className="flex lg:flex-1">
           <Link href={`/${locale}`} className="-m-1.5 p-1.5 transition-transform hover:scale-105">
             <Image
-              src="/logo-vietconsult.svg"
+              src={`${basePath}/logo-vietconsult.svg`}
               alt="VIETconsult Logo"
               width={300}
               height={60}
