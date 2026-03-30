@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useTranslations, useLocale } from 'next-intl'
 import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
@@ -38,9 +39,14 @@ export function Header() {
         {/* Logo */}
         <div className="flex lg:flex-1">
           <Link href={`/${locale}`} className="-m-1.5 p-1.5 transition-transform hover:scale-105">
-            <span className="text-2xl font-bold uppercase tracking-tight text-primary-navy">
-              VIET<span className="text-primary-gold">consult</span>
-            </span>
+            <Image
+              src="/Logo_Vietconsult.png"
+              alt="VIETconsult Logo"
+              width={200}
+              height={50}
+              priority
+              className="h-10 w-auto sm:h-12"
+            />
           </Link>
         </div>
 
