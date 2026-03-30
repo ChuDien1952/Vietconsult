@@ -41,7 +41,7 @@ export function Header() {
         <div className="flex lg:flex-1">
           <Link href={`/${locale}`} className="-m-1.5 p-1.5 transition-transform hover:scale-105">
             <Image
-              src={`${basePath}/logo-vietconsult.svg`}
+              src={`${basePath}/Logo_Vietconsult.svg`}
               alt="VIETconsult Logo"
               width={300}
               height={60}
