@@ -13,8 +13,16 @@
       // Redirect to default locale (German)
       window.location.href = '/de/';
     } else {
-      // For other 404s, redirect to German locale
-      window.location.href = '/de/';
+      // Check if path already has locale prefix
+      const hasLocale = /^\/(de|en|vi)(\/|$)/.test(path);
+
+      if (!hasLocale) {
+        // Add /de/ prefix to the current path
+        window.location.href = '/de' + path;
+      } else {
+        // Path has locale but page not found, redirect to home
+        window.location.href = '/de/';
+      }
     }
   </script>
   <style>
