@@ -45,11 +45,22 @@ export function VisionSection() {
           className="mx-auto mt-20 grid max-w-7xl grid-cols-1 gap-8 md:grid-cols-3"
         >
           <motion.div variants={fadeInUp}>
-            <Card className="h-full border-3 border-black shadow-bold transition-all hover:shadow-bold-hover hover:translate-x-1 hover:translate-y-1">
-              <CardHeader>
-                <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-lg bg-primary-navy">
-                  <Target className="h-8 w-8 text-primary-gold" />
+            <Card className="group h-full overflow-hidden border-3 border-black shadow-bold transition-all hover:shadow-bold-hover hover:translate-x-1 hover:translate-y-1">
+              {/* Background Image */}
+              <div className="relative h-48 overflow-hidden">
+                <Image
+                  src="/images/recruitment-meeting.jpg"
+                  alt="Sustainable Workforce Recruitment"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-primary-navy/70 to-primary-navy/90" />
+                <div className="absolute bottom-4 left-4 flex h-16 w-16 items-center justify-center rounded-lg bg-white border-2 border-black shadow-bold">
+                  <Target className="h-8 w-8 text-primary-navy" />
                 </div>
+              </div>
+              <CardHeader>
                 <CardTitle className="text-xl text-dark-charcoal">{t('card1Title')}</CardTitle>
               </CardHeader>
               <CardContent>
@@ -59,11 +70,22 @@ export function VisionSection() {
           </motion.div>
 
           <motion.div variants={fadeInUp}>
-            <Card className="h-full border-3 border-black shadow-bold transition-all hover:shadow-bold-hover hover:translate-x-1 hover:translate-y-1">
-              <CardHeader>
-                <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-lg bg-primary-red">
-                  <Users className="h-8 w-8 text-white" />
+            <Card className="group h-full overflow-hidden border-3 border-black shadow-bold transition-all hover:shadow-bold-hover hover:translate-x-1 hover:translate-y-1">
+              {/* Background Image */}
+              <div className="relative h-48 overflow-hidden">
+                <Image
+                  src="/images/business-presentation.webp"
+                  alt="Responsible Collaboration"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-primary-red/70 to-primary-red/90" />
+                <div className="absolute bottom-4 left-4 flex h-16 w-16 items-center justify-center rounded-lg bg-white border-2 border-black shadow-bold">
+                  <Users className="h-8 w-8 text-primary-red" />
                 </div>
+              </div>
+              <CardHeader>
                 <CardTitle className="text-xl text-dark-charcoal">{t('card2Title')}</CardTitle>
               </CardHeader>
               <CardContent>
@@ -73,11 +95,22 @@ export function VisionSection() {
           </motion.div>
 
           <motion.div variants={fadeInUp}>
-            <Card className="h-full border-3 border-black shadow-bold transition-all hover:shadow-bold-hover hover:translate-x-1 hover:translate-y-1">
-              <CardHeader>
-                <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-lg bg-primary-gold">
-                  <Award className="h-8 w-8 text-black" />
+            <Card className="group h-full overflow-hidden border-3 border-black shadow-bold transition-all hover:shadow-bold-hover hover:translate-x-1 hover:translate-y-1">
+              {/* Background Image */}
+              <div className="relative h-48 overflow-hidden">
+                <Image
+                  src="/images/team-collaboration.jpg"
+                  alt="Successful Integration"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-primary-amber/70 to-primary-amber/90" />
+                <div className="absolute bottom-4 left-4 flex h-16 w-16 items-center justify-center rounded-lg bg-white border-2 border-black shadow-bold">
+                  <Award className="h-8 w-8 text-primary-gold" />
                 </div>
+              </div>
+              <CardHeader>
                 <CardTitle className="text-xl text-dark-charcoal">{t('card3Title')}</CardTitle>
               </CardHeader>
               <CardContent>
@@ -96,12 +129,35 @@ export function ServicesOverviewSection() {
   const t = useTranslations('home.services')
   const locale = useLocale()
 
+  const serviceImages = [
+    { src: '/images/healthcare-worker.jpg', alt: 'Healthcare Services' },
+    { src: '/images/tech-worker.jpg', alt: 'Technical Services' },
+    { src: '/images/office-meeting.webp', alt: 'Integration Services' },
+  ]
+
   return (
     <section className="relative overflow-hidden bg-gradient-dark py-20 lg:py-32">
       {/* Geometric background */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute right-0 top-0 h-96 w-96 rounded-full bg-primary-gold blur-3xl" />
         <div className="absolute bottom-0 left-0 h-96 w-96 rounded-full bg-primary-amber blur-3xl" />
+      </div>
+
+      {/* Background Image Collage */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="grid h-full grid-cols-3 gap-2">
+          {serviceImages.map((img, index) => (
+            <div key={index} className="relative h-full overflow-hidden">
+              <Image
+                src={img.src}
+                alt={img.alt}
+                fill
+                className="object-cover"
+                sizes="33vw"
+              />
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">

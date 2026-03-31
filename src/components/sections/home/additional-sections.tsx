@@ -267,6 +267,7 @@ export function SpecializedAreasSection() {
       icon: Stethoscope,
       bgColor: 'bg-primary-red',
       iconColor: 'text-white',
+      image: '/images/healthcare-professional.jpg',
     },
     {
       title: t('area2Title'),
@@ -274,6 +275,7 @@ export function SpecializedAreasSection() {
       icon: Wrench,
       bgColor: 'bg-primary-navy',
       iconColor: 'text-primary-gold',
+      image: '/images/technical-engineer.jpg',
     },
     {
       title: t('area3Title'),
@@ -281,6 +283,7 @@ export function SpecializedAreasSection() {
       icon: GraduationCap,
       bgColor: 'bg-primary-amber',
       iconColor: 'text-black',
+      image: '/images/training-program.jpg',
     },
   ]
 
@@ -309,13 +312,22 @@ export function SpecializedAreasSection() {
         >
           {areas.map((area, index) => (
             <motion.div key={index} variants={fadeInUp}>
-              <Card className="h-full border-3 border-black shadow-bold transition-all hover:shadow-bold-hover hover:translate-x-1 hover:translate-y-1">
-                <CardHeader>
-                  <div
-                    className={`mb-6 flex h-20 w-20 items-center justify-center rounded-lg ${area.bgColor} border-2 border-black`}
-                  >
-                    <area.icon className={`h-10 w-10 ${area.iconColor}`} />
+              <Card className="group h-full overflow-hidden border-3 border-black shadow-bold transition-all hover:shadow-bold-hover hover:translate-x-1 hover:translate-y-1">
+                {/* Background Image */}
+                <div className="relative h-64 overflow-hidden">
+                  <Image
+                    src={area.image}
+                    alt={area.title}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
+                  <div className={`absolute inset-0 bg-gradient-to-b ${area.bgColor}/70 to-dark-charcoal/90`} />
+                  <div className="absolute bottom-4 left-4 flex h-20 w-20 items-center justify-center rounded-lg bg-white border-2 border-black shadow-bold">
+                    <area.icon className={`h-10 w-10 ${area.bgColor.replace('bg-', 'text-')}`} />
                   </div>
+                </div>
+                <CardHeader>
                   <CardTitle className="text-xl text-dark-charcoal">{area.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
