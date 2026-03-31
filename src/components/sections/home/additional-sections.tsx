@@ -140,9 +140,9 @@ export function ProcessSection() {
                 } md:w-1/2`}
               >
                 <div className="flex items-start gap-6 md:gap-8">
-                  {/* Number badge with image background - Oval shape */}
+                  {/* Number badge with image background - Large oval with blur effect */}
                   <motion.div
-                    className={`group relative flex h-32 w-36 md:h-36 md:w-44 flex-shrink-0 items-center justify-center overflow-hidden rounded-[50%] border-3 border-black shadow-bold ${
+                    className={`group relative flex h-36 w-44 md:h-44 md:w-56 flex-shrink-0 items-center justify-center overflow-hidden rounded-[50%] border-3 border-black shadow-bold ${
                       index % 2 === 0
                         ? 'md:order-2 md:ml-auto md:mr-8'
                         : 'md:order-1 md:ml-8'
@@ -155,16 +155,16 @@ export function ProcessSection() {
                         src={step.image}
                         alt={`Step ${step.number} - ${step.title}`}
                         fill
-                        className="object-cover"
-                        sizes="(max-width: 768px) 144px, 176px"
+                        className="object-cover blur-sm grayscale opacity-60 group-hover:blur-none group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
+                        sizes="(max-width: 768px) 176px, 224px"
                         priority={index < 2}
                       />
                       {/* Very subtle vignette - darker at bottom only */}
                       <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
                       {/* Very light color tint for branding */}
-                      <div className={`absolute inset-0 bg-gradient-to-br ${step.color} opacity-15 mix-blend-soft-light`} />
+                      <div className={`absolute inset-0 bg-gradient-to-br ${step.color} opacity-15 mix-blend-soft-light group-hover:opacity-5 transition-opacity duration-500`} />
                     </div>
-                    <span className="relative z-10 text-5xl md:text-6xl font-bold text-white drop-shadow-[0_4px_16px_rgba(0,0,0,1)]">
+                    <span className="relative z-10 text-6xl md:text-7xl font-bold text-white drop-shadow-[0_4px_16px_rgba(0,0,0,1)] group-hover:scale-110 transition-transform duration-500">
                       {step.number}
                     </span>
                   </motion.div>
