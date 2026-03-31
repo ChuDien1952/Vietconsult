@@ -155,12 +155,13 @@ export function ProcessSection() {
                         src={step.image}
                         alt={`Step ${step.number}`}
                         fill
-                        className="object-cover"
+                        className="object-cover opacity-100 group-hover:opacity-80 transition-opacity"
                         sizes="80px"
+                        priority={index < 2}
                       />
-                      <div className={`absolute inset-0 bg-gradient-to-br ${step.color}`} />
+                      <div className={`absolute inset-0 bg-gradient-to-br ${step.color} opacity-60`} />
                     </div>
-                    <span className="relative z-10 text-3xl font-bold text-white drop-shadow-lg">
+                    <span className="relative z-10 text-3xl font-bold text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
                       {step.number}
                     </span>
                   </motion.div>
