@@ -140,9 +140,9 @@ export function ProcessSection() {
                 } md:w-1/2`}
               >
                 <div className="flex items-start gap-6 md:gap-8">
-                  {/* Number badge with image background */}
+                  {/* Number badge with image background - Oval shape */}
                   <motion.div
-                    className={`group relative flex h-24 w-24 md:h-28 md:w-28 flex-shrink-0 items-center justify-center overflow-hidden rounded-full border-3 border-black shadow-bold ${
+                    className={`group relative flex h-32 w-36 md:h-36 md:w-44 flex-shrink-0 items-center justify-center overflow-hidden rounded-[50%] border-3 border-black shadow-bold ${
                       index % 2 === 0
                         ? 'md:order-2 md:ml-auto md:mr-8'
                         : 'md:order-1 md:ml-8'
@@ -156,7 +156,7 @@ export function ProcessSection() {
                         alt={`Step ${step.number} - ${step.title}`}
                         fill
                         className="object-cover"
-                        sizes="(max-width: 768px) 96px, 112px"
+                        sizes="(max-width: 768px) 144px, 176px"
                         priority={index < 2}
                       />
                       {/* Very subtle vignette - darker at bottom only */}
@@ -164,7 +164,7 @@ export function ProcessSection() {
                       {/* Very light color tint for branding */}
                       <div className={`absolute inset-0 bg-gradient-to-br ${step.color} opacity-15 mix-blend-soft-light`} />
                     </div>
-                    <span className="relative z-10 text-4xl md:text-5xl font-bold text-white drop-shadow-[0_4px_16px_rgba(0,0,0,1)]">
+                    <span className="relative z-10 text-5xl md:text-6xl font-bold text-white drop-shadow-[0_4px_16px_rgba(0,0,0,1)]">
                       {step.number}
                     </span>
                   </motion.div>
