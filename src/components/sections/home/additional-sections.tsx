@@ -142,7 +142,7 @@ export function ProcessSection() {
                 <div className="flex items-start gap-6 md:gap-8">
                   {/* Number badge with ultra-dramatic 5-second zoom animation */}
                   <motion.div
-                    className={`group relative flex h-36 w-44 md:h-44 md:w-56 flex-shrink-0 items-center justify-center overflow-visible rounded-[50%] border-3 border-black shadow-bold ${
+                    className={`group relative flex h-36 w-44 md:h-44 md:w-56 flex-shrink-0 items-center justify-center overflow-visible ${
                       index % 2 === 0
                         ? 'md:order-2 md:ml-auto md:mr-8'
                         : 'md:order-1 md:ml-8'
@@ -151,7 +151,8 @@ export function ProcessSection() {
                     {/* Minimal halo effect (20%) */}
                     <div className="absolute inset-0 rounded-[50%] bg-gradient-to-br from-white/10 via-transparent to-transparent blur-xl opacity-20 group-hover:opacity-0 transition-opacity duration-[5000ms]" />
 
-                    <div className="absolute inset-0 rounded-[50%] overflow-hidden scale-[0.2] group-hover:scale-100 transition-transform duration-[5000ms] ease-out">
+                    {/* Border + Image container - scales together */}
+                    <div className="absolute inset-0 rounded-[50%] border-3 border-black shadow-bold scale-[0.2] group-hover:scale-100 transition-all duration-[5000ms] ease-out overflow-hidden">
                       <Image
                         src={step.image}
                         alt={`Step ${step.number} - ${step.title}`}
