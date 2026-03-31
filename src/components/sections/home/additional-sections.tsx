@@ -142,7 +142,7 @@ export function ProcessSection() {
                 <div className="flex items-start gap-6 md:gap-8">
                   {/* Number badge with image background */}
                   <motion.div
-                    className={`group relative flex h-20 w-20 flex-shrink-0 items-center justify-center overflow-hidden rounded-full border-3 border-black shadow-bold ${
+                    className={`group relative flex h-24 w-24 md:h-28 md:w-28 flex-shrink-0 items-center justify-center overflow-hidden rounded-full border-3 border-black shadow-bold ${
                       index % 2 === 0
                         ? 'md:order-2 md:ml-auto md:mr-8'
                         : 'md:order-1 md:ml-8'
@@ -153,15 +153,15 @@ export function ProcessSection() {
                     <div className="absolute inset-0">
                       <Image
                         src={step.image}
-                        alt={`Step ${step.number}`}
+                        alt={`Step ${step.number} - ${step.title}`}
                         fill
-                        className="object-cover opacity-100 group-hover:opacity-80 transition-opacity"
-                        sizes="80px"
+                        className="object-cover"
+                        sizes="(max-width: 768px) 96px, 112px"
                         priority={index < 2}
                       />
-                      <div className={`absolute inset-0 bg-gradient-to-br ${step.color} opacity-60`} />
+                      <div className={`absolute inset-0 bg-gradient-to-br ${step.color} opacity-40 group-hover:opacity-30 transition-opacity`} />
                     </div>
-                    <span className="relative z-10 text-3xl font-bold text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+                    <span className="relative z-10 text-4xl md:text-5xl font-bold text-white drop-shadow-[0_3px_10px_rgba(0,0,0,0.9)]">
                       {step.number}
                     </span>
                   </motion.div>
