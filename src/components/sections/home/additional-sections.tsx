@@ -159,9 +159,12 @@ export function ProcessSection() {
                         sizes="(max-width: 768px) 96px, 112px"
                         priority={index < 2}
                       />
-                      <div className={`absolute inset-0 bg-gradient-to-br ${step.color} opacity-40 group-hover:opacity-30 transition-opacity`} />
+                      {/* Very subtle vignette - darker at bottom only */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+                      {/* Very light color tint for branding */}
+                      <div className={`absolute inset-0 bg-gradient-to-br ${step.color} opacity-15 mix-blend-soft-light`} />
                     </div>
-                    <span className="relative z-10 text-4xl md:text-5xl font-bold text-white drop-shadow-[0_3px_10px_rgba(0,0,0,0.9)]">
+                    <span className="relative z-10 text-4xl md:text-5xl font-bold text-white drop-shadow-[0_4px_16px_rgba(0,0,0,1)]">
                       {step.number}
                     </span>
                   </motion.div>
