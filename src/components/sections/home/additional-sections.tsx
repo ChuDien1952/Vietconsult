@@ -78,21 +78,29 @@ export function ProcessSection() {
       number: 1,
       title: t('step1Title'),
       description: t('step1Description'),
+      image: '/images/recruitment-meeting.jpg',
+      color: 'from-primary-red/70 to-primary-red/90',
     },
     {
       number: 2,
       title: t('step2Title'),
       description: t('step2Description'),
+      image: '/images/training.webp',
+      color: 'from-primary-navy/70 to-primary-navy/90',
     },
     {
       number: 3,
       title: t('step3Title'),
       description: t('step3Description'),
+      image: '/images/professional-worker.webp',
+      color: 'from-primary-amber/70 to-primary-amber/90',
     },
     {
       number: 4,
       title: t('step4Title'),
       description: t('step4Description'),
+      image: '/images/workplace.webp',
+      color: 'from-primary-gold/70 to-primary-gold/90',
     },
   ]
 
@@ -117,41 +125,68 @@ export function ProcessSection() {
           whileInView="visible"
           viewport={{ once: true }}
           variants={stagger}
-          className="mx-auto mt-20 max-w-5xl"
+          className="mx-auto mt-20 max-w-6xl"
         >
           <div className="relative">
-            {/* Timeline line */}
-            <div className="absolute left-4 top-0 hidden h-full w-1 bg-primary-gold/20 md:left-1/2 md:block md:-ml-px" />
+            {/* Timeline line with gradient */}
+            <div className="absolute left-4 top-0 hidden h-full w-1 bg-gradient-to-b from-primary-red via-primary-navy via-primary-amber to-primary-gold md:left-1/2 md:block md:-ml-px" />
 
             {steps.map((step, index) => (
               <motion.div
                 key={step.number}
                 variants={fadeInUp}
-                className={`relative mb-16 md:mb-20 ${
+                className={`relative mb-16 md:mb-24 ${
                   index % 2 === 0 ? 'md:text-right' : 'md:ml-auto md:text-left'
                 } md:w-1/2`}
               >
                 <div className="flex items-start gap-6 md:gap-8">
-                  {/* Number badge */}
-                  <div
-                    className={`flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full bg-primary-navy border-3 border-black shadow-bold text-2xl font-bold text-primary-gold ${
+                  {/* Number badge with image background */}
+                  <motion.div
+                    className={`group relative flex h-20 w-20 flex-shrink-0 items-center justify-center overflow-hidden rounded-full border-3 border-black shadow-bold ${
                       index % 2 === 0
                         ? 'md:order-2 md:ml-auto md:mr-8'
                         : 'md:order-1 md:ml-8'
                     }`}
+                    whileHover={{ scale: 1.1, rotate: 5 }}
+                    transition={{ duration: 0.3 }}
                   >
-                    {step.number}
-                  </div>
+                    <div className="absolute inset-0">
+                      <Image
+                        src={step.image}
+                        alt={`Step ${step.number}`}
+                        fill
+                        className="object-cover"
+                        sizes="80px"
+                      />
+                      <div className={`absolute inset-0 bg-gradient-to-br ${step.color}`} />
+                    </div>
+                    <span className="relative z-10 text-3xl font-bold text-white drop-shadow-lg">
+                      {step.number}
+                    </span>
+                  </motion.div>
 
-                  {/* Content */}
-                  <div className={index % 2 === 0 ? 'md:pr-8' : 'md:pl-8'}>
+                  {/* Content Card */}
+                  <motion.div
+                    className={`flex-1 rounded-xl border-3 border-black bg-white p-6 shadow-bold transition-all hover:shadow-bold-hover hover:translate-x-1 hover:translate-y-1 ${
+                      index % 2 === 0 ? 'md:pr-8' : 'md:pl-8'
+                    }`}
+                    whileHover={{ scale: 1.02 }}
+                  >
                     <h3 className="text-xl font-bold text-dark-charcoal lg:text-2xl">
                       {step.title}
                     </h3>
                     <p className="mt-3 text-base text-slate-gray">
                       {step.description}
                     </p>
-                  </div>
+
+                    {/* Step indicator */}
+                    <div className={`mt-4 flex items-center gap-2 ${index % 2 === 0 ? 'md:justify-end' : ''}`}>
+                      <div className="h-1 w-12 bg-gradient-to-r from-primary-gold to-primary-amber" />
+                      <span className="text-xs font-semibold text-primary-navy">
+                        Schritt {step.number}
+                      </span>
+                    </div>
+                  </motion.div>
                 </div>
               </motion.div>
             ))}

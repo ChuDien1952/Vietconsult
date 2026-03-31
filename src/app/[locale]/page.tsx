@@ -13,6 +13,8 @@ import {
   WhyUsSection,
   CTABannerSection,
 } from '@/components/sections/home/additional-sections'
+import { StatsSection } from '@/components/sections/home/stats-section'
+import { SuccessStoriesSection } from '@/components/sections/home/success-stories-section'
 
 export const dynamic = 'force-static'
 
@@ -22,12 +24,14 @@ export default function Home() {
       <HeroSection />
       <VisionSection />
       <TeamShowcaseSection />
+      <StatsSection />
       <ServicesOverviewSection />
       <BenefitsSection />
       <PartnersSection />
       <ProcessSection />
       <InfrastructureSection />
       <SpecializedAreasSection />
+      <SuccessStoriesSection />
       <WhyUsSection />
       <CTABannerSection />
     </div>

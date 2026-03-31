@@ -35,7 +35,8 @@
       "Bash(python:*)",
       "Bash(powershell:*)",
       "Bash(gh run watch:*)",
-      "Bash(Select-String -Pattern \"(error|Error|Compiled|Created redirect)\" -Context 0,2)"
+      "Bash(Select-String -Pattern \"(error|Error|Compiled|Created redirect)\" -Context 0,2)",
+      "Bash(ls:*)"
     ]
   }
 }
