@@ -78,28 +78,28 @@ export function ProcessSection() {
       number: 1,
       title: t('step1Title'),
       description: t('step1Description'),
-      image: '/images/recruitment-meeting.jpg',
+      image: '/images/step-1-recruitment.jpg',
       color: 'from-primary-red/70 to-primary-red/90',
     },
     {
       number: 2,
       title: t('step2Title'),
       description: t('step2Description'),
-      image: '/images/training.webp',
+      image: '/images/step-2-training.png',
       color: 'from-primary-navy/70 to-primary-navy/90',
     },
     {
       number: 3,
       title: t('step3Title'),
       description: t('step3Description'),
-      image: '/images/professional-worker.webp',
+      image: '/images/step-3-recognition.webp',
       color: 'from-primary-amber/70 to-primary-amber/90',
     },
     {
       number: 4,
       title: t('step4Title'),
       description: t('step4Description'),
-      image: '/images/workplace.webp',
+      image: '/images/step-4-arrival.webp',
       color: 'from-primary-gold/70 to-primary-gold/90',
     },
   ]
@@ -183,7 +183,7 @@ export function ProcessSection() {
                     <div className={`mt-4 flex items-center gap-2 ${index % 2 === 0 ? 'md:justify-end' : ''}`}>
                       <div className="h-1 w-12 bg-gradient-to-r from-primary-gold to-primary-amber" />
                       <span className="text-xs font-semibold text-primary-navy">
-                        Schritt {step.number}
+                        {t('stepLabel')} {step.number}
                       </span>
                     </div>
                   </motion.div>

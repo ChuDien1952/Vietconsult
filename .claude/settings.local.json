@@ -36,7 +36,9 @@
       "Bash(powershell:*)",
       "Bash(gh run watch:*)",
       "Bash(Select-String -Pattern \"(error|Error|Compiled|Created redirect)\" -Context 0,2)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(Select-String -Pattern \"(error|Error|Compiled|Created redirect|MISSING_MESSAGE)\" -Context 0,2)",
+      "Bash(cat:*)"
     ]
   }
 }
