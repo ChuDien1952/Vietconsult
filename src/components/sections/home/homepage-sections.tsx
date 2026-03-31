@@ -303,8 +303,7 @@ export function TeamShowcaseSection() {
                   <CheckCircle className="h-6 w-6 text-black" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-dark-charcoal">Persönliche Betreuung</h3>
-                  <p className="text-sm text-slate-gray">Dedizierte Ansprechpartner in Deutschland und Vietnam</p>
+                  <p className="text-sm text-slate-gray">{t('benefit1')}</p>
                 </div>
               </div>
 
@@ -313,8 +312,7 @@ export function TeamShowcaseSection() {
                   <CheckCircle className="h-6 w-6 text-primary-gold" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-dark-charcoal">Interkulturelle Kompetenz</h3>
-                  <p className="text-sm text-slate-gray">Tiefes Verständnis beider Kulturen und Arbeitswelten</p>
+                  <p className="text-sm text-slate-gray">{t('benefit2')}</p>
                 </div>
               </div>
 
@@ -323,8 +321,7 @@ export function TeamShowcaseSection() {
                   <CheckCircle className="h-6 w-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-dark-charcoal">Langjährige Expertise</h3>
-                  <p className="text-sm text-slate-gray">Über 10 Jahre Erfahrung in der internationalen Fachkräftevermittlung</p>
+                  <p className="text-sm text-slate-gray">{t('benefit3')}</p>
                 </div>
               </div>
             </div>
@@ -332,7 +329,7 @@ export function TeamShowcaseSection() {
             <div className="mt-10">
               <Button size="lg" variant="default" asChild>
                 <Link href={`/${locale}/uber-uns`}>
-                  Unser Team kennenlernen
+                  {t('cta')}
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
