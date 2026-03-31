@@ -4,8 +4,9 @@ import { useTranslations, useLocale } from 'next-intl'
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card'
-import { Target, Users, TrendingUp, Clock, Award, CheckCircle } from 'lucide-react'
+import { Target, Users, TrendingUp, Clock, Award, CheckCircle, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -198,6 +199,128 @@ export function BenefitsSection() {
             </div>
           </motion.div>
         </motion.div>
+      </div>
+    </section>
+  )
+}
+
+// Team Showcase Section
+export function TeamShowcaseSection() {
+  const t = useTranslations('home.team')
+  const locale = useLocale()
+
+  const teamMembers = [
+    {
+      name: 'Alexander Schmidt',
+      role: 'Managing Director Germany',
+      image: '/images/team-member-1.webp',
+    },
+    {
+      name: 'Sarah Müller',
+      role: 'Head of Integration Services',
+      image: '/images/team-member-2.webp',
+    },
+  ]
+
+  return (
+    <section className="relative overflow-hidden bg-light-gray py-20 lg:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-24">
+          {/* Left Column - Content */}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="flex flex-col justify-center"
+          >
+            <h2 className="text-h3 font-bold text-dark-charcoal lg:text-h2">
+              {t('title') || 'Erfahrenes Team für Ihren Erfolg'}
+            </h2>
+            <p className="mt-6 text-body-lg text-slate-gray">
+              {t('description') || 'Unser multikulturelles Team mit langjähriger Erfahrung begleitet Sie von der Bedarfsanalyse bis zur erfolgreichen Integration.'}
+            </p>
+
+            <div className="mt-8 space-y-4">
+              <div className="flex items-start gap-4">
+                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary-gold border-2 border-black">
+                  <CheckCircle className="h-6 w-6 text-black" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-dark-charcoal">Persönliche Betreuung</h3>
+                  <p className="text-sm text-slate-gray">Dedizierte Ansprechpartner in Deutschland und Vietnam</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary-navy border-2 border-black">
+                  <CheckCircle className="h-6 w-6 text-primary-gold" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-dark-charcoal">Interkulturelle Kompetenz</h3>
+                  <p className="text-sm text-slate-gray">Tiefes Verständnis beider Kulturen und Arbeitswelten</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary-red border-2 border-black">
+                  <CheckCircle className="h-6 w-6 text-white" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-dark-charcoal">Langjährige Expertise</h3>
+                  <p className="text-sm text-slate-gray">Über 10 Jahre Erfahrung in der internationalen Fachkräftevermittlung</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-10">
+              <Button size="lg" variant="default" asChild>
+                <Link href={`/${locale}/uber-uns`}>
+                  Unser Team kennenlernen
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+            </div>
+          </motion.div>
+
+          {/* Right Column - Team Members Grid */}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={stagger}
+            className="grid grid-cols-1 gap-8 sm:grid-cols-2"
+          >
+            {teamMembers.map((member, index) => (
+              <motion.div
+                key={index}
+                variants={fadeInUp}
+                className="group relative"
+              >
+                <div className="relative overflow-hidden rounded-2xl border-3 border-black shadow-bold transition-all hover:shadow-bold-hover hover:translate-x-1 hover:translate-y-1">
+                  {/* Image */}
+                  <div className="relative aspect-[3/4] overflow-hidden bg-gray-100">
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    />
+                    {/* Gradient Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-dark-charcoal/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                  </div>
+
+                  {/* Info Card */}
+                  <div className="absolute bottom-0 left-0 right-0 translate-y-2 transform bg-white p-6 transition-transform duration-300 group-hover:translate-y-0 border-t-3 border-black">
+                    <h3 className="font-bold text-dark-charcoal">{member.name}</h3>
+                    <p className="mt-1 text-sm text-slate-gray">{member.role}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
       </div>
     </section>
   )

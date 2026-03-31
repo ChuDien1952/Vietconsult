@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button'
 import { ArrowRight, Users, Award, TrendingUp } from 'lucide-react'
 import Link from 'next/link'
 import { useLocale } from 'next-intl'
+import Image from 'next/image'
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 60 },
@@ -158,18 +159,18 @@ export function HeroSection() {
                 variants={scaleIn}
                 className="relative h-full w-full rounded-2xl bg-gradient-to-br from-primary-navy/50 to-dark-charcoal/50 p-8 backdrop-blur-sm"
               >
-                {/* Placeholder for professional image */}
-                <div className="relative h-full min-h-[400px] overflow-hidden rounded-xl bg-gradient-to-br from-primary-gold/20 to-primary-amber/10">
-                  <div className="flex h-full items-center justify-center">
-                    <div className="text-center">
-                      <Users className="mx-auto h-24 w-24 text-primary-gold opacity-50" />
-                      <p className="mt-4 text-sm text-gray-400">
-                        Professional team image here
-                        <br />
-                        <span className="text-xs">(Unsplash/Pexels)</span>
-                      </p>
-                    </div>
-                  </div>
+                {/* Professional team image */}
+                <div className="relative h-full min-h-[400px] overflow-hidden rounded-xl">
+                  <Image
+                    src="/images/consultation.webp"
+                    alt="VIETconsult Professional Team Consultation"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    priority
+                  />
+                  {/* Gradient overlay for better text contrast */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-dark-charcoal/80 via-transparent to-transparent" />
 
                   {/* Floating stats cards */}
                   <motion.div

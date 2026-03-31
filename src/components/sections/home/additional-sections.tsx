@@ -14,6 +14,7 @@ import {
   ArrowRight,
 } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -190,18 +191,29 @@ export function InfrastructureSection() {
         >
           {/* Vietnam */}
           <motion.div variants={fadeInUp}>
-            <Card className="h-full border-3 border-black shadow-bold transition-all hover:shadow-bold-hover hover:translate-x-1 hover:translate-y-1">
-              <CardHeader>
-                <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-lg bg-primary-red border-2 border-black">
-                  <Building2 className="h-10 w-10 text-white" />
+            <Card className="group relative overflow-hidden border-3 border-black shadow-bold transition-all hover:shadow-bold-hover hover:translate-x-1 hover:translate-y-1">
+              {/* Background Image */}
+              <div className="absolute inset-0 h-64">
+                <Image
+                  src="/images/training.webp"
+                  alt="VIETconsult Vietnam Training Center"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-primary-red/80 to-dark-charcoal/90" />
+              </div>
+
+              <CardHeader className="relative z-10">
+                <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-lg bg-white border-2 border-black shadow-bold">
+                  <Building2 className="h-10 w-10 text-primary-red" />
                 </div>
-                <CardTitle className="flex items-center gap-3 text-2xl text-dark-charcoal">
-                  <MapPin className="h-6 w-6 text-primary-red" />
+                <CardTitle className="flex items-center gap-3 text-2xl text-white">
+                  <MapPin className="h-6 w-6 text-primary-gold" />
                   {t('vietnamTitle')}
                 </CardTitle>
               </CardHeader>
-              <CardContent>
-                <p className="text-base text-slate-gray">
+              <CardContent className="relative z-10">
+                <p className="text-base text-white/90">
                   {t('vietnamDescription')}
                 </p>
               </CardContent>
@@ -210,18 +222,29 @@ export function InfrastructureSection() {
 
           {/* Germany */}
           <motion.div variants={fadeInUp}>
-            <Card className="h-full border-3 border-black shadow-bold transition-all hover:shadow-bold-hover hover:translate-x-1 hover:translate-y-1">
-              <CardHeader>
-                <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-lg bg-primary-navy border-2 border-black">
-                  <Building2 className="h-10 w-10 text-primary-gold" />
+            <Card className="group relative overflow-hidden border-3 border-black shadow-bold transition-all hover:shadow-bold-hover hover:translate-x-1 hover:translate-y-1">
+              {/* Background Image */}
+              <div className="absolute inset-0 h-64">
+                <Image
+                  src="/images/workplace.webp"
+                  alt="VIETconsult Germany Office"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-primary-navy/80 to-dark-charcoal/90" />
+              </div>
+
+              <CardHeader className="relative z-10">
+                <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-lg bg-white border-2 border-black shadow-bold">
+                  <Building2 className="h-10 w-10 text-primary-navy" />
                 </div>
-                <CardTitle className="flex items-center gap-3 text-2xl text-dark-charcoal">
-                  <MapPin className="h-6 w-6 text-primary-navy" />
+                <CardTitle className="flex items-center gap-3 text-2xl text-white">
+                  <MapPin className="h-6 w-6 text-primary-gold" />
                   {t('germanyTitle')}
                 </CardTitle>
               </CardHeader>
-              <CardContent>
-                <p className="text-base text-slate-gray">
+              <CardContent className="relative z-10">
+                <p className="text-base text-white/90">
                   {t('germanyDescription')}
                 </p>
               </CardContent>

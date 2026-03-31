@@ -3,6 +3,7 @@ import {
   VisionSection,
   ServicesOverviewSection,
   BenefitsSection,
+  TeamShowcaseSection,
 } from '@/components/sections/home/homepage-sections'
 import {
   PartnersSection,
@@ -20,6 +21,7 @@ export default function Home() {
     <div>
       <HeroSection />
       <VisionSection />
+      <TeamShowcaseSection />
       <ServicesOverviewSection />
       <BenefitsSection />
       <PartnersSection />
