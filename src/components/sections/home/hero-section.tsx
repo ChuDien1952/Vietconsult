@@ -183,7 +183,7 @@ export function HeroSection() {
                       </div>
                       <div>
                         <p className="text-2xl font-bold text-gray-900">KDA</p>
-                        <p className="text-xs text-gray-600">Gütezeichen</p>
+                        <p className="text-xs text-gray-600">{t('qualitySeal')}</p>
                       </div>
                     </div>
                   </motion.div>
@@ -198,7 +198,7 @@ export function HeroSection() {
                       </div>
                       <div>
                         <p className="text-2xl font-bold text-white">99%</p>
-                        <p className="text-xs text-gray-400">Erfolgsquote</p>
+                        <p className="text-xs text-gray-400">{t('successRate')}</p>
                       </div>
                     </div>
                   </motion.div>
