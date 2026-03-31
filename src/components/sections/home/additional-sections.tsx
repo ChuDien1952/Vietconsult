@@ -149,25 +149,25 @@ export function ProcessSection() {
                     }`}
                   >
                     {/* Dreamy blur halo effect */}
-                    <div className="absolute inset-0 rounded-[50%] bg-gradient-to-br from-white/20 via-transparent to-transparent blur-xl opacity-70 group-hover:opacity-0 transition-opacity duration-700" />
+                    <div className="absolute inset-0 rounded-[50%] bg-gradient-to-br from-white/20 via-transparent to-transparent blur-xl opacity-50 group-hover:opacity-0 transition-opacity duration-[2000ms]" />
 
-                    <div className="absolute inset-0 rounded-[50%] overflow-hidden scale-95 group-hover:scale-110 transition-transform duration-700 ease-out">
+                    <div className="absolute inset-0 rounded-[50%] overflow-hidden scale-[0.7] group-hover:scale-100 transition-transform duration-[2000ms] ease-out">
                       <Image
                         src={step.image}
                         alt={`Step ${step.number} - ${step.title}`}
                         fill
-                        className="object-cover blur-md grayscale opacity-50 brightness-110 group-hover:blur-none group-hover:grayscale-0 group-hover:opacity-100 group-hover:brightness-100 transition-all duration-700 ease-out"
+                        className="object-cover blur-sm grayscale opacity-60 brightness-105 group-hover:blur-none group-hover:grayscale-0 group-hover:opacity-100 group-hover:brightness-100 transition-all duration-[2000ms] ease-out"
                         sizes="(max-width: 768px) 176px, 224px"
                         priority={index < 2}
                       />
                       {/* Ethereal glow overlay */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-white/30 via-transparent to-transparent opacity-80 group-hover:opacity-0 transition-opacity duration-700" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-white/30 via-transparent to-transparent opacity-60 group-hover:opacity-0 transition-opacity duration-[2000ms]" />
                       {/* Subtle vignette */}
                       <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
                       {/* Color tint */}
-                      <div className={`absolute inset-0 bg-gradient-to-br ${step.color} opacity-20 mix-blend-overlay group-hover:opacity-5 transition-opacity duration-700`} />
+                      <div className={`absolute inset-0 bg-gradient-to-br ${step.color} opacity-20 mix-blend-overlay group-hover:opacity-5 transition-opacity duration-[2000ms]`} />
                     </div>
-                    <span className="relative z-10 text-6xl md:text-7xl font-bold text-white drop-shadow-[0_5px_20px_rgba(0,0,0,0.9)] scale-100 group-hover:scale-125 transition-transform duration-700 ease-out">
+                    <span className="relative z-10 text-6xl md:text-7xl font-bold text-white drop-shadow-[0_5px_20px_rgba(0,0,0,0.9)] scale-[0.7] group-hover:scale-100 transition-transform duration-[2000ms] ease-out">
                       {step.number}
                     </span>
                   </motion.div>
