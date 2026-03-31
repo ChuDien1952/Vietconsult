@@ -140,31 +140,34 @@ export function ProcessSection() {
                 } md:w-1/2`}
               >
                 <div className="flex items-start gap-6 md:gap-8">
-                  {/* Number badge with image background - Large oval with blur effect */}
+                  {/* Number badge with dreamy blur effect and scale animation */}
                   <motion.div
-                    className={`group relative flex h-36 w-44 md:h-44 md:w-56 flex-shrink-0 items-center justify-center overflow-hidden rounded-[50%] border-3 border-black shadow-bold ${
+                    className={`group relative flex h-36 w-44 md:h-44 md:w-56 flex-shrink-0 items-center justify-center overflow-visible rounded-[50%] border-3 border-black shadow-bold ${
                       index % 2 === 0
                         ? 'md:order-2 md:ml-auto md:mr-8'
                         : 'md:order-1 md:ml-8'
                     }`}
-                    whileHover={{ scale: 1.1, rotate: 5 }}
-                    transition={{ duration: 0.3 }}
                   >
-                    <div className="absolute inset-0">
+                    {/* Dreamy blur halo effect */}
+                    <div className="absolute inset-0 rounded-[50%] bg-gradient-to-br from-white/20 via-transparent to-transparent blur-xl opacity-70 group-hover:opacity-0 transition-opacity duration-700" />
+
+                    <div className="absolute inset-0 rounded-[50%] overflow-hidden scale-95 group-hover:scale-110 transition-transform duration-700 ease-out">
                       <Image
                         src={step.image}
                         alt={`Step ${step.number} - ${step.title}`}
                         fill
-                        className="object-cover blur-sm grayscale opacity-60 group-hover:blur-none group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
+                        className="object-cover blur-md grayscale opacity-50 brightness-110 group-hover:blur-none group-hover:grayscale-0 group-hover:opacity-100 group-hover:brightness-100 transition-all duration-700 ease-out"
                         sizes="(max-width: 768px) 176px, 224px"
                         priority={index < 2}
                       />
-                      {/* Very subtle vignette - darker at bottom only */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
-                      {/* Very light color tint for branding */}
-                      <div className={`absolute inset-0 bg-gradient-to-br ${step.color} opacity-15 mix-blend-soft-light group-hover:opacity-5 transition-opacity duration-500`} />
+                      {/* Ethereal glow overlay */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-white/30 via-transparent to-transparent opacity-80 group-hover:opacity-0 transition-opacity duration-700" />
+                      {/* Subtle vignette */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+                      {/* Color tint */}
+                      <div className={`absolute inset-0 bg-gradient-to-br ${step.color} opacity-20 mix-blend-overlay group-hover:opacity-5 transition-opacity duration-700`} />
                     </div>
-                    <span className="relative z-10 text-6xl md:text-7xl font-bold text-white drop-shadow-[0_4px_16px_rgba(0,0,0,1)] group-hover:scale-110 transition-transform duration-500">
+                    <span className="relative z-10 text-6xl md:text-7xl font-bold text-white drop-shadow-[0_5px_20px_rgba(0,0,0,0.9)] scale-100 group-hover:scale-125 transition-transform duration-700 ease-out">
                       {step.number}
                     </span>
                   </motion.div>
