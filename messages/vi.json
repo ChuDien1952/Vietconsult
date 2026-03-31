@@ -16,6 +16,7 @@
   },
   "home": {
     "hero": {
+      "label": "Lao động chuyên môn từ Việt Nam",
       "titleLine1": "Giải pháp toàn diện cho",
       "titleLine2": "Lao động chuyên môn từ Việt Nam",
       "subtitle": "Từ phân tích nhu cầu tại Đức qua trường ngôn ngữ riêng tại Việt Nam đến hỗ trợ dài hạn trong doanh nghiệp.",
@@ -25,7 +26,18 @@
     "stats": {
       "integration": "Tích hợp bền vững",
       "candidates": "Ứng viên được tuyển chọn kỹ lưỡng",
-      "steps": "Bước tích hợp"
+      "steps": "Bước tích hợp",
+      "title": "Thành công của chúng tôi bằng con số",
+      "subtitle": "Hơn 15 năm kinh nghiệm trong việc tuyển dụng thành công các chuyên gia",
+      "cta": "Trở thành một phần câu chuyện thành công của chúng tôi",
+      "stat1Label": "Tuyển dụng thành công",
+      "stat1Description": "Chuyên gia có trình độ đến Đức",
+      "stat2Label": "Doanh nghiệp đối tác",
+      "stat2Description": "Nhà tuyển dụng hài lòng tại Đức",
+      "stat3Label": "Tỷ lệ thành công",
+      "stat3Description": "Tích hợp lâu dài & sự hài lòng",
+      "stat4Label": "Năm kinh nghiệm",
+      "stat4Description": "Chuyên môn trong tuyển dụng quốc tế"
     },
     "vision": {
       "title": "Tầm nhìn",
@@ -100,6 +112,23 @@
       "point4": "Hỗ trợ toàn diện từ A đến Z",
       "point5": "Tích hợp bền vững cho thành công lâu dài",
       "point6": "Văn phòng tại Việt Nam và Đức"
+    },
+    "team": {
+      "title": "Đội ngũ chuyên nghiệp vì thành công của bạn",
+      "description": "Kinh nghiệm, chuyên môn và cam kết cá nhân",
+      "cta": "Làm quen với đội ngũ",
+      "benefit1": "Người liên hệ chuyên trách tại Đức và Việt Nam",
+      "benefit2": "Tư vấn cá nhân bằng ngôn ngữ của bạn",
+      "benefit3": "Kinh nghiệm lâu năm trong tuyển dụng quốc tế"
+    },
+    "successStories": {
+      "title": "Câu chuyện thành công",
+      "subtitle": "Những gì ứng viên và đối tác nói về chúng tôi",
+      "cta": "Hơn 1.200 tuyển dụng thành công kể từ năm 2008",
+      "moreStories": "+1.200 ứng viên hài lòng",
+      "story1Quote": "VIETconsult không chỉ giúp tôi tìm được việc mà còn giúp tôi cảm thấy như ở nhà tại Đức. Sự hỗ trợ luôn chuyên nghiệp và cá nhân.",
+      "story2Quote": "Sự hợp tác với VIETconsult thật tuyệt vời. Các chuyên gia được tuyển chọn có trình độ cao và được chuẩn bị hoàn hảo. Một giá trị thực sự cho doanh nghiệp chúng tôi.",
+      "story3Quote": "Toàn bộ quá trình rất minh bạch và có tổ chức tốt. Từ trường ngôn ngữ tại Việt Nam đến tích hợp ở Đức - VIETconsult luôn ở bên tôi."
     },
     "ctaBanner": {
       "title": "Bắt đầu cùng nhau ngay bây giờ",

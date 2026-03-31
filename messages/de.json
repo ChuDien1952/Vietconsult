@@ -16,6 +16,7 @@
   },
   "home": {
     "hero": {
+      "label": "Fachkräfte aus Vietnam",
       "titleLine1": "Ganzheitliche Lösungen für",
       "titleLine2": "Fachkräfte aus Vietnam",
       "subtitle": "Von der Bedarfsanalyse in Deutschland über die eigene Sprachschule in Vietnam bis zur langfristigen Begleitung im Betrieb.",
@@ -25,7 +26,18 @@
     "stats": {
       "integration": "Nachhaltige Integration",
       "candidates": "Sorgfältig ausgewählte Kandidaten",
-      "steps": "Schritte bis zur Integration"
+      "steps": "Schritte bis zur Integration",
+      "title": "Unsere Erfolge in Zahlen",
+      "subtitle": "Über 15 Jahre Erfahrung in der erfolgreichen Vermittlung von Fachkräften",
+      "cta": "Werden Sie Teil unserer Erfolgsgeschichte",
+      "stat1Label": "Erfolgreiche Vermittlungen",
+      "stat1Description": "Qualifizierte Fachkräfte nach Deutschland",
+      "stat2Label": "Partnerunternehmen",
+      "stat2Description": "Zufriedene Arbeitgeber in Deutschland",
+      "stat3Label": "Erfolgsquote",
+      "stat3Description": "Langfristige Integration & Zufriedenheit",
+      "stat4Label": "Jahre Erfahrung",
+      "stat4Description": "Expertise in internationaler Rekrutierung"
     },
     "vision": {
       "title": "Unsere Vision",
@@ -100,6 +112,23 @@
       "point4": "Umfassende Betreuung von A bis Z",
       "point5": "Nachhaltige Integration für langfristigen Erfolg",
       "point6": "Standorte in Vietnam und Deutschland"
+    },
+    "team": {
+      "title": "Erfahrenes Team für Ihren Erfolg",
+      "description": "Erfahrung, Expertise und persönliches Engagement",
+      "cta": "Team kennenlernen",
+      "benefit1": "Dedizierte Ansprechpartner in Deutschland und Vietnam",
+      "benefit2": "Persönliche Beratung in Ihrer Sprache",
+      "benefit3": "Langjährige Erfahrung in internationaler Rekrutierung"
+    },
+    "successStories": {
+      "title": "Erfolgsgeschichten",
+      "subtitle": "Was unsere Kandidaten und Partner über uns sagen",
+      "cta": "Über 1.200 erfolgreiche Vermittlungen seit 2008",
+      "moreStories": "+1.200 zufriedene Kandidaten",
+      "story1Quote": "VIETconsult hat mir nicht nur einen Job vermittelt, sondern mir geholfen, mich in Deutschland wirklich zu Hause zu fühlen. Die Begleitung war durchweg professionell und persönlich.",
+      "story2Quote": "Die Zusammenarbeit mit VIETconsult ist hervorragend. Die vermittelten Fachkräfte sind top qualifiziert und perfekt vorbereitet. Ein echter Mehrwert für unser Unternehmen.",
+      "story3Quote": "Der gesamte Prozess war transparent und gut organisiert. Von der Sprachschule in Vietnam bis zur Integration in Deutschland - VIETconsult war immer an meiner Seite."
     },
     "ctaBanner": {
       "title": "Jetzt gemeinsam starten",

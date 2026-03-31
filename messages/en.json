@@ -16,6 +16,7 @@
   },
   "home": {
     "hero": {
+      "label": "Skilled Workers from Vietnam",
       "titleLine1": "Comprehensive Solutions for",
       "titleLine2": "Skilled Workers from Vietnam",
       "subtitle": "From needs analysis in Germany through our own language school in Vietnam to long-term support in the company.",
@@ -25,7 +26,18 @@
     "stats": {
       "integration": "Sustainable Integration",
       "candidates": "Carefully selected candidates",
-      "steps": "Steps to Integration"
+      "steps": "Steps to Integration",
+      "title": "Our Success in Numbers",
+      "subtitle": "Over 15 years of experience in successful placement of professionals",
+      "cta": "Become Part of Our Success Story",
+      "stat1Label": "Successful Placements",
+      "stat1Description": "Qualified professionals to Germany",
+      "stat2Label": "Partner Companies",
+      "stat2Description": "Satisfied employers in Germany",
+      "stat3Label": "Success Rate",
+      "stat3Description": "Long-term integration & satisfaction",
+      "stat4Label": "Years of Experience",
+      "stat4Description": "Expertise in international recruitment"
     },
     "vision": {
       "title": "Our Vision",
@@ -100,6 +112,23 @@
       "point4": "Comprehensive support from A to Z",
       "point5": "Sustainable integration for long-term success",
       "point6": "Locations in Vietnam and Germany"
+    },
+    "team": {
+      "title": "Experienced Team for Your Success",
+      "description": "Experience, expertise, and personal commitment",
+      "cta": "Meet the Team",
+      "benefit1": "Dedicated contacts in Germany and Vietnam",
+      "benefit2": "Personal consultation in your language",
+      "benefit3": "Long-standing experience in international recruitment"
+    },
+    "successStories": {
+      "title": "Success Stories",
+      "subtitle": "What our candidates and partners say about us",
+      "cta": "Over 1,200 successful placements since 2008",
+      "moreStories": "+1,200 satisfied candidates",
+      "story1Quote": "VIETconsult didn't just help me find a job, but helped me feel at home in Germany. The support was consistently professional and personal.",
+      "story2Quote": "The collaboration with VIETconsult is excellent. The recruited professionals are highly qualified and perfectly prepared. A real added value for our company.",
+      "story3Quote": "The entire process was transparent and well organized. From the language school in Vietnam to integration in Germany - VIETconsult was always by my side."
     },
     "ctaBanner": {
       "title": "Start Together Now",
