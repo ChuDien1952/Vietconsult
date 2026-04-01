@@ -176,12 +176,11 @@ export function ProcessSection() {
                     </span>
                   </motion.div>
 
-                  {/* Content Card */}
+                  {/* Content Card - scales with 5-second animation */}
                   <motion.div
-                    className={`flex-1 rounded-xl border-3 border-black bg-white p-6 shadow-bold transition-all hover:shadow-bold-hover hover:translate-x-1 hover:translate-y-1 ${
+                    className={`flex-1 rounded-xl border-3 border-black bg-white p-6 shadow-bold scale-[0.2] group-hover:scale-100 transition-all duration-[5000ms] ease-out hover:shadow-bold-hover hover:translate-x-1 hover:translate-y-1 ${
                       index % 2 === 0 ? 'md:pr-8' : 'md:pl-8'
                     }`}
-                    whileHover={{ scale: 1.02 }}
                   >
                     <h3 className="text-xl font-bold text-dark-charcoal lg:text-2xl">
                       {step.title}
