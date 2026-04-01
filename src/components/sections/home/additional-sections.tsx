@@ -176,9 +176,9 @@ export function ProcessSection() {
                     </span>
                   </motion.div>
 
-                  {/* Content Card - scales with 5-second animation */}
+                  {/* Content Card - inverse scaling (large when image small, small when image large) */}
                   <motion.div
-                    className={`flex-1 rounded-xl border-3 border-black bg-white p-6 shadow-bold scale-[0.2] group-hover:scale-100 transition-all duration-[5000ms] ease-out hover:shadow-bold-hover hover:translate-x-1 hover:translate-y-1 ${
+                    className={`flex-1 rounded-xl border-3 border-black bg-white p-6 shadow-bold scale-100 group-hover:scale-[0.2] transition-all duration-[5000ms] ease-out hover:shadow-bold-hover hover:translate-x-1 hover:translate-y-1 ${
                       index % 2 === 0 ? 'md:pr-8' : 'md:pl-8'
                     }`}
                   >
