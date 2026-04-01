@@ -205,6 +205,9 @@ export function ProcessSection() {
 
             {/* YouTube Video Thumbnail - After Step 4 */}
             <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
               variants={fadeInUp}
               className="mt-20 mb-12 text-center"
             >
