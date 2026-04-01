@@ -176,10 +176,12 @@ export function ProcessSection() {
                     </span>
                   </motion.div>
 
-                  {/* Content Card - inverse scaling (large when image small, small when image large) */}
+                  {/* Content Card - inverse scaling + moves closer to image when image is small */}
                   <motion.div
-                    className={`flex-1 rounded-xl border-3 border-black bg-white p-6 shadow-bold scale-100 group-hover:scale-[0.2] transition-all duration-[5000ms] ease-out hover:shadow-bold-hover hover:translate-x-1 hover:translate-y-1 ${
-                      index % 2 === 0 ? 'md:pr-8' : 'md:pl-8'
+                    className={`flex-1 rounded-xl border-3 border-black bg-white p-6 shadow-bold scale-100 group-hover:scale-[0.2] transition-all duration-[5000ms] ease-out hover:shadow-bold-hover ${
+                      index % 2 === 0
+                        ? 'md:pr-8 -translate-x-32 group-hover:translate-x-0'
+                        : 'md:pl-8 translate-x-32 group-hover:translate-x-0'
                     }`}
                   >
                     <h3 className="text-xl font-bold text-dark-charcoal lg:text-2xl">
