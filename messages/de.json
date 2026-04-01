@@ -296,23 +296,251 @@
     },
     "recruitment": {
       "title": "Rekrutierung & Auswahl",
+      "subtitle": "Gezielte Kandidatensuche und professionelle Auswahl qualifizierter Fachkräfte in Vietnam nach Ihren individuellen Anforderungen",
       "description": "Gezielte Kandidatensuche und professionelle Auswahl qualifizierter Fachkräfte in Vietnam",
-      "link": "/services/rekrutierung-auswahl"
+      "link": "/services/rekrutierung-auswahl",
+      "cta": "Jetzt Fachkräfte finden",
+      "ctaSecondary": "Zurück zu Services",
+      "process": {
+        "title": "Unser Rekrutierungsprozess",
+        "subtitle": "Systematische Auswahl für maximalen Erfolg",
+        "step1": {
+          "title": "Bedarfsanalyse & Anforderungsprofil",
+          "description": "Wir analysieren detailliert Ihre Anforderungen, erstellen ein präzises Kompetenzprofil und definieren gemeinsam die idealen Kandidatenkriterien für Ihr Unternehmen."
+        },
+        "step2": {
+          "title": "Kandidatensuche in Vietnam",
+          "description": "Durch unser etabliertes Netzwerk und lokale Präsenz in Vietnam identifizieren wir gezielt passende Kandidaten über Universitäten, Fachschulen und Partnerinstitutionen."
+        },
+        "step3": {
+          "title": "Professionelles Screening & Assessment",
+          "description": "Mehrstufige Auswahlverfahren mit fachlichen Tests, Sprachstandprüfungen, psychologischen Eignungstests und strukturierten Interviews sichern höchste Qualität."
+        },
+        "step4": {
+          "title": "Präsentation & Matching",
+          "description": "Sie erhalten detaillierte Kandidatenprofile mit allen relevanten Qualifikationen, führen persönliche Gespräche und treffen die finale Auswahlentscheidung."
+        }
+      },
+      "features": {
+        "title": "Ihre Vorteile bei der Rekrutierung",
+        "subtitle": "Qualität und Effizienz in jedem Schritt",
+        "feature1": {
+          "title": "Lokale Expertise in Vietnam",
+          "description": "Eigene Büros in Ho-Chi-Minh-Stadt und Hanoi mit erfahrenem Rekrutierungsteam vor Ort für direkten Zugang zu Top-Talenten."
+        },
+        "feature2": {
+          "title": "Umfassendes Kandidaten-Screening",
+          "description": "Mehrstufige Auswahlverfahren mit fachlichen, sprachlichen und persönlichen Eignungstests garantieren höchste Qualität."
+        },
+        "feature3": {
+          "title": "Branchen-Spezialisierung",
+          "description": "Expertise in Pflege, Medizin, Technik, Industrie und IT mit branchenspezifischen Rekrutierungsstrategien und Netzwerken."
+        },
+        "feature4": {
+          "title": "Transparenter Prozess",
+          "description": "Lückenlose Dokumentation, regelmäßige Updates und vollständige Transparenz über alle Rekrutierungsschritte."
+        },
+        "feature5": {
+          "title": "Rechtssichere Vermittlung",
+          "description": "Alle Prozesse entsprechen deutschen und internationalen Standards, KDA-zertifiziert nach ethischen Rekrutierungsrichtlinien."
+        },
+        "feature6": {
+          "title": "Zeitersparnis & Effizienz",
+          "description": "Wir übernehmen den gesamten Rekrutierungsprozess und präsentieren Ihnen nur vorqualifizierte Top-Kandidaten."
+        }
+      },
+      "cta": {
+        "title": "Bereit für qualifizierte Fachkräfte?",
+        "subtitle": "Starten Sie jetzt Ihren individuellen Rekrutierungsprozess mit VIETconsult und profitieren Sie von unserer langjährigen Expertise.",
+        "button": "Kostenloses Beratungsgespräch",
+        "buttonSecondary": "Weitere Services entdecken"
+      }
     },
-    "training": {
+    "languageTraining": {
       "title": "Sprach- & kulturelle Bildung",
+      "subtitle": "Intensive Vorbereitung in unserer eigenen Sprachschule in Vietnam mit umfassendem kulturellem Training für erfolgreiche Integration",
       "description": "Intensive Vorbereitung in unserer eigenen Sprachschule mit kulturellem Training",
-      "link": "/services/sprach-kulturelle-bildung"
+      "link": "/services/sprach-kulturelle-bildung",
+      "cta": "Mehr über Sprachtraining",
+      "ctaSecondary": "Zurück zu Services",
+      "process": {
+        "title": "Unser Bildungsprogramm",
+        "subtitle": "Von A1 bis zur beruflichen Kompetenz",
+        "step1": {
+          "title": "Einstufung & Individueller Lernplan",
+          "description": "Detaillierte Sprachstandanalyse und Erstellung eines maßgeschneiderten Curriculums basierend auf Vorkenntnissen, Lerngeschwindigkeit und beruflichen Anforderungen."
+        },
+        "step2": {
+          "title": "Intensiver Sprachunterricht (A1-B2)",
+          "description": "Strukturierter Deutschunterricht in unserer eigenen Sprachschule mit erfahrenen Muttersprachlern, modernen Lehrmethoden und kleinen Lerngruppen für optimalen Fortschritt."
+        },
+        "step3": {
+          "title": "Fachsprachtraining & Berufsvorbereitung",
+          "description": "Branchenspezifisches Vokabular, Fachterminologie und praxisorientierte Kommunikation für Pflege, Technik oder IT sowie Vorbereitung auf telc- und Goethe-Zertifikate."
+        },
+        "step4": {
+          "title": "Kulturelle Integration & Soft Skills",
+          "description": "Interkulturelle Kompetenz, deutsche Arbeitskulturen, Business-Etikette, regionale Besonderheiten und praktische Alltagssituationen für erfolgreiche Integration."
+        }
+      },
+      "features": {
+        "title": "Unsere Bildungsvorteile",
+        "subtitle": "Qualität, die überzeugt",
+        "feature1": {
+          "title": "Eigene Sprachschulen in Vietnam",
+          "description": "Moderne Einrichtungen in Ho-Chi-Minh-Stadt und Hanoi mit qualifizierten Lehrkräften, digitalen Lerntools und optimaler Lernumgebung."
+        },
+        "feature2": {
+          "title": "Muttersprachliche Lehrkräfte",
+          "description": "Erfahrene deutsche Lehrkräfte mit DaF/DaZ-Qualifikation und interkultureller Kompetenz für authentisches Sprachlernen."
+        },
+        "feature3": {
+          "title": "Branchenspezifische Kurse",
+          "description": "Spezialisierte Programme für Pflege, Medizin, Technik, IT und Industrie mit relevantem Fachvokabular und Praxisbezug."
+        },
+        "feature4": {
+          "title": "Zertifizierte Abschlüsse",
+          "description": "Vorbereitung und Durchführung offizieller Sprachprüfungen (telc, Goethe-Institut) für anerkannte Zertifikate."
+        },
+        "feature5": {
+          "title": "Kulturelle Vorbereitung",
+          "description": "Umfassendes Training zu deutscher Kultur, Arbeitswelt, gesellschaftlichen Normen und Alltagssituationen."
+        },
+        "feature6": {
+          "title": "Flexible Lernmodelle",
+          "description": "Vollzeit-, Teilzeit- und Online-Kurse angepasst an individuelle Bedürfnisse und Zeitpläne mit Blended-Learning-Konzepten."
+        }
+      },
+      "cta": {
+        "title": "Investieren Sie in erfolgreiche Integration",
+        "subtitle": "Gut vorbereitete Fachkräfte sind produktiver, zufriedener und bleiben länger. Unsere Sprachprogramme sind der Schlüssel zum Erfolg.",
+        "button": "Bildungsprogramme anfragen",
+        "buttonSecondary": "Weitere Services entdecken"
+      }
     },
     "recognition": {
       "title": "Anerkennung",
+      "subtitle": "Professionelle Unterstützung bei der beruflichen Anerkennung und Qualifikation in Deutschland für alle regulierten Berufe",
       "description": "Unterstützung bei der beruflichen Anerkennung und Qualifikation in Deutschland",
-      "link": "/services/anerkennung"
+      "link": "/services/anerkennung",
+      "cta": "Mehr über Anerkennung",
+      "ctaSecondary": "Zurück zu Services",
+      "process": {
+        "title": "Der Anerkennungsprozess",
+        "subtitle": "Schritt für Schritt zur vollen Anerkennung",
+        "step1": {
+          "title": "Dokumentenprüfung & Beratung",
+          "description": "Analyse aller ausländischen Qualifikationen, Prüfung der Anerkennungsfähigkeit, Identifikation der zuständigen Stellen und Entwicklung einer individuellen Anerkennungsstrategie."
+        },
+        "step2": {
+          "title": "Antragsstellung & Behördenkommunikation",
+          "description": "Vollständige Zusammenstellung aller erforderlichen Unterlagen, professionelle Übersetzungen, Beglaubigungen und Einreichung bei den zuständigen Anerkennungsstellen."
+        },
+        "step3": {
+          "title": "Defizitausgleich & Qualifizierung",
+          "description": "Organisation von Anpassungslehrgängen, Kenntnisprüfungen oder Eignungsprüfungen zur Schließung festgestellter Qualifikationslücken."
+        },
+        "step4": {
+          "title": "Volle Anerkennung & Berufszulassung",
+          "description": "Begleitung bis zur vollständigen Anerkennung, Erlangung der Berufserlaubnis und Registrierung bei Berufskammern für uneingeschränkte Berufsausübung."
+        }
+      },
+      "features": {
+        "title": "Anerkennungs-Expertise",
+        "subtitle": "Ihr Erfolg ist unser Ziel",
+        "feature1": {
+          "title": "Umfassende Beratung",
+          "description": "Individuelle Analyse Ihrer Qualifikationen mit detaillierter Einschätzung der Anerkennungschancen und transparentem Prozessablauf."
+        },
+        "feature2": {
+          "title": "Behörden-Expertise",
+          "description": "Langjährige Erfahrung mit deutschen Anerkennungsstellen, etablierte Kontakte und Kenntnis aller Verfahrenswege für effiziente Abwicklung."
+        },
+        "feature3": {
+          "title": "Vollständige Dokumentation",
+          "description": "Professionelle Aufbereitung aller Unterlagen, zertifizierte Übersetzungen, Beglaubigungen und lückenlose Nachweisführung."
+        },
+        "feature4": {
+          "title": "Qualifizierungsmaßnahmen",
+          "description": "Organisation von Anpassungslehrgängen, Vorbereitungskursen für Kenntnisprüfungen und Vermittlung geeigneter Bildungsträger."
+        },
+        "feature5": {
+          "title": "Spezialisierung regulierte Berufe",
+          "description": "Expertise in Pflege, Medizin, Ingenieurwesen und anderen reglementierten Berufen mit spezifischen Anerkennungsverfahren."
+        },
+        "feature6": {
+          "title": "Zeitnahe Bearbeitung",
+          "description": "Proaktives Monitoring des Anerkennungsverfahrens, schnelle Reaktion auf Nachfragen und Minimierung der Bearbeitungszeit."
+        }
+      },
+      "cta": {
+        "title": "Volle Anerkennung für Ihre Fachkräfte",
+        "subtitle": "Wir kennen alle Anforderungen und Prozesse. Lassen Sie uns gemeinsam die berufliche Anerkennung Ihrer Kandidaten sicherstellen.",
+        "button": "Anerkennungsberatung starten",
+        "buttonSecondary": "Weitere Services entdecken"
+      }
     },
     "relocation": {
       "title": "Relocation & Integration",
+      "subtitle": "Umfassende Begleitung bei Einreise, Wohnungssuche und langfristige Integration im Unternehmen und in Deutschland",
       "description": "Begleitung bei der Einreise und langfristige Integration im Unternehmen",
-      "link": "/services/relocation-integration"
+      "link": "/services/relocation-integration",
+      "cta": "Mehr über Integration",
+      "ctaSecondary": "Zurück zu Services",
+      "process": {
+        "title": "Unser Integrationsprozess",
+        "subtitle": "Vom ersten Tag an gut betreut",
+        "step1": {
+          "title": "Visa & Einreise-Management",
+          "description": "Vollständige Unterstützung bei Visumsanträgen, Terminvereinbarungen, Dokumentenvorbereitung, Einreiseformalitäten und Abholung am Flughafen in Deutschland."
+        },
+        "step2": {
+          "title": "Wohnungssuche & Erstausstattung",
+          "description": "Aktive Wohnungssuche in Unternehmensnähe, Besichtigungstermine, Mietvertragsunterstützung, Möblierung und Einrichtung für sofortigen Wohnkomfort."
+        },
+        "step3": {
+          "title": "Behördengänge & Anmeldung",
+          "description": "Begleitung zu Bürgeramt, Ausländerbehörde, Krankenkasse, Banken und allen weiteren Behörden mit Dolmetscherservice und Dokumentenhilfe."
+        },
+        "step4": {
+          "title": "Langfristige Betreuung & Support",
+          "description": "Kontinuierliche Ansprechpartner für alle Fragen, kulturelle Anpassung, berufliche Entwicklung, Konfliktlösung und langfristige Zufriedenheit."
+        }
+      },
+      "features": {
+        "title": "Integrations-Vorteile",
+        "subtitle": "Mehr als nur Vermittlung",
+        "feature1": {
+          "title": "Persönlicher Integrationsbegleiter",
+          "description": "Fester Ansprechpartner für Fachkraft und Arbeitgeber während der gesamten Integrationsphase mit 24/7-Erreichbarkeit bei Notfällen."
+        },
+        "feature2": {
+          "title": "Wohnraumlösungen",
+          "description": "Unterstützung bei der Wohnungssuche, Verhandlung mit Vermietern, Mietverträgen und temporäre Übergangslösungen bei Bedarf."
+        },
+        "feature3": {
+          "title": "Onboarding im Unternehmen",
+          "description": "Begleitung der ersten Arbeitstage, Einarbeitung, kulturelle Sensibilisierung des Teams und regelmäßige Feedbackgespräche."
+        },
+        "feature4": {
+          "title": "Kulturelle Integration",
+          "description": "Vernetzung mit vietnamesischer Community, lokale Freizeitangebote, kulturelle Events und soziale Integration für langfristiges Wohlbefinden."
+        },
+        "feature5": {
+          "title": "Familienzusammenführung",
+          "description": "Unterstützung bei Familiennachzug, Kindergarten- und Schulplatzsuche, Integration der gesamten Familie für stabile Lebenssituation."
+        },
+        "feature6": {
+          "title": "Konfliktmanagement",
+          "description": "Professionelle Mediation bei Herausforderungen, kulturellen Missverständnissen oder beruflichen Konflikten für nachhaltige Lösungen."
+        }
+      },
+      "cta": {
+        "title": "Nachhaltige Integration garantiert Erfolg",
+        "subtitle": "Gut integrierte Fachkräfte sind motivierter, produktiver und bleiben langfristig. Investieren Sie in professionelle Begleitung.",
+        "button": "Integrationsprogramm anfragen",
+        "buttonSecondary": "Weitere Services entdecken"
+      }
     }
   },
   "contact": {
