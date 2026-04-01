@@ -406,11 +406,11 @@ export function ProcessVideoSection() {
           transition={{ duration: 0.6 }}
         >
           <div className="relative overflow-hidden rounded-2xl border-3 border-black shadow-bold transition-all hover:shadow-bold-hover hover:-translate-y-2 duration-300">
-            {/* YouTube Thumbnail */}
+            {/* Training Image */}
             <div className="relative aspect-video w-full">
               <Image
-                src="https://img.youtube.com/vi/l_eV66VJQkU/maxresdefault.jpg"
-                alt="VIETconsult Process Video"
+                src="/images/process-training.png"
+                alt="VIETconsult Process Training"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 1280px"
