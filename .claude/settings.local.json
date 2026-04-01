@@ -38,7 +38,8 @@
       "Bash(Select-String -Pattern \"(error|Error|Compiled|Created redirect)\" -Context 0,2)",
       "Bash(ls:*)",
       "Bash(Select-String -Pattern \"(error|Error|Compiled|Created redirect|MISSING_MESSAGE)\" -Context 0,2)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(Select-String -Pattern \"process\" -Context 5,15)"
     ]
   }
 }

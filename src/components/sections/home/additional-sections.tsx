@@ -202,6 +202,55 @@ export function ProcessSection() {
                 </div>
               </motion.div>
             ))}
+
+            {/* YouTube Video Thumbnail - After Step 4 */}
+            <motion.div
+              variants={fadeInUp}
+              className="mt-16 text-center"
+            >
+              <a
+                href="https://www.youtube.com/watch?v=l_eV66VJQkU"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-block"
+              >
+                <div className="relative overflow-hidden rounded-2xl border-3 border-black shadow-bold transition-all hover:shadow-bold-hover hover:scale-105 duration-300">
+                  {/* YouTube Thumbnail */}
+                  <div className="relative aspect-video w-full max-w-3xl mx-auto">
+                    <Image
+                      src="https://img.youtube.com/vi/l_eV66VJQkU/maxresdefault.jpg"
+                      alt="VIETconsult Process Video"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 896px"
+                      unoptimized
+                    />
+                    {/* Overlay gradient */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+
+                    {/* Play button */}
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary-gold border-3 border-black shadow-bold transition-all group-hover:scale-110 group-hover:bg-primary-amber">
+                        <svg
+                          className="ml-1 h-10 w-10 text-black"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M8 5v14l11-7z" />
+                        </svg>
+                      </div>
+                    </div>
+
+                    {/* Video title overlay */}
+                    <div className="absolute bottom-0 left-0 right-0 p-6">
+                      <h3 className="text-xl font-bold text-white md:text-2xl drop-shadow-lg">
+                        {t('videoTitle') || 'Unser bewährter Prozess im Detail'}
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </motion.div>
           </div>
         </motion.div>
       </div>
