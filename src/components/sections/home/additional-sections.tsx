@@ -395,58 +395,46 @@ export function ProcessVideoSection() {
   const t = useTranslations('home.process')
 
   return (
-    <section className="relative overflow-hidden bg-light-gray py-20 lg:py-24">
-      {/* Background pattern */}
-      <div className="absolute inset-0 opacity-[0.02]">
-        <div
-          className="h-full w-full"
-          style={{
-            backgroundImage: `radial-gradient(circle, #202C58 1px, transparent 1px)`,
-            backgroundSize: '30px 30px',
-          }}
-        />
+    <section className="relative overflow-visible bg-primary-gold/20 py-32 lg:py-40 border-y-8 border-primary-red">
+      {/* ULTRA VISIBLE SECTION MARKER */}
+      <div className="absolute top-4 left-1/2 -translate-x-1/2 bg-primary-red text-white px-8 py-3 rounded-full font-bold text-2xl z-50 shadow-2xl">
+        ▶ VIDEO SECTION ◀
       </div>
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={fadeInUp}
-          className="text-center"
-        >
-          {/* Section title */}
-          <h2 className="text-h3 font-bold tracking-tight text-dark-charcoal lg:text-h2 mb-12">
+        <div className="text-center">
+          {/* Section title - ALWAYS VISIBLE */}
+          <h2 className="text-4xl lg:text-6xl font-bold tracking-tight text-dark-charcoal mb-16 underline decoration-primary-red decoration-4">
             {t('videoSectionTitle') || 'Unser Prozess im Detail'}
           </h2>
 
-          {/* YouTube Video Thumbnail */}
+          {/* YouTube Video Thumbnail - ALWAYS VISIBLE */}
           <a
             href="https://www.youtube.com/watch?v=l_eV66VJQkU"
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-block"
+            className="group inline-block w-full"
           >
-            <div className="relative overflow-hidden rounded-2xl border-3 border-black shadow-bold transition-all hover:shadow-bold-hover hover:scale-105 duration-300">
+            <div className="relative overflow-hidden rounded-3xl border-8 border-primary-navy shadow-2xl transition-all hover:shadow-bold-hover hover:scale-105 duration-300 bg-white p-4">
               {/* YouTube Thumbnail */}
-              <div className="relative aspect-video w-full max-w-4xl mx-auto">
+              <div className="relative aspect-video w-full max-w-5xl mx-auto">
                 <Image
                   src="https://img.youtube.com/vi/l_eV66VJQkU/maxresdefault.jpg"
                   alt="VIETconsult Process Video"
                   fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 1024px"
+                  className="object-cover rounded-2xl"
+                  sizes="(max-width: 768px) 100vw, 1280px"
                   unoptimized
                   priority
                 />
                 {/* Overlay gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent rounded-2xl" />
 
-                {/* Play button */}
+                {/* Play button - EXTRA LARGE */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="flex h-24 w-24 items-center justify-center rounded-full bg-primary-gold border-4 border-black shadow-bold transition-all group-hover:scale-125 group-hover:bg-primary-amber group-hover:rotate-12">
+                  <div className="flex h-32 w-32 items-center justify-center rounded-full bg-primary-red border-8 border-white shadow-2xl transition-all group-hover:scale-125 group-hover:bg-primary-gold group-hover:rotate-12 animate-pulse">
                     <svg
-                      className="ml-1 h-12 w-12 text-black"
+                      className="ml-2 h-16 w-16 text-white"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                     >
@@ -456,18 +444,23 @@ export function ProcessVideoSection() {
                 </div>
 
                 {/* Video title overlay */}
-                <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/90 to-transparent">
-                  <h3 className="text-2xl font-bold text-white md:text-3xl drop-shadow-2xl">
+                <div className="absolute bottom-0 left-0 right-0 p-10 bg-gradient-to-t from-black/95 to-transparent rounded-b-2xl">
+                  <h3 className="text-3xl font-bold text-white md:text-4xl drop-shadow-2xl">
                     {t('videoTitle') || 'Unser bewährter Prozess im Detail'}
                   </h3>
-                  <p className="mt-2 text-sm text-gray-300 md:text-base">
+                  <p className="mt-3 text-lg text-gray-200 md:text-xl font-medium">
                     {t('videoDescription') || 'Sehen Sie, wie wir Fachkräfte erfolgreich integrieren'}
                   </p>
                 </div>
               </div>
             </div>
           </a>
-        </motion.div>
+
+          {/* CTA Text below */}
+          <p className="mt-12 text-2xl font-bold text-dark-charcoal">
+            👆 CLICK TO WATCH VIDEO 👆
+          </p>
+        </div>
       </div>
     </section>
   )
