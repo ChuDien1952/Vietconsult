@@ -101,10 +101,10 @@ export function ServicesGridSection() {
       link: t('recruitment.link'),
     },
     {
-      title: t('training.title'),
-      description: t('training.description'),
+      title: t('languageTraining.title'),
+      description: t('languageTraining.description'),
       icon: GraduationCap,
-      link: t('training.link'),
+      link: t('languageTraining.link'),
     },
     {
       title: t('recognition.title'),

@@ -86,12 +86,12 @@ export function ServiceDetailHero({ serviceKey }: { serviceKey: string }) {
           <div className="mt-10 flex items-center justify-center gap-4">
             <Button size="lg" asChild>
               <Link href="/kontakt">
-                {t('cta')}
+                {t('ctaButton')}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
             <Button variant="outline" size="lg" asChild>
-              <Link href="/services">{t('ctaSecondary')}</Link>
+              <Link href="/services">{t('ctaSecondaryButton')}</Link>
             </Button>
           </div>
         </motion.div>

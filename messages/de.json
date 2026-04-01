@@ -301,6 +301,8 @@
       "link": "/services/rekrutierung-auswahl",
       "cta": "Jetzt Fachkräfte finden",
       "ctaSecondary": "Zurück zu Services",
+      "ctaButton": "Jetzt Kandidaten finden",
+      "ctaSecondaryButton": "Alle Services",
       "process": {
         "title": "Unser Rekrutierungsprozess",
         "subtitle": "Systematische Auswahl für maximalen Erfolg",
@@ -363,6 +365,8 @@
       "link": "/services/sprach-kulturelle-bildung",
       "cta": "Mehr über Sprachtraining",
       "ctaSecondary": "Zurück zu Services",
+      "ctaButton": "Jetzt Sprachtraining anfragen",
+      "ctaSecondaryButton": "Alle Services",
       "process": {
         "title": "Unser Bildungsprogramm",
         "subtitle": "Von A1 bis zur beruflichen Kompetenz",
@@ -425,6 +429,8 @@
       "link": "/services/anerkennung",
       "cta": "Mehr über Anerkennung",
       "ctaSecondary": "Zurück zu Services",
+      "ctaButton": "Jetzt Anerkennung beantragen",
+      "ctaSecondaryButton": "Alle Services",
       "process": {
         "title": "Der Anerkennungsprozess",
         "subtitle": "Schritt für Schritt zur vollen Anerkennung",
@@ -487,6 +493,8 @@
       "link": "/services/relocation-integration",
       "cta": "Mehr über Integration",
       "ctaSecondary": "Zurück zu Services",
+      "ctaButton": "Jetzt Integration anfragen",
+      "ctaSecondaryButton": "Alle Services",
       "process": {
         "title": "Unser Integrationsprozess",
         "subtitle": "Vom ersten Tag an gut betreut",
