@@ -206,7 +206,7 @@ export function ProcessSection() {
             {/* YouTube Video Thumbnail - After Step 4 */}
             <motion.div
               variants={fadeInUp}
-              className="mt-16 text-center"
+              className="mt-20 mb-12 text-center"
             >
               <a
                 href="https://www.youtube.com/watch?v=l_eV66VJQkU"
