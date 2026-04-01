@@ -392,103 +392,47 @@ export function SpecializedAreasSection() {
 
 // Process Video Section - YouTube Video Showcase
 export function ProcessVideoSection() {
-  const t = useTranslations('home.process')
-
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-primary-navy/5 to-light-gray py-24 lg:py-32">
-      {/* Background pattern */}
-      <div className="absolute inset-0 opacity-[0.02]">
-        <div
-          className="h-full w-full"
-          style={{
-            backgroundImage: `radial-gradient(circle, #202C58 1px, transparent 1px)`,
-            backgroundSize: '30px 30px',
-          }}
-        />
-      </div>
-
-      {/* Decorative shapes */}
-      <motion.div
-        className="absolute -right-32 top-32 h-64 w-64 rounded-full bg-primary-gold/10 blur-3xl"
-        animate={{
-          scale: [1, 1.2, 1],
-          opacity: [0.3, 0.5, 0.3],
-        }}
-        transition={{
-          duration: 8,
-          repeat: Infinity,
-          ease: 'easeInOut',
-        }}
-      />
-
+    <section className="relative overflow-hidden bg-light-gray py-16 lg:py-20">
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+        <motion.a
+          href="https://www.youtube.com/watch?v=l_eV66VJQkU"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group inline-block w-full max-w-5xl mx-auto"
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center"
         >
-          {/* Section title */}
-          <h2 className="text-h3 font-bold tracking-tight text-dark-charcoal lg:text-h2 mb-6">
-            {t('videoSectionTitle') || 'Unser Prozess im Detail'}
-          </h2>
-          <p className="mx-auto max-w-2xl text-body-lg text-slate-gray mb-12">
-            {t('videoDescription') || 'Sehen Sie, wie wir Fachkräfte erfolgreich integrieren'}
-          </p>
+          <div className="relative overflow-hidden rounded-2xl border-3 border-black shadow-bold transition-all hover:shadow-bold-hover hover:-translate-y-2 duration-300">
+            {/* YouTube Thumbnail */}
+            <div className="relative aspect-video w-full">
+              <Image
+                src="https://img.youtube.com/vi/l_eV66VJQkU/maxresdefault.jpg"
+                alt="VIETconsult Process Video"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 1280px"
+                unoptimized
+                priority
+              />
 
-          {/* YouTube Video Thumbnail */}
-          <motion.a
-            href="https://www.youtube.com/watch?v=l_eV66VJQkU"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group inline-block w-full max-w-5xl"
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            <div className="relative overflow-hidden rounded-2xl border-3 border-black shadow-bold transition-all hover:shadow-bold-hover hover:-translate-y-2 duration-300">
-              {/* YouTube Thumbnail */}
-              <div className="relative aspect-video w-full">
-                <Image
-                  src="https://img.youtube.com/vi/l_eV66VJQkU/maxresdefault.jpg"
-                  alt="VIETconsult Process Video"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 1280px"
-                  unoptimized
-                  priority
-                />
-                {/* Overlay gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-
-                {/* Play button */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="flex h-24 w-24 items-center justify-center rounded-full bg-primary-gold border-4 border-black shadow-bold transition-all group-hover:scale-125 group-hover:bg-primary-amber group-hover:rotate-12">
-                    <svg
-                      className="ml-1 h-12 w-12 text-black"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </div>
-                </div>
-
-                {/* Video title overlay */}
-                <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 bg-gradient-to-t from-black/90 to-transparent">
-                  <h3 className="text-xl font-bold text-white md:text-2xl lg:text-3xl drop-shadow-2xl">
-                    {t('videoTitle') || 'Unser bewährter Prozess im Detail'}
-                  </h3>
+              {/* Play button */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="flex h-24 w-24 items-center justify-center rounded-full bg-primary-gold border-4 border-black shadow-bold transition-all group-hover:scale-125 group-hover:bg-primary-amber group-hover:rotate-12">
+                  <svg
+                    className="ml-1 h-12 w-12 text-black"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
                 </div>
               </div>
-
-              {/* Hover effect border */}
-              <div className="absolute bottom-0 left-0 h-1 w-0 bg-gradient-to-r from-primary-gold to-primary-amber transition-all duration-500 group-hover:w-full" />
             </div>
-          </motion.a>
-        </motion.div>
+          </div>
+        </motion.a>
       </div>
     </section>
   )
