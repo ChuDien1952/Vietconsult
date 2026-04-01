@@ -151,8 +151,11 @@ export function ProcessSection() {
                     {/* Minimal halo effect (20%) */}
                     <div className="absolute inset-0 rounded-[50%] bg-gradient-to-br from-white/10 via-transparent to-transparent blur-xl opacity-20 group-hover:opacity-0 transition-opacity duration-[5000ms]" />
 
-                    {/* Border + Image container - scales together */}
-                    <div className="absolute inset-0 rounded-[50%] border-3 border-black shadow-bold scale-[0.2] group-hover:scale-100 transition-all duration-[5000ms] ease-out overflow-hidden">
+                    {/* Oval border - scales with image */}
+                    <div className="absolute inset-0 rounded-[50%] border-3 border-black shadow-bold scale-[0.2] group-hover:scale-100 transition-all duration-[5000ms] ease-out" />
+
+                    {/* Image container - scales separately */}
+                    <div className="absolute inset-0 rounded-[50%] scale-[0.2] group-hover:scale-100 transition-all duration-[5000ms] ease-out overflow-hidden">
                       <Image
                         src={step.image}
                         alt={`Step ${step.number} - ${step.title}`}
