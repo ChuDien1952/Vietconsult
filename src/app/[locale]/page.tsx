@@ -8,6 +8,7 @@ import {
 import {
   PartnersSection,
   ProcessSection,
+  ProcessVideoSection,
   InfrastructureSection,
   SpecializedAreasSection,
   WhyUsSection,
@@ -29,6 +30,7 @@ export default function Home() {
       <BenefitsSection />
       <PartnersSection />
       <ProcessSection />
+      <ProcessVideoSection />
       <InfrastructureSection />
       <SpecializedAreasSection />
       <SuccessStoriesSection />

@@ -203,57 +203,6 @@ export function ProcessSection() {
               </motion.div>
             ))}
 
-            {/* YouTube Video Thumbnail - After Step 4 */}
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeInUp}
-              className="mt-20 mb-12 text-center"
-            >
-              <a
-                href="https://www.youtube.com/watch?v=l_eV66VJQkU"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group inline-block"
-              >
-                <div className="relative overflow-hidden rounded-2xl border-3 border-black shadow-bold transition-all hover:shadow-bold-hover hover:scale-105 duration-300">
-                  {/* YouTube Thumbnail */}
-                  <div className="relative aspect-video w-full max-w-3xl mx-auto">
-                    <Image
-                      src="https://img.youtube.com/vi/l_eV66VJQkU/maxresdefault.jpg"
-                      alt="VIETconsult Process Video"
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 100vw, 896px"
-                      unoptimized
-                    />
-                    {/* Overlay gradient */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-
-                    {/* Play button */}
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary-gold border-3 border-black shadow-bold transition-all group-hover:scale-110 group-hover:bg-primary-amber">
-                        <svg
-                          className="ml-1 h-10 w-10 text-black"
-                          fill="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M8 5v14l11-7z" />
-                        </svg>
-                      </div>
-                    </div>
-
-                    {/* Video title overlay */}
-                    <div className="absolute bottom-0 left-0 right-0 p-6">
-                      <h3 className="text-xl font-bold text-white md:text-2xl drop-shadow-lg">
-                        {t('videoTitle') || 'Unser bewährter Prozess im Detail'}
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </motion.div>
           </div>
         </motion.div>
       </div>
@@ -435,6 +384,89 @@ export function SpecializedAreasSection() {
               </Card>
             </motion.div>
           ))}
+        </motion.div>
+      </div>
+    </section>
+  )
+}
+
+// Process Video Section - YouTube Video Showcase
+export function ProcessVideoSection() {
+  const t = useTranslations('home.process')
+
+  return (
+    <section className="relative overflow-hidden bg-light-gray py-20 lg:py-24">
+      {/* Background pattern */}
+      <div className="absolute inset-0 opacity-[0.02]">
+        <div
+          className="h-full w-full"
+          style={{
+            backgroundImage: `radial-gradient(circle, #202C58 1px, transparent 1px)`,
+            backgroundSize: '30px 30px',
+          }}
+        />
+      </div>
+
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInUp}
+          className="text-center"
+        >
+          {/* Section title */}
+          <h2 className="text-h3 font-bold tracking-tight text-dark-charcoal lg:text-h2 mb-12">
+            {t('videoSectionTitle') || 'Unser Prozess im Detail'}
+          </h2>
+
+          {/* YouTube Video Thumbnail */}
+          <a
+            href="https://www.youtube.com/watch?v=l_eV66VJQkU"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-block"
+          >
+            <div className="relative overflow-hidden rounded-2xl border-3 border-black shadow-bold transition-all hover:shadow-bold-hover hover:scale-105 duration-300">
+              {/* YouTube Thumbnail */}
+              <div className="relative aspect-video w-full max-w-4xl mx-auto">
+                <Image
+                  src="https://img.youtube.com/vi/l_eV66VJQkU/maxresdefault.jpg"
+                  alt="VIETconsult Process Video"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 1024px"
+                  unoptimized
+                  priority
+                />
+                {/* Overlay gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+
+                {/* Play button */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="flex h-24 w-24 items-center justify-center rounded-full bg-primary-gold border-4 border-black shadow-bold transition-all group-hover:scale-125 group-hover:bg-primary-amber group-hover:rotate-12">
+                    <svg
+                      className="ml-1 h-12 w-12 text-black"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                </div>
+
+                {/* Video title overlay */}
+                <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/90 to-transparent">
+                  <h3 className="text-2xl font-bold text-white md:text-3xl drop-shadow-2xl">
+                    {t('videoTitle') || 'Unser bewährter Prozess im Detail'}
+                  </h3>
+                  <p className="mt-2 text-sm text-gray-300 md:text-base">
+                    {t('videoDescription') || 'Sehen Sie, wie wir Fachkräfte erfolgreich integrieren'}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
         </motion.div>
       </div>
     </section>
