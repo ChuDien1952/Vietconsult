@@ -29,9 +29,9 @@ export function PageHeader() {
   const t = useTranslations('advantages')
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-primary-blue to-blue-700 py-16 lg:py-24">
-      <div className="absolute -left-20 -top-20 h-64 w-64 rounded-full bg-white/5 blur-3xl" />
-      <div className="absolute -bottom-20 -right-20 h-64 w-64 rounded-full bg-white/5 blur-3xl" />
+    <section className="relative overflow-hidden bg-gradient-dark py-16 lg:py-24">
+      <div className="absolute -left-20 -top-20 h-64 w-64 rounded-full bg-primary-gold/20 blur-3xl" />
+      <div className="absolute -bottom-20 -right-20 h-64 w-64 rounded-full bg-primary-amber/20 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
@@ -41,16 +41,16 @@ export function PageHeader() {
           className="mx-auto max-w-3xl text-center"
         >
           {/* Breadcrumb */}
-          <div className="mb-6 flex items-center justify-center gap-2 text-sm text-blue-100">
+          <div className="mb-6 flex items-center justify-center gap-2 text-sm text-gray-300">
             <span>Home</span>
             <ChevronRight className="h-4 w-4" />
-            <span className="text-white">{t('breadcrumb')}</span>
+            <span className="text-primary-gold">{t('breadcrumb')}</span>
           </div>
 
-          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
+          <h1 className="text-h2 font-bold tracking-tight text-white lg:text-h1">
             {t('pageTitle')}
           </h1>
-          <p className="mt-4 text-xl text-blue-100">{t('pageSubtitle')}</p>
+          <p className="mt-4 text-body-lg text-gray-300">{t('pageSubtitle')}</p>
         </motion.div>
       </div>
     </section>
@@ -92,49 +92,60 @@ export function BenefitsSection() {
       title: t('benefit1Title'),
       description: t('benefit1Description'),
       icon: Clock,
-      color: 'text-blue-600',
-      bgColor: 'bg-blue-100',
+      bgColor: 'bg-primary-red',
+      iconColor: 'text-white',
     },
     {
       title: t('benefit2Title'),
       description: t('benefit2Description'),
       icon: DollarSign,
-      color: 'text-green-600',
-      bgColor: 'bg-green-100',
+      bgColor: 'bg-primary-navy',
+      iconColor: 'text-primary-gold',
     },
     {
       title: t('benefit3Title'),
       description: t('benefit3Description'),
       icon: Shield,
-      color: 'text-purple-600',
-      bgColor: 'bg-purple-100',
+      bgColor: 'bg-primary-amber',
+      iconColor: 'text-black',
     },
     {
       title: t('benefit4Title'),
       description: t('benefit4Description'),
       icon: Users,
-      color: 'text-red-600',
-      bgColor: 'bg-red-100',
+      bgColor: 'bg-primary-gold',
+      iconColor: 'text-black',
     },
     {
       title: t('benefit5Title'),
       description: t('benefit5Description'),
       icon: GraduationCap,
-      color: 'text-amber-600',
-      bgColor: 'bg-amber-100',
+      bgColor: 'bg-primary-red',
+      iconColor: 'text-white',
     },
     {
       title: t('benefit6Title'),
       description: t('benefit6Description'),
       icon: HeartHandshake,
-      color: 'text-pink-600',
-      bgColor: 'bg-pink-100',
+      bgColor: 'bg-primary-navy',
+      iconColor: 'text-primary-gold',
     },
   ]
 
   return (
-    <section className="bg-gray-50 py-16 lg:py-24">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <section className="relative overflow-hidden bg-light-gray py-16 lg:py-24">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-[0.02]">
+        <div className="absolute inset-0" style={{
+          backgroundImage: 'radial-gradient(circle at 1px 1px, rgb(0 0 0) 1px, transparent 0)',
+          backgroundSize: '40px 40px'
+        }} />
+      </div>
+
+      {/* Decorative blur */}
+      <div className="absolute right-0 top-1/4 h-96 w-96 rounded-full bg-primary-gold/20 blur-3xl animate-pulse" />
+
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -142,10 +153,10 @@ export function BenefitsSection() {
           variants={fadeInUp}
           className="mx-auto max-w-2xl text-center"
         >
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-h3 font-bold tracking-tight text-dark-charcoal lg:text-h2">
             {t('title')}
           </h2>
-          <p className="mt-4 text-lg text-slate-gray">{t('subtitle')}</p>
+          <p className="mt-4 text-body-lg text-slate-gray">{t('subtitle')}</p>
         </motion.div>
 
         <motion.div
@@ -157,21 +168,17 @@ export function BenefitsSection() {
         >
           {benefits.map((benefit, index) => (
             <motion.div key={index} variants={fadeInUp}>
-              <Card className="h-full transition-all hover:shadow-lg">
-                <CardHeader>
-                  <div
-                    className={`mb-4 flex h-16 w-16 items-center justify-center rounded-lg ${benefit.bgColor}`}
-                  >
-                    <benefit.icon className={`h-8 w-8 ${benefit.color}`} />
-                  </div>
-                  <CardTitle className="text-xl">{benefit.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-base leading-7 text-slate-gray">
-                    {benefit.description}
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="group h-full bg-white border-3 border-black shadow-bold rounded-2xl p-8 transition-all hover:-translate-y-2 hover:shadow-bold-hover">
+                <div className={`mb-6 flex h-16 w-16 items-center justify-center rounded-full ${benefit.bgColor} border-2 border-black transition-transform group-hover:scale-110 group-hover:rotate-12`}>
+                  <benefit.icon className={`h-8 w-8 ${benefit.iconColor}`} />
+                </div>
+                <h3 className="text-xl font-bold text-dark-charcoal mb-3">
+                  {benefit.title}
+                </h3>
+                <p className="text-base leading-7 text-slate-gray">
+                  {benefit.description}
+                </p>
+              </div>
             </motion.div>
           ))}
         </motion.div>
@@ -194,12 +201,14 @@ export function PromiseSection() {
           variants={fadeInUp}
           className="relative mx-auto max-w-4xl"
         >
-          <div className="rounded-2xl border-l-4 border-primary-blue bg-blue-50 p-8 lg:p-12">
-            <Quote className="mb-6 h-12 w-12 text-primary-blue opacity-50" />
-            <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl">
+          <div className="rounded-2xl border-3 border-black shadow-bold bg-gradient-to-br from-primary-gold/10 to-primary-amber/10 p-8 lg:p-12">
+            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary-gold border-2 border-black shadow-bold mb-6">
+              <Quote className="h-8 w-8 text-black" />
+            </div>
+            <h2 className="text-h3 font-bold text-dark-charcoal lg:text-h2">
               {t('title')}
             </h2>
-            <p className="mt-6 text-lg leading-8 text-slate-gray">
+            <p className="mt-6 text-body-lg leading-8 text-slate-gray">
               {t('description')}
             </p>
           </div>

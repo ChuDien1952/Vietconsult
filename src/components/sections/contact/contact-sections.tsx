@@ -21,9 +21,13 @@ export function PageHeader() {
   const t = useTranslations('contact')
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-primary-blue to-blue-700 py-16 lg:py-24">
-      <div className="absolute -left-20 -top-20 h-64 w-64 rounded-full bg-white/5 blur-3xl" />
-      <div className="absolute -bottom-20 -right-20 h-64 w-64 rounded-full bg-white/5 blur-3xl" />
+    <section className="relative overflow-hidden bg-gradient-dark py-16 lg:py-24">
+      {/* Geometric Background Elements */}
+      <div className="absolute -left-20 -top-20 h-96 w-96 rounded-full bg-primary-gold/10 blur-3xl animate-pulse" />
+      <div className="absolute -bottom-20 -right-20 h-96 w-96 rounded-full bg-primary-amber/10 blur-3xl animate-pulse" />
+
+      {/* Dot Pattern Overlay */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,_rgba(255,188,0,0.05)_1px,_transparent_0)] [background-size:40px_40px]" />
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
@@ -32,16 +36,16 @@ export function PageHeader() {
           variants={fadeInUp}
           className="mx-auto max-w-3xl text-center"
         >
-          <div className="mb-6 flex items-center justify-center gap-2 text-sm text-blue-100">
+          <div className="mb-6 flex items-center justify-center gap-2 text-sm text-gray-300">
             <span>Home</span>
             <ChevronRight className="h-4 w-4" />
-            <span className="text-white">{t('breadcrumb')}</span>
+            <span className="text-primary-gold">{t('breadcrumb')}</span>
           </div>
 
-          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
+          <h1 className="text-5xl font-bold tracking-tight text-white lg:text-6xl">
             {t('pageTitle')}
           </h1>
-          <p className="mt-4 text-xl text-blue-100">{t('pageSubtitle')}</p>
+          <p className="mt-4 text-xl text-gray-300">{t('pageSubtitle')}</p>
         </motion.div>
       </div>
     </section>
@@ -67,8 +71,14 @@ export function ContactFormSection() {
   }
 
   return (
-    <section className="bg-white py-16 lg:py-24">
-      <div className="mx-auto max-w-3xl px-6 lg:px-8">
+    <section className="relative bg-white py-16 lg:py-24">
+      {/* Dot Pattern Background */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,_rgba(255,188,0,0.02)_1px,_transparent_0)] [background-size:40px_40px]" />
+
+      {/* Decorative Gold Blur */}
+      <div className="absolute right-0 top-1/4 h-96 w-96 rounded-full bg-primary-gold/5 blur-3xl animate-pulse" />
+
+      <div className="relative mx-auto max-w-3xl px-6 lg:px-8">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -76,105 +86,103 @@ export function ContactFormSection() {
           variants={fadeInUp}
         >
           <div className="mb-8 text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            <h2 className="text-4xl font-bold tracking-tight text-dark-charcoal lg:text-5xl">
               {t('title')}
             </h2>
             <p className="mt-4 text-lg text-slate-gray">{t('subtitle')}</p>
           </div>
 
-          <Card>
-            <CardContent className="pt-6">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700">
-                      {t('nameLabel')}
-                    </label>
-                    <input
-                      type="text"
-                      required
-                      placeholder={t('namePlaceholder')}
-                      className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 focus:border-primary-blue focus:outline-none focus:ring-1 focus:ring-primary-blue"
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700">
-                      {t('emailLabel')}
-                    </label>
-                    <input
-                      type="email"
-                      required
-                      placeholder={t('emailPlaceholder')}
-                      className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 focus:border-primary-blue focus:outline-none focus:ring-1 focus:ring-primary-blue"
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    />
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700">
-                      {t('phoneLabel')}
-                    </label>
-                    <input
-                      type="tel"
-                      placeholder={t('phonePlaceholder')}
-                      className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 focus:border-primary-blue focus:outline-none focus:ring-1 focus:ring-primary-blue"
-                      value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700">
-                      {t('companyLabel')}
-                    </label>
-                    <input
-                      type="text"
-                      placeholder={t('companyPlaceholder')}
-                      className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 focus:border-primary-blue focus:outline-none focus:ring-1 focus:ring-primary-blue"
-                      value={formData.company}
-                      onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                    />
-                  </div>
+          <div className="rounded-2xl border-3 border-black bg-white p-8 shadow-bold transition-all duration-300 hover:-translate-y-2 hover:shadow-bold-hover">
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                <div>
+                  <label className="block text-sm font-medium text-dark-charcoal">
+                    {t('nameLabel')}
+                  </label>
+                  <input
+                    type="text"
+                    required
+                    placeholder={t('namePlaceholder')}
+                    className="mt-2 block w-full rounded-lg border-2 border-black px-4 py-3 transition-all duration-300 focus:border-primary-gold focus:outline-none focus:ring-2 focus:ring-primary-gold/20"
+                    value={formData.name}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700">
-                    {t('messageLabel')}
+                  <label className="block text-sm font-medium text-dark-charcoal">
+                    {t('emailLabel')}
                   </label>
-                  <textarea
-                    required
-                    rows={5}
-                    placeholder={t('messagePlaceholder')}
-                    className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 focus:border-primary-blue focus:outline-none focus:ring-1 focus:ring-primary-blue"
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  />
-                </div>
-
-                <div className="flex items-start">
                   <input
-                    type="checkbox"
+                    type="email"
                     required
-                    className="mt-1 h-4 w-4 rounded border-gray-300 text-primary-blue focus:ring-primary-blue"
-                    checked={formData.privacy}
-                    onChange={(e) => setFormData({ ...formData, privacy: e.target.checked })}
+                    placeholder={t('emailPlaceholder')}
+                    className="mt-2 block w-full rounded-lg border-2 border-black px-4 py-3 transition-all duration-300 focus:border-primary-gold focus:outline-none focus:ring-2 focus:ring-primary-gold/20"
+                    value={formData.email}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   />
-                  <label className="ml-2 text-sm text-gray-600">{t('privacyLabel')}</label>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                <div>
+                  <label className="block text-sm font-medium text-dark-charcoal">
+                    {t('phoneLabel')}
+                  </label>
+                  <input
+                    type="tel"
+                    placeholder={t('phonePlaceholder')}
+                    className="mt-2 block w-full rounded-lg border-2 border-black px-4 py-3 transition-all duration-300 focus:border-primary-gold focus:outline-none focus:ring-2 focus:ring-primary-gold/20"
+                    value={formData.phone}
+                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                  />
                 </div>
 
-                <Button type="submit" size="lg" className="w-full">
-                  <Send className="mr-2 h-5 w-5" />
-                  {t('submitButton')}
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
+                <div>
+                  <label className="block text-sm font-medium text-dark-charcoal">
+                    {t('companyLabel')}
+                  </label>
+                  <input
+                    type="text"
+                    placeholder={t('companyPlaceholder')}
+                    className="mt-2 block w-full rounded-lg border-2 border-black px-4 py-3 transition-all duration-300 focus:border-primary-gold focus:outline-none focus:ring-2 focus:ring-primary-gold/20"
+                    value={formData.company}
+                    onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-dark-charcoal">
+                  {t('messageLabel')}
+                </label>
+                <textarea
+                  required
+                  rows={5}
+                  placeholder={t('messagePlaceholder')}
+                  className="mt-2 block w-full rounded-lg border-2 border-black px-4 py-3 transition-all duration-300 focus:border-primary-gold focus:outline-none focus:ring-2 focus:ring-primary-gold/20"
+                  value={formData.message}
+                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                />
+              </div>
+
+              <div className="flex items-start">
+                <input
+                  type="checkbox"
+                  required
+                  className="mt-1 h-4 w-4 rounded border-2 border-black text-primary-gold focus:ring-primary-gold"
+                  checked={formData.privacy}
+                  onChange={(e) => setFormData({ ...formData, privacy: e.target.checked })}
+                />
+                <label className="ml-3 text-sm text-slate-gray">{t('privacyLabel')}</label>
+              </div>
+
+              <Button type="submit" size="lg" className="w-full">
+                <Send className="mr-2 h-5 w-5" />
+                {t('submitButton')}
+              </Button>
+            </form>
+          </div>
         </motion.div>
       </div>
     </section>
@@ -208,8 +216,14 @@ export function LocationsSection() {
   ]
 
   return (
-    <section className="bg-gray-50 py-16 lg:py-24">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <section className="relative bg-light-gray py-16 lg:py-24">
+      {/* Dot Pattern Background */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,_rgba(255,188,0,0.02)_1px,_transparent_0)] [background-size:40px_40px]" />
+
+      {/* Decorative Gold Blur */}
+      <div className="absolute left-0 top-1/3 h-96 w-96 rounded-full bg-primary-gold/5 blur-3xl animate-pulse" />
+
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -217,7 +231,7 @@ export function LocationsSection() {
           variants={fadeInUp}
           className="mb-12 text-center"
         >
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-4xl font-bold tracking-tight text-dark-charcoal lg:text-5xl">
             {t('title')}
           </h2>
           <p className="mt-4 text-lg text-slate-gray">{t('subtitle')}</p>
@@ -232,25 +246,24 @@ export function LocationsSection() {
         >
           {locations.map((location, index) => (
             <motion.div key={index} variants={fadeInUp}>
-              <Card className="h-full">
-                <CardHeader>
-                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary-blue/10">
-                    <MapPin className="h-6 w-6 text-primary-blue" />
+              <div className="group h-full rounded-2xl border-3 border-black bg-white p-6 shadow-bold transition-all duration-300 hover:-translate-y-2 hover:shadow-bold-hover">
+                <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full border-2 border-black bg-primary-gold transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12">
+                  <MapPin className="h-7 w-7 text-black" />
+                </div>
+                <h3 className="mb-3 text-lg font-bold text-dark-charcoal">{location.title}</h3>
+                <p className="mb-3 text-sm text-slate-gray">{location.address}</p>
+                {location.phone && (
+                  <div className="flex items-center gap-2 text-sm text-slate-gray">
+                    <Phone className="h-4 w-4" />
+                    <a
+                      href={`tel:${location.phone}`}
+                      className="transition-colors duration-300 hover:text-primary-gold"
+                    >
+                      {location.phone}
+                    </a>
                   </div>
-                  <CardTitle className="text-lg">{location.title}</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-2">
-                  <p className="text-sm text-slate-gray">{location.address}</p>
-                  {location.phone && (
-                    <div className="flex items-center gap-2 text-sm text-slate-gray">
-                      <Phone className="h-4 w-4" />
-                      <a href={`tel:${location.phone}`} className="hover:text-primary-blue">
-                        {location.phone}
-                      </a>
-                    </div>
-                  )}
-                </CardContent>
-              </Card>
+                )}
+              </div>
             </motion.div>
           ))}
         </motion.div>

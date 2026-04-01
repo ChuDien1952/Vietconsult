@@ -33,9 +33,11 @@ export function PageHeader() {
   const t = useTranslations('partner')
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-primary-blue to-blue-700 py-16 lg:py-24">
-      <div className="absolute -left-20 -top-20 h-64 w-64 rounded-full bg-white/5 blur-3xl" />
-      <div className="absolute -bottom-20 -right-20 h-64 w-64 rounded-full bg-white/5 blur-3xl" />
+    <section className="relative overflow-hidden bg-gradient-to-b from-dark-charcoal to-primary-navy py-16 lg:py-24">
+      {/* Geometric Background Elements */}
+      <div className="absolute -left-20 -top-20 h-64 w-64 rounded-full bg-primary-gold/10 blur-3xl animate-pulse" />
+      <div className="absolute -bottom-20 -right-20 h-64 w-64 rounded-full bg-primary-gold/10 blur-3xl animate-pulse" />
+      <div className="absolute left-1/4 top-1/2 h-96 w-96 rounded-full bg-primary-gold/5 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
@@ -45,16 +47,16 @@ export function PageHeader() {
           className="mx-auto max-w-3xl text-center"
         >
           {/* Breadcrumb */}
-          <div className="mb-6 flex items-center justify-center gap-2 text-sm text-blue-100">
+          <div className="mb-6 flex items-center justify-center gap-2 text-sm text-gray-400">
             <span>Home</span>
             <ChevronRight className="h-4 w-4" />
-            <span className="text-white">{t('breadcrumb')}</span>
+            <span className="text-primary-gold">{t('breadcrumb')}</span>
           </div>
 
-          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
+          <h1 className="text-h2 font-bold tracking-tight text-white lg:text-h1">
             {t('pageTitle')}
           </h1>
-          <p className="mt-4 text-xl text-blue-100">{t('pageSubtitle')}</p>
+          <p className="mt-6 text-body-lg text-gray-300 lg:text-xl">{t('pageSubtitle')}</p>
         </motion.div>
       </div>
     </section>
@@ -66,8 +68,11 @@ export function IntroSection() {
   const t = useTranslations('partner.intro')
 
   return (
-    <section className="bg-white py-16 lg:py-24">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <section className="relative bg-white py-16 lg:py-24 overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,_rgba(255,188,0,0.03)_0%,_transparent_50%)]" />
+
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -75,10 +80,10 @@ export function IntroSection() {
           variants={fadeInUp}
           className="mx-auto max-w-3xl text-center"
         >
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-h3 font-bold tracking-tight text-dark-charcoal lg:text-h2">
             {t('title')}
           </h2>
-          <p className="mt-6 text-lg leading-8 text-slate-gray">
+          <p className="mt-6 text-body-lg leading-8 text-slate-gray lg:text-xl">
             {t('description')}
           </p>
         </motion.div>
@@ -92,20 +97,24 @@ export function ServicesGridSection() {
   const t = useTranslations('partner.services')
 
   const services = [
-    { name: t('service1'), icon: Presentation, color: 'text-blue-600', bgColor: 'bg-blue-100' },
-    { name: t('service2'), icon: BookOpen, color: 'text-green-600', bgColor: 'bg-green-100' },
-    { name: t('service3'), icon: Users, color: 'text-purple-600', bgColor: 'bg-purple-100' },
-    { name: t('service4'), icon: Mic, color: 'text-red-600', bgColor: 'bg-red-100' },
-    { name: t('service5'), icon: Video, color: 'text-indigo-600', bgColor: 'bg-indigo-100' },
-    { name: t('service6'), icon: UserCheck, color: 'text-amber-600', bgColor: 'bg-amber-100' },
-    { name: t('service7'), icon: Award, color: 'text-cyan-600', bgColor: 'bg-cyan-100' },
-    { name: t('service8'), icon: HeartHandshake, color: 'text-pink-600', bgColor: 'bg-pink-100' },
-    { name: t('service9'), icon: Calendar, color: 'text-teal-600', bgColor: 'bg-teal-100' },
+    { name: t('service1'), icon: Presentation, iconColor: 'text-primary-gold', iconBg: 'bg-primary-gold' },
+    { name: t('service2'), icon: BookOpen, iconColor: 'text-primary-navy', iconBg: 'bg-primary-navy' },
+    { name: t('service3'), icon: Users, iconColor: 'text-primary-amber', iconBg: 'bg-primary-amber' },
+    { name: t('service4'), icon: Mic, iconColor: 'text-primary-red', iconBg: 'bg-primary-red' },
+    { name: t('service5'), icon: Video, iconColor: 'text-primary-gold', iconBg: 'bg-primary-gold' },
+    { name: t('service6'), icon: UserCheck, iconColor: 'text-primary-navy', iconBg: 'bg-primary-navy' },
+    { name: t('service7'), icon: Award, iconColor: 'text-primary-amber', iconBg: 'bg-primary-amber' },
+    { name: t('service8'), icon: HeartHandshake, iconColor: 'text-primary-red', iconBg: 'bg-primary-red' },
+    { name: t('service9'), icon: Calendar, iconColor: 'text-primary-gold', iconBg: 'bg-primary-gold' },
   ]
 
   return (
-    <section className="bg-gray-50 py-16 lg:py-24">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <section className="relative bg-light-gray py-16 lg:py-24 overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,_rgba(32,44,88,0.03)_0%,_transparent_50%)]" />
+      <div className="absolute right-0 top-1/4 h-96 w-96 rounded-full bg-primary-gold/5 blur-3xl animate-pulse" />
+
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -113,10 +122,10 @@ export function ServicesGridSection() {
           variants={fadeInUp}
           className="mx-auto max-w-2xl text-center"
         >
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-h3 font-bold tracking-tight text-dark-charcoal lg:text-h2">
             {t('title')}
           </h2>
-          <p className="mt-4 text-lg text-slate-gray">{t('subtitle')}</p>
+          <p className="mt-6 text-body-lg text-slate-gray lg:text-xl">{t('subtitle')}</p>
         </motion.div>
 
         <motion.div
@@ -124,18 +133,20 @@ export function ServicesGridSection() {
           whileInView="visible"
           viewport={{ once: true }}
           variants={stagger}
-          className="mx-auto mt-16 grid max-w-7xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+          className="mx-auto mt-16 grid max-w-7xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3"
         >
           {services.map((service, index) => (
             <motion.div key={index} variants={fadeInUp}>
-              <Card className="h-full text-center transition-all hover:shadow-lg">
-                <CardHeader>
-                  <div
-                    className={`mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-lg ${service.bgColor}`}
-                  >
-                    <service.icon className={`h-8 w-8 ${service.color}`} />
+              <Card className="group h-full overflow-hidden border-3 border-black bg-white shadow-bold text-center transition-all hover:shadow-bold-hover hover:-translate-y-2">
+                <CardHeader className="space-y-6">
+                  <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full border-2 border-black bg-white shadow-bold">
+                    <div className={`flex h-16 w-16 items-center justify-center rounded-full ${service.iconBg} transition-transform group-hover:scale-110 group-hover:rotate-12`}>
+                      <service.icon className="h-8 w-8 text-white" />
+                    </div>
                   </div>
-                  <CardTitle className="text-xl">{service.name}</CardTitle>
+                  <CardTitle className="text-xl font-bold text-dark-charcoal">
+                    {service.name}
+                  </CardTitle>
                 </CardHeader>
               </Card>
             </motion.div>

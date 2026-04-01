@@ -21,9 +21,15 @@ export function PageHeader() {
   const t = useTranslations('services')
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-primary-blue to-blue-700 py-16 lg:py-24">
-      <div className="absolute -left-20 -top-20 h-64 w-64 rounded-full bg-white/5 blur-3xl" />
-      <div className="absolute -bottom-20 -right-20 h-64 w-64 rounded-full bg-white/5 blur-3xl" />
+    <section className="relative overflow-hidden bg-gradient-to-br from-dark-charcoal to-primary-navy py-16 lg:py-24">
+      {/* Geometric Background Elements */}
+      <div className="absolute -left-20 -top-20 h-96 w-96 rounded-full bg-primary-gold/10 blur-3xl animate-pulse" />
+      <div className="absolute -bottom-20 -right-20 h-96 w-96 rounded-full bg-primary-amber/10 blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+
+      {/* Dot Pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="h-full w-full" style={{ backgroundImage: 'radial-gradient(circle, #FFBC00 1px, transparent 1px)', backgroundSize: '50px 50px' }} />
+      </div>
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
@@ -33,16 +39,16 @@ export function PageHeader() {
           className="mx-auto max-w-3xl text-center"
         >
           {/* Breadcrumb */}
-          <div className="mb-6 flex items-center justify-center gap-2 text-sm text-blue-100">
+          <div className="mb-6 flex items-center justify-center gap-2 text-sm text-gray-400">
             <span>Home</span>
             <ChevronRight className="h-4 w-4" />
-            <span className="text-white">{t('breadcrumb')}</span>
+            <span className="text-primary-gold">{t('breadcrumb')}</span>
           </div>
 
-          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
+          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
             {t('pageTitle')}
           </h1>
-          <p className="mt-4 text-xl text-blue-100">{t('pageSubtitle')}</p>
+          <p className="mt-4 text-xl text-gray-300">{t('pageSubtitle')}</p>
         </motion.div>
       </div>
     </section>
@@ -54,8 +60,16 @@ export function IntroSection() {
   const t = useTranslations('services.intro')
 
   return (
-    <section className="bg-white py-16 lg:py-24">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <section className="relative bg-white py-16 lg:py-24">
+      {/* Dot Pattern Background */}
+      <div className="absolute inset-0 opacity-[0.02]">
+        <div className="h-full w-full" style={{ backgroundImage: 'radial-gradient(circle, #000 1px, transparent 1px)', backgroundSize: '50px 50px' }} />
+      </div>
+
+      {/* Decorative Gold Blur */}
+      <div className="absolute right-0 top-1/4 h-96 w-96 rounded-full bg-primary-gold/10 blur-3xl animate-pulse" />
+
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -63,7 +77,7 @@ export function IntroSection() {
           variants={fadeInUp}
           className="mx-auto max-w-3xl text-center"
         >
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-dark-charcoal sm:text-4xl lg:text-5xl">
             {t('title')}
           </h2>
           <p className="mt-6 text-lg leading-8 text-slate-gray">
@@ -84,39 +98,40 @@ export function ServicesGridSection() {
       title: t('recruitment.title'),
       description: t('recruitment.description'),
       icon: Search,
-      color: 'text-blue-600',
-      bgColor: 'bg-blue-100',
       link: t('recruitment.link'),
     },
     {
       title: t('training.title'),
       description: t('training.description'),
       icon: GraduationCap,
-      color: 'text-green-600',
-      bgColor: 'bg-green-100',
       link: t('training.link'),
     },
     {
       title: t('recognition.title'),
       description: t('recognition.description'),
       icon: FileCheck,
-      color: 'text-purple-600',
-      bgColor: 'bg-purple-100',
       link: t('recognition.link'),
     },
     {
       title: t('relocation.title'),
       description: t('relocation.description'),
       icon: Plane,
-      color: 'text-red-600',
-      bgColor: 'bg-red-100',
       link: t('relocation.link'),
     },
   ]
 
   return (
-    <section className="bg-gray-50 py-16 lg:py-24">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <section className="relative overflow-hidden bg-gradient-to-br from-dark-charcoal via-primary-navy to-dark-charcoal py-16 lg:py-24">
+      {/* Geometric Background Elements */}
+      <div className="absolute left-0 top-1/4 h-96 w-96 rounded-full bg-primary-gold/10 blur-3xl animate-pulse" />
+      <div className="absolute right-0 bottom-1/4 h-96 w-96 rounded-full bg-primary-amber/10 blur-3xl animate-pulse" style={{ animationDelay: '1.5s' }} />
+
+      {/* Dot Pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="h-full w-full" style={{ backgroundImage: 'radial-gradient(circle, #FFBC00 1px, transparent 1px)', backgroundSize: '50px 50px' }} />
+      </div>
+
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -127,24 +142,23 @@ export function ServicesGridSection() {
           {services.map((service, index) => (
             <motion.div key={index} variants={fadeInUp}>
               <Link href={service.link}>
-                <Card className="group h-full transition-all hover:shadow-xl hover:border-primary-blue">
-                  <CardHeader>
-                    <div
-                      className={`mb-4 flex h-16 w-16 items-center justify-center rounded-lg ${service.bgColor} transition-transform group-hover:scale-110`}
-                    >
-                      <service.icon className={`h-8 w-8 ${service.color}`} />
-                    </div>
-                    <CardTitle className="text-2xl flex items-center justify-between">
-                      {service.title}
-                      <ArrowRight className="h-5 w-5 text-gray-400 transition-all group-hover:text-primary-blue group-hover:translate-x-1" />
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-base leading-7 text-slate-gray">
-                      {service.description}
-                    </p>
-                  </CardContent>
-                </Card>
+                <div className="group relative h-full rounded-2xl border-3 border-primary-gold/30 bg-dark-charcoal p-8 shadow-bold transition-all hover:-translate-y-2 hover:border-primary-gold hover:shadow-bold-hover">
+                  {/* Icon Circle */}
+                  <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-primary-gold border-2 border-black shadow-bold transition-all group-hover:scale-110 group-hover:rotate-12">
+                    <service.icon className="h-10 w-10 text-black" />
+                  </div>
+
+                  {/* Title */}
+                  <h3 className="mb-4 text-2xl font-bold text-white flex items-center justify-between">
+                    {service.title}
+                    <ArrowRight className="h-6 w-6 text-primary-gold transition-all group-hover:translate-x-2" />
+                  </h3>
+
+                  {/* Description */}
+                  <p className="text-base leading-7 text-gray-400">
+                    {service.description}
+                  </p>
+                </div>
               </Link>
             </motion.div>
           ))}

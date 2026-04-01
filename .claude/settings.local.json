@@ -39,7 +39,14 @@
       "Bash(ls:*)",
       "Bash(Select-String -Pattern \"(error|Error|Compiled|Created redirect|MISSING_MESSAGE)\" -Context 0,2)",
       "Bash(cat:*)",
-      "Bash(Select-String -Pattern \"process\" -Context 5,15)"
+      "Bash(Select-String -Pattern \"process\" -Context 5,15)",
+      "Bash(find:*)",
+      "SlashCommand(/plan:fast Cập nhật thiết kế talentscare.de style (bold shadow, gold accents, navy backgrounds) cho tất cả các trang còn lại của VIETconsult website. Bao gồm: Über Uns, Partner, Vorteile, Gütezeichen, Services (overview + 4 detail pages), Kontakt. Thêm nội dung phong phú và hình ảnh từ documents/images. Giữ nguyên i18n structure hiện tại.)",
+      "SlashCommand(/plan:fast:*)",
+      "Skill(planning)",
+      "Bash(echo:*)",
+      "Bash(wc:*)",
+      "Bash(grep:*)"
     ]
   }
 }

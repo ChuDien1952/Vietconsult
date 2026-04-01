@@ -30,9 +30,15 @@ export function PageHeader() {
   const t = useTranslations('qualitySeal')
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-primary-blue to-blue-700 py-16 lg:py-24">
-      <div className="absolute -left-20 -top-20 h-64 w-64 rounded-full bg-white/5 blur-3xl" />
-      <div className="absolute -bottom-20 -right-20 h-64 w-64 rounded-full bg-white/5 blur-3xl" />
+    <section className="relative overflow-hidden bg-gradient-to-b from-dark-charcoal to-primary-navy py-16 lg:py-24">
+      {/* Geometric Background */}
+      <div className="absolute -left-20 -top-20 h-80 w-80 rounded-full bg-primary-gold/10 blur-3xl animate-pulse" />
+      <div className="absolute -bottom-20 -right-20 h-80 w-80 rounded-full bg-warm-amber/10 blur-3xl animate-pulse" />
+      <div className="absolute right-0 top-0 h-96 w-96 opacity-5">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#FFBC00" d="M40,-50C50,-40,55,-25,58,-10C60,5,60,20,55,32C50,45,40,55,28,58C15,60,5,55,-8,52C-20,50,-35,48,-45,40C-55,32,-60,20,-62,5C-65,-10,-65,-25,-58,-38C-50,-50,-35,-60,-18,-62C-2,-65,15,-60,30,-52Z" transform="translate(100 100)" />
+        </svg>
+      </div>
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
@@ -42,17 +48,17 @@ export function PageHeader() {
           className="mx-auto max-w-3xl text-center"
         >
           {/* Breadcrumb */}
-          <div className="mb-6 flex items-center justify-center gap-2 text-sm text-blue-100">
+          <div className="mb-6 flex items-center justify-center gap-2 text-sm text-gray-400">
             <span>Home</span>
             <ChevronRight className="h-4 w-4" />
-            <span className="text-white">{t('breadcrumb')}</span>
+            <span className="text-primary-gold">{t('breadcrumb')}</span>
           </div>
 
-          <Award className="mx-auto mb-6 h-16 w-16 text-white" />
-          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
+          <Award className="mx-auto mb-6 h-16 w-16 text-primary-gold" />
+          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
             {t('pageTitle')}
           </h1>
-          <p className="mt-4 text-xl text-blue-100">{t('pageSubtitle')}</p>
+          <p className="mt-4 text-xl text-gray-300">{t('pageSubtitle')}</p>
         </motion.div>
       </div>
     </section>
@@ -73,8 +79,10 @@ export function IntroSection() {
           variants={fadeInUp}
           className="mx-auto max-w-3xl text-center"
         >
-          <Shield className="mx-auto mb-6 h-12 w-12 text-primary-blue" />
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full border-3 border-black bg-primary-gold/10">
+            <Shield className="h-10 w-10 text-primary-gold" />
+          </div>
+          <h2 className="text-3xl font-bold tracking-tight text-dark-charcoal sm:text-4xl lg:text-5xl">
             {t('title')}
           </h2>
           <p className="mt-6 text-lg leading-8 text-slate-gray">
@@ -95,49 +103,51 @@ export function StandardsSection() {
       title: t('standard1Title'),
       description: t('standard1Description'),
       icon: Globe,
-      color: 'text-blue-600',
-      bgColor: 'bg-blue-100',
+      bgColor: 'bg-primary-gold',
     },
     {
       title: t('standard2Title'),
       description: t('standard2Description'),
       icon: Shield,
-      color: 'text-green-600',
-      bgColor: 'bg-green-100',
+      bgColor: 'bg-primary-navy',
     },
     {
       title: t('standard3Title'),
       description: t('standard3Description'),
       icon: Award,
-      color: 'text-purple-600',
-      bgColor: 'bg-purple-100',
+      bgColor: 'bg-warm-amber',
     },
     {
       title: t('standard4Title'),
       description: t('standard4Description'),
       icon: FileText,
-      color: 'text-amber-600',
-      bgColor: 'bg-amber-100',
+      bgColor: 'bg-accent-red',
     },
     {
       title: t('standard5Title'),
       description: t('standard5Description'),
       icon: CheckCircle2,
-      color: 'text-cyan-600',
-      bgColor: 'bg-cyan-100',
+      bgColor: 'bg-primary-gold',
     },
     {
       title: t('standard6Title'),
       description: t('standard6Description'),
       icon: MessageSquare,
-      color: 'text-pink-600',
-      bgColor: 'bg-pink-100',
+      bgColor: 'bg-primary-navy',
     },
   ]
 
   return (
-    <section className="bg-gray-50 py-16 lg:py-24">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <section className="relative bg-light-gray py-16 lg:py-24">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-[0.02]">
+        <div className="absolute inset-0" style={{
+          backgroundImage: 'radial-gradient(circle, #000 1px, transparent 1px)',
+          backgroundSize: '40px 40px'
+        }} />
+      </div>
+
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -145,7 +155,7 @@ export function StandardsSection() {
           variants={fadeInUp}
           className="mx-auto max-w-2xl text-center"
         >
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-dark-charcoal sm:text-4xl lg:text-5xl">
             {t('title')}
           </h2>
           <p className="mt-4 text-lg text-slate-gray">{t('subtitle')}</p>
@@ -159,22 +169,22 @@ export function StandardsSection() {
           className="mx-auto mt-16 grid max-w-7xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3"
         >
           {standards.map((standard, index) => (
-            <motion.div key={index} variants={fadeInUp}>
-              <Card className="h-full transition-all hover:shadow-lg">
-                <CardHeader>
-                  <div
-                    className={`mb-4 flex h-16 w-16 items-center justify-center rounded-lg ${standard.bgColor}`}
-                  >
-                    <standard.icon className={`h-8 w-8 ${standard.color}`} />
-                  </div>
-                  <CardTitle className="text-xl">{standard.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-base leading-7 text-slate-gray">
-                    {standard.description}
-                  </p>
-                </CardContent>
-              </Card>
+            <motion.div
+              key={index}
+              variants={fadeInUp}
+              className="group"
+            >
+              <div className="h-full rounded-2xl border-3 border-black bg-white p-8 shadow-bold transition-all duration-300 hover:-translate-y-2 hover:shadow-bold-hover">
+                <div className={`mb-6 flex h-16 w-16 items-center justify-center rounded-full border-2 border-black ${standard.bgColor}`}>
+                  <standard.icon className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="mb-4 text-xl font-bold text-dark-charcoal">
+                  {standard.title}
+                </h3>
+                <p className="text-base leading-7 text-slate-gray">
+                  {standard.description}
+                </p>
+              </div>
             </motion.div>
           ))}
         </motion.div>
@@ -197,9 +207,11 @@ export function ComplianceSection() {
           variants={fadeInUp}
           className="relative mx-auto max-w-4xl"
         >
-          <div className="rounded-2xl border-l-4 border-primary-blue bg-blue-50 p-8 lg:p-12">
-            <CheckCircle2 className="mb-6 h-12 w-12 text-primary-blue" />
-            <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl">
+          <div className="group rounded-2xl border-3 border-black bg-primary-gold/5 p-8 shadow-bold transition-all duration-300 hover:-translate-y-2 hover:shadow-bold-hover lg:p-12">
+            <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-full border-2 border-black bg-primary-gold">
+              <CheckCircle2 className="h-8 w-8 text-white" />
+            </div>
+            <h2 className="text-2xl font-bold text-dark-charcoal sm:text-3xl lg:text-4xl">
               {t('title')}
             </h2>
             <p className="mt-6 text-lg leading-8 text-slate-gray">
@@ -217,8 +229,12 @@ export function ComplaintSection() {
   const t = useTranslations('qualitySeal.complaint')
 
   return (
-    <section className="bg-gradient-to-br from-primary-blue to-blue-700 py-16 lg:py-24">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <section className="relative overflow-hidden bg-gradient-to-b from-dark-charcoal to-primary-navy py-16 lg:py-24">
+      {/* Background Elements */}
+      <div className="absolute -left-32 top-0 h-96 w-96 rounded-full bg-primary-gold/10 blur-3xl animate-pulse" />
+      <div className="absolute -right-32 bottom-0 h-96 w-96 rounded-full bg-warm-amber/10 blur-3xl animate-pulse" />
+
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -226,25 +242,23 @@ export function ComplaintSection() {
           variants={fadeInUp}
           className="mx-auto max-w-3xl text-center"
         >
-          <MessageSquare className="mx-auto mb-6 h-12 w-12 text-white" />
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full border-3 border-black bg-primary-gold shadow-bold">
+            <MessageSquare className="h-10 w-10 text-white" />
+          </div>
+          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
             {t('title')}
           </h2>
-          <p className="mt-4 text-lg text-blue-100">{t('description')}</p>
+          <p className="mt-4 text-lg text-gray-300">{t('description')}</p>
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-white bg-white text-primary-blue hover:bg-blue-50"
-            >
+            <Button size="lg">
               <Download className="mr-2 h-5 w-5" />
               {t('downloadLabel')}
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="border-white bg-transparent text-white hover:bg-white/10"
+              className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-dark-charcoal"
             >
               <Mail className="mr-2 h-5 w-5" />
               {t('contactLabel')}
