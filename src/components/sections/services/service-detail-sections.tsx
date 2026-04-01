@@ -202,6 +202,56 @@ export function ProcessTimeline({ serviceKey }: { serviceKey: string }) {
   )
 }
 
+// Image Showcase Section
+export function ImageShowcase({ serviceKey }: { serviceKey: string }) {
+  const imageMap: { [key: string]: { src: string; alt: string } } = {
+    recruitment: {
+      src: '/images/recruitment/recruitment-hero.jpg',
+      alt: 'Professional Recruitment Process',
+    },
+    languageTraining: {
+      src: '/images/training/language-training.png',
+      alt: 'Language Training Session',
+    },
+    recognition: {
+      src: '/images/services/healthcare-professional.webp',
+      alt: 'Professional Recognition Process',
+    },
+    relocation: {
+      src: '/images/services/integration-support.webp',
+      alt: 'Relocation and Integration Support',
+    },
+  }
+
+  const imageData = imageMap[serviceKey]
+
+  if (!imageData) return null
+
+  return (
+    <section className="relative bg-white py-16 lg:py-24">
+      <div className="mx-auto max-w-6xl px-6 lg:px-8">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="relative overflow-hidden rounded-2xl border-3 border-black shadow-bold"
+        >
+          <Image
+            src={imageData.src}
+            alt={imageData.alt}
+            width={1200}
+            height={600}
+            className="h-auto w-full object-cover"
+          />
+          {/* Decorative gold border overlay */}
+          <div className="absolute -bottom-4 -right-4 -z-10 h-full w-full rounded-2xl border-3 border-primary-gold" />
+        </motion.div>
+      </div>
+    </section>
+  )
+}
+
 // Key Features Section
 export function KeyFeatures({ serviceKey }: { serviceKey: string }) {
   const t = useTranslations(`services.${serviceKey}.features`)

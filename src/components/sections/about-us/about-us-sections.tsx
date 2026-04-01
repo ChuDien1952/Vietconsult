@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
 import {
   Target,
@@ -91,20 +92,44 @@ export function IntroSection() {
   return (
     <section className="bg-white py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={fadeInUp}
-          className="mx-auto max-w-3xl text-center"
-        >
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            {t('title')}
-          </h2>
-          <p className="mt-6 text-lg leading-8 text-slate-gray">
-            {t('description')}
-          </p>
-        </motion.div>
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
+          {/* Image Column */}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="relative"
+          >
+            <div className="relative overflow-hidden rounded-2xl border-3 border-black shadow-bold">
+              <Image
+                src="/images/about-us/team-meeting.jpg"
+                alt="VIETconsult Team Meeting"
+                width={600}
+                height={400}
+                className="h-full w-full object-cover"
+              />
+            </div>
+            {/* Decorative element */}
+            <div className="absolute -bottom-6 -right-6 -z-10 h-full w-full rounded-2xl border-3 border-primary-gold" />
+          </motion.div>
+
+          {/* Content Column */}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="flex flex-col justify-center"
+          >
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">
+              {t('title')}
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-slate-gray">
+              {t('description')}
+            </p>
+          </motion.div>
+        </div>
       </div>
     </section>
   )
