@@ -176,12 +176,12 @@ export function ProcessSection() {
                     </span>
                   </motion.div>
 
-                  {/* Content Card - inverse scaling + moves closer to image when image is small */}
+                  {/* Content Card - inverse scaling + adjusts position to avoid overlap */}
                   <motion.div
                     className={`flex-1 rounded-xl border-3 border-black bg-white p-6 shadow-bold scale-100 group-hover:scale-[0.2] transition-all duration-[5000ms] ease-out hover:shadow-bold-hover ${
                       index % 2 === 0
-                        ? 'md:pr-8 translate-x-32 group-hover:translate-x-0'
-                        : 'md:pl-8 -translate-x-32 group-hover:translate-x-0'
+                        ? 'md:pr-8 translate-x-0 group-hover:translate-x-32'
+                        : 'md:pl-8 translate-x-0 group-hover:-translate-x-32'
                     }`}
                   >
                     <h3 className="text-xl font-bold text-dark-charcoal lg:text-2xl">
