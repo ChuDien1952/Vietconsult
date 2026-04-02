@@ -2,6 +2,7 @@ import {
   PageHeader,
   IntroSection,
   MissionVisionSection,
+  TeamGallerySection,
   ValuesSection,
   WhyVietnamSection,
 } from '@/components/sections/about-us/about-us-sections'
@@ -14,6 +15,7 @@ export default function AboutUsPage() {
       <PageHeader />
       <IntroSection />
       <MissionVisionSection />
+      <TeamGallerySection />
       <ValuesSection />
       <WhyVietnamSection />
     </div>

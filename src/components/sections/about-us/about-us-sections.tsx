@@ -197,6 +197,86 @@ export function MissionVisionSection() {
   )
 }
 
+// Team Gallery Section
+export function TeamGallerySection() {
+  return (
+    <section className="relative bg-white py-16 lg:py-24">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mb-12 text-center"
+        >
+          <h2 className="text-3xl font-bold tracking-tight text-dark-charcoal sm:text-4xl lg:text-5xl">
+            Unser Team in Aktion
+          </h2>
+          <p className="mt-4 text-lg text-slate-gray">
+            Einblicke in unsere Arbeit und Zusammenarbeit
+          </p>
+        </motion.div>
+
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={stagger}
+          className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
+        >
+          {/* Office Germany */}
+          <motion.div variants={fadeInUp} className="group relative overflow-hidden rounded-2xl border-3 border-black shadow-bold">
+            <Image
+              src="/images/about-us/office-germany.webp"
+              alt="Office in Germany"
+              width={400}
+              height={300}
+              className="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-dark-charcoal/80 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-6">
+              <h3 className="text-xl font-bold text-white">Deutschland</h3>
+              <p className="text-sm text-gray-300">Unsere Standorte</p>
+            </div>
+          </motion.div>
+
+          {/* Office Vietnam */}
+          <motion.div variants={fadeInUp} className="group relative overflow-hidden rounded-2xl border-3 border-black shadow-bold">
+            <Image
+              src="/images/about-us/office-vietnam.webp"
+              alt="Office in Vietnam"
+              width={400}
+              height={300}
+              className="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-dark-charcoal/80 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-6">
+              <h3 className="text-xl font-bold text-white">Vietnam</h3>
+              <p className="text-sm text-gray-300">Rekrutierung & Bildung</p>
+            </div>
+          </motion.div>
+
+          {/* Team Collaboration */}
+          <motion.div variants={fadeInUp} className="group relative overflow-hidden rounded-2xl border-3 border-black shadow-bold">
+            <Image
+              src="/images/about-us/team-collaboration.webp"
+              alt="Team Collaboration"
+              width={400}
+              height={300}
+              className="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-dark-charcoal/80 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-6">
+              <h3 className="text-xl font-bold text-white">Zusammenarbeit</h3>
+              <p className="text-sm text-gray-300">Internationale Teams</p>
+            </div>
+          </motion.div>
+        </motion.div>
+      </div>
+    </section>
+  )
+}
+
 // Values Section
 export function ValuesSection() {
   const t = useTranslations('aboutUs.values')
