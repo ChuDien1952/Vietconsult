@@ -98,25 +98,25 @@ export function ServicesGridSection() {
       title: t('recruitment.title'),
       description: t('recruitment.description'),
       icon: Search,
-      link: t('recruitment.link'),
+      href: '/services/rekrutierung-auswahl',
     },
     {
       title: t('languageTraining.title'),
       description: t('languageTraining.description'),
       icon: GraduationCap,
-      link: t('languageTraining.link'),
+      href: '/services/sprach-kulturelle-bildung',
     },
     {
       title: t('recognition.title'),
       description: t('recognition.description'),
       icon: FileCheck,
-      link: t('recognition.link'),
+      href: '/services/anerkennung',
     },
     {
       title: t('relocation.title'),
       description: t('relocation.description'),
       icon: Plane,
-      link: t('relocation.link'),
+      href: '/services/relocation-integration',
     },
   ]
 
@@ -141,8 +141,8 @@ export function ServicesGridSection() {
         >
           {services.map((service, index) => (
             <motion.div key={index} variants={fadeInUp}>
-              <Link href={service.link}>
-                <div className="group relative h-full rounded-2xl border-3 border-primary-gold/30 bg-dark-charcoal p-8 shadow-bold transition-all hover:-translate-y-2 hover:border-primary-gold hover:shadow-bold-hover">
+              <Link href={service.href} className="block h-full">
+                <div className="group relative h-full rounded-2xl border-3 border-primary-gold/30 bg-dark-charcoal p-8 shadow-bold transition-all hover:-translate-y-2 hover:border-primary-gold hover:shadow-bold-hover cursor-pointer">
                   {/* Icon Circle */}
                   <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-primary-gold border-2 border-black shadow-bold transition-all group-hover:scale-110 group-hover:rotate-12">
                     <service.icon className="h-10 w-10 text-black" />
