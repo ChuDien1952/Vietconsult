@@ -4,14 +4,16 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useTranslations, useLocale } from 'next-intl'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, ChevronDown } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { LanguageSwitcher } from '@/components/ui/language-switcher'
 
 export function Header() {
   const t = useTranslations('navigation')
+  const tServices = useTranslations('services')
   const locale = useLocale()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
@@ -28,7 +30,25 @@ export function Header() {
     { name: t('partner'), href: `/${locale}/partner-talentscare` },
     { name: t('advantages'), href: `/${locale}/vorteile` },
     { name: t('qualitySeal'), href: `/${locale}/guetezeichen` },
-    { name: t('services'), href: `/${locale}/services` },
+  ]
+
+  const servicesMenu = [
+    {
+      name: tServices('recruitment.title'),
+      href: `/${locale}/services/rekrutierung-auswahl`
+    },
+    {
+      name: tServices('languageTraining.title'),
+      href: `/${locale}/services/sprach-kulturelle-bildung`
+    },
+    {
+      name: tServices('recognition.title'),
+      href: `/${locale}/services/anerkennung`
+    },
+    {
+      name: tServices('relocation.title'),
+      href: `/${locale}/services/relocation-integration`
+    },
   ]
 
   return (
@@ -79,6 +99,38 @@ export function Header() {
               <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-primary-gold transition-all duration-300 group-hover:w-full"></span>
             </Link>
           ))}
+
+          {/* Services Dropdown */}
+          <div
+            className="relative"
+            onMouseEnter={() => setServicesDropdownOpen(true)}
+            onMouseLeave={() => setServicesDropdownOpen(false)}
+          >
+            <button
+              className="relative flex items-center gap-1 px-4 py-2 text-sm font-bold uppercase tracking-wide text-slate-gray transition-colors hover:text-primary-navy group"
+            >
+              {t('services')}
+              <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${servicesDropdownOpen ? 'rotate-180' : ''}`} />
+              <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-primary-gold transition-all duration-300 group-hover:w-full"></span>
+            </button>
+
+            {/* Dropdown Menu */}
+            {servicesDropdownOpen && (
+              <div className="absolute left-0 top-full mt-2 w-72 rounded-xl border-3 border-black bg-white shadow-bold">
+                <div className="py-2">
+                  {servicesMenu.map((service, index) => (
+                    <Link
+                      key={service.href}
+                      href={service.href}
+                      className="block px-6 py-3 text-sm font-semibold text-slate-gray transition-colors hover:bg-primary-gold/10 hover:text-primary-navy"
+                    >
+                      {service.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
         </div>
 
         {/* Desktop CTA & Language Switcher */}
@@ -104,6 +156,36 @@ export function Header() {
                 {item.name}
               </Link>
             ))}
+
+            {/* Mobile Services Dropdown */}
+            <div className="rounded-lg border-2 border-black bg-dark-charcoal">
+              <button
+                onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
+                className="flex w-full items-center justify-between px-4 py-3 text-base font-bold uppercase tracking-wide text-white"
+              >
+                {t('services')}
+                <ChevronDown className={`h-5 w-5 transition-transform duration-200 ${servicesDropdownOpen ? 'rotate-180' : ''}`} />
+              </button>
+
+              {servicesDropdownOpen && (
+                <div className="border-t-2 border-primary-gold bg-white">
+                  {servicesMenu.map((service) => (
+                    <Link
+                      key={service.href}
+                      href={service.href}
+                      onClick={() => {
+                        setMobileMenuOpen(false)
+                        setServicesDropdownOpen(false)
+                      }}
+                      className="block border-b border-gray-200 px-6 py-3 text-sm font-semibold text-slate-gray last:border-0 hover:bg-primary-gold/10 hover:text-primary-navy"
+                    >
+                      {service.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
             <div className="mt-6 flex flex-col gap-4 border-t-2 border-gray-200 pt-4">
               <LanguageSwitcher />
               <Button asChild className="w-full">
