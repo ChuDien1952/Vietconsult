@@ -2,9 +2,10 @@
 
 import { useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Search, GraduationCap, FileCheck, Plane, ChevronRight, ArrowRight } from 'lucide-react'
+import { Search, GraduationCap, FileCheck, Plane, ChevronRight, ArrowRight, CheckCircle } from 'lucide-react'
 import Link from 'next/link'
 
 const fadeInUp = {
@@ -70,20 +71,74 @@ export function IntroSection() {
       <div className="absolute right-0 top-1/4 h-96 w-96 rounded-full bg-primary-gold/10 blur-3xl animate-pulse" />
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={fadeInUp}
-          className="mx-auto max-w-3xl text-center"
-        >
-          <h2 className="text-3xl font-bold tracking-tight text-dark-charcoal sm:text-4xl lg:text-5xl">
-            {t('title')}
-          </h2>
-          <p className="mt-6 text-lg leading-8 text-slate-gray">
-            {t('description')}
-          </p>
-        </motion.div>
+        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
+          {/* Left - Content */}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="order-2 lg:order-1"
+          >
+            <h2 className="text-3xl font-bold tracking-tight text-dark-charcoal sm:text-4xl lg:text-5xl">
+              {t('title')}
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-slate-gray">
+              {t('description')}
+            </p>
+
+            {/* Key Points */}
+            <div className="mt-8 space-y-4">
+              <div className="flex items-start gap-3">
+                <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-primary-gold/10">
+                  <CheckCircle className="h-5 w-5 text-primary-gold" />
+                </div>
+                <p className="text-base text-slate-gray">
+                  Ganzheitliche Betreuung von der Rekrutierung bis zur Integration
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-primary-gold/10">
+                  <CheckCircle className="h-5 w-5 text-primary-gold" />
+                </div>
+                <p className="text-base text-slate-gray">
+                  Eigene Infrastruktur in Vietnam und Deutschland
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-primary-gold/10">
+                  <CheckCircle className="h-5 w-5 text-primary-gold" />
+                </div>
+                <p className="text-base text-slate-gray">
+                  Über 15 Jahre Erfahrung in der internationalen Fachkräftegewinnung
+                </p>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Right - Image */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="order-1 lg:order-2"
+          >
+            <div className="relative">
+              <div className="overflow-hidden rounded-2xl border-3 border-black shadow-bold">
+                <Image
+                  src="/images/services/office-collaboration.webp"
+                  alt="Professional Services Team Collaboration"
+                  width={600}
+                  height={400}
+                  className="h-auto w-full object-cover"
+                />
+              </div>
+              {/* Decorative gold border */}
+              <div className="absolute -bottom-6 -right-6 -z-10 h-full w-full rounded-2xl border-3 border-primary-gold" />
+            </div>
+          </motion.div>
+        </div>
       </div>
     </section>
   )
