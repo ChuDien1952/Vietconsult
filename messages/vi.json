@@ -309,10 +309,69 @@
       "description": "Tìm kiếm ứng viên có mục tiêu và tuyển chọn chuyên nghiệp các chuyên gia có trình độ tại Việt Nam",
       "link": "/services/rekrutierung-auswahl"
     },
-    "training": {
+    "languageTraining": {
       "title": "Đào tạo ngôn ngữ & văn hóa",
+      "subtitle": "Chuẩn bị chuyên sâu tại trường ngôn ngữ riêng tại Việt Nam với đào tạo văn hóa toàn diện để tích hợp thành công",
       "description": "Chuẩn bị chuyên sâu tại trường ngôn ngữ riêng với đào tạo văn hóa",
-      "link": "/services/sprach-kulturelle-bildung"
+      "link": "/services/sprach-kulturelle-bildung",
+      "cta": "Tìm hiểu thêm về đào tạo ngôn ngữ",
+      "ctaSecondary": "Quay lại Dịch vụ",
+      "ctaButton": "Yêu cầu đào tạo ngôn ngữ ngay",
+      "ctaSecondaryButton": "Tất cả dịch vụ",
+      "process": {
+        "title": "Chương trình đào tạo của chúng tôi",
+        "subtitle": "Từ A1 đến năng lực nghề nghiệp",
+        "step1": {
+          "title": "Đánh giá & Kế hoạch học tập cá nhân",
+          "description": "Phân tích trình độ ngôn ngữ chi tiết và xây dựng chương trình học tùy chỉnh dựa trên kiến thức hiện tại, tốc độ học tập và yêu cầu nghề nghiệp."
+        },
+        "step2": {
+          "title": "Đào tạo ngôn ngữ chuyên sâu (A1-B2)",
+          "description": "Khóa học tiếng Đức có cấu trúc tại trường ngôn ngữ riêng với giáo viên bản ngữ giàu kinh nghiệm, phương pháp giảng dạy hiện đại và nhóm học nhỏ để đạt tiến bộ tối ưu."
+        },
+        "step3": {
+          "title": "Đào tạo ngôn ngữ chuyên ngành & Chuẩn bị nghề nghiệp",
+          "description": "Từ vựng chuyên ngành, thuật ngữ kỹ thuật và giao tiếp thực hành cho y tá, kỹ thuật hoặc CNTT cùng chuẩn bị cho chứng chỉ telc và Goethe."
+        },
+        "step4": {
+          "title": "Tích hợp văn hóa & Kỹ năng mềm",
+          "description": "Năng lực liên văn hóa, văn hóa làm việc Đức, nghi thức kinh doanh, đặc điểm khu vực và tình huống hàng ngày thực tế để tích hợp thành công."
+        }
+      },
+      "features": {
+        "title": "Ưu điểm đào tạo của chúng tôi",
+        "subtitle": "Chất lượng thuyết phục",
+        "feature1": {
+          "title": "Trường ngôn ngữ riêng tại Việt Nam",
+          "description": "Cơ sở hiện đại tại TP. Hồ Chí Minh và Hà Nội với giáo viên đủ trình độ, công cụ học tập kỹ thuật số và môi trường học tập tối ưu."
+        },
+        "feature2": {
+          "title": "Giáo viên bản ngữ",
+          "description": "Giáo viên người Đức giàu kinh nghiệm với trình độ DaF/DaZ và năng lực liên văn hóa cho việc học ngôn ngữ chân thực."
+        },
+        "feature3": {
+          "title": "Khóa học chuyên ngành",
+          "description": "Chương trình chuyên biệt cho y tá, y khoa, kỹ thuật, CNTT và công nghiệp với từ vựng chuyên ngành phù hợp và thực hành."
+        },
+        "feature4": {
+          "title": "Chứng chỉ được công nhận",
+          "description": "Chuẩn bị và thực hiện các kỳ thi ngôn ngữ chính thức (telc, Viện Goethe) cho chứng chỉ được công nhận."
+        },
+        "feature5": {
+          "title": "Chuẩn bị văn hóa",
+          "description": "Đào tạo toàn diện về văn hóa Đức, môi trường làm việc, chuẩn mực xã hội và tình huống hàng ngày."
+        },
+        "feature6": {
+          "title": "Mô hình học tập linh hoạt",
+          "description": "Khóa học toàn thời gian, bán thời gian và trực tuyến điều chỉnh theo nhu cầu và lịch trình cá nhân với khái niệm học tập kết hợp."
+        }
+      },
+      "cta": {
+        "title": "Đầu tư vào tích hợp thành công",
+        "subtitle": "Lao động chuyên môn được chuẩn bị tốt năng suất hơn, hài lòng hơn và gắn bó lâu dài hơn. Chương trình ngôn ngữ của chúng tôi là chìa khóa thành công.",
+        "button": "Yêu cầu chương trình đào tạo",
+        "buttonSecondary": "Khám phá thêm dịch vụ"
+      }
     },
     "recognition": {
       "title": "Công nhận",

@@ -309,10 +309,69 @@
       "description": "Targeted candidate search and professional selection of qualified professionals in Vietnam",
       "link": "/services/rekrutierung-auswahl"
     },
-    "training": {
+    "languageTraining": {
       "title": "Language & Cultural Training",
+      "subtitle": "Intensive preparation in our own language school in Vietnam with comprehensive cultural training for successful integration",
       "description": "Intensive preparation in our own language school with cultural training",
-      "link": "/services/sprach-kulturelle-bildung"
+      "link": "/services/sprach-kulturelle-bildung",
+      "cta": "Learn more about language training",
+      "ctaSecondary": "Back to Services",
+      "ctaButton": "Request language training now",
+      "ctaSecondaryButton": "All Services",
+      "process": {
+        "title": "Our Training Program",
+        "subtitle": "From A1 to professional competence",
+        "step1": {
+          "title": "Assessment & Individual Learning Plan",
+          "description": "Detailed language level analysis and creation of a customized curriculum based on existing knowledge, learning pace, and professional requirements."
+        },
+        "step2": {
+          "title": "Intensive Language Training (A1-B2)",
+          "description": "Structured German courses in our own language school with experienced native speakers, modern teaching methods, and small learning groups for optimal progress."
+        },
+        "step3": {
+          "title": "Technical Language Training & Career Preparation",
+          "description": "Industry-specific vocabulary, technical terminology, and practice-oriented communication for nursing, technology, or IT, plus preparation for telc and Goethe certificates."
+        },
+        "step4": {
+          "title": "Cultural Integration & Soft Skills",
+          "description": "Intercultural competence, German work culture, business etiquette, regional specifics, and practical everyday situations for successful integration."
+        }
+      },
+      "features": {
+        "title": "Our Training Advantages",
+        "subtitle": "Quality that convinces",
+        "feature1": {
+          "title": "Own Language Schools in Vietnam",
+          "description": "Modern facilities in Ho Chi Minh City and Hanoi with qualified teachers, digital learning tools, and optimal learning environment."
+        },
+        "feature2": {
+          "title": "Native Speaker Teachers",
+          "description": "Experienced German teachers with DaF/DaZ qualifications and intercultural competence for authentic language learning."
+        },
+        "feature3": {
+          "title": "Industry-Specific Courses",
+          "description": "Specialized programs for nursing, medicine, technology, IT, and industry with relevant technical vocabulary and practical focus."
+        },
+        "feature4": {
+          "title": "Certified Qualifications",
+          "description": "Preparation and execution of official language exams (telc, Goethe Institute) for recognized certificates."
+        },
+        "feature5": {
+          "title": "Cultural Preparation",
+          "description": "Comprehensive training on German culture, work environment, social norms, and everyday situations."
+        },
+        "feature6": {
+          "title": "Flexible Learning Models",
+          "description": "Full-time, part-time, and online courses adapted to individual needs and schedules with blended learning concepts."
+        }
+      },
+      "cta": {
+        "title": "Invest in successful integration",
+        "subtitle": "Well-prepared professionals are more productive, satisfied, and stay longer. Our language programs are the key to success.",
+        "button": "Request training program",
+        "buttonSecondary": "Discover more services"
+      }
     },
     "recognition": {
       "title": "Recognition",
