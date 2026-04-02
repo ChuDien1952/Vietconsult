@@ -131,13 +131,14 @@ export function Header() {
             onMouseEnter={handleMouseEnterDropdown}
             onMouseLeave={handleMouseLeaveDropdown}
           >
-            <button
+            <Link
+              href={`/${locale}/services`}
               className="relative flex items-center gap-1 px-4 py-2 text-sm font-bold uppercase tracking-wide text-slate-gray transition-colors hover:text-primary-navy group"
             >
               {t('services')}
               <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${servicesDropdownOpen ? 'rotate-180' : ''}`} />
               <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-primary-gold transition-all duration-300 group-hover:w-full"></span>
-            </button>
+            </Link>
 
             {/* Dropdown Menu */}
             {servicesDropdownOpen && (
@@ -182,13 +183,22 @@ export function Header() {
               </Link>
             ))}
 
+            {/* Mobile Services Link */}
+            <Link
+              href={`/${locale}/services`}
+              onClick={() => setMobileMenuOpen(false)}
+              className="block rounded-lg border-2 border-transparent px-4 py-3 text-base font-bold uppercase tracking-wide text-slate-gray transition-colors hover:border-primary-gold hover:bg-light-gray"
+            >
+              {t('services')}
+            </Link>
+
             {/* Mobile Services Dropdown */}
             <div className="rounded-lg border-2 border-black bg-dark-charcoal">
               <button
                 onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
                 className="flex w-full items-center justify-between px-4 py-3 text-base font-bold uppercase tracking-wide text-white"
               >
-                {t('services')}
+                {t('services')} - Chi tiết
                 <ChevronDown className={`h-5 w-5 transition-transform duration-200 ${servicesDropdownOpen ? 'rotate-180' : ''}`} />
               </button>
 
