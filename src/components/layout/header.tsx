@@ -15,6 +15,7 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const [dropdownTimer, setDropdownTimer] = useState<NodeJS.Timeout | null>(null)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,6 +24,30 @@ export function Header() {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  // Cleanup timer on unmount
+  useEffect(() => {
+    return () => {
+      if (dropdownTimer) {
+        clearTimeout(dropdownTimer)
+      }
+    }
+  }, [dropdownTimer])
+
+  const handleMouseEnterDropdown = () => {
+    if (dropdownTimer) {
+      clearTimeout(dropdownTimer)
+      setDropdownTimer(null)
+    }
+    setServicesDropdownOpen(true)
+  }
+
+  const handleMouseLeaveDropdown = () => {
+    const timer = setTimeout(() => {
+      setServicesDropdownOpen(false)
+    }, 300) // 300ms delay
+    setDropdownTimer(timer)
+  }
 
   const navigation = [
     { name: t('home'), href: `/${locale}` },
@@ -103,8 +128,8 @@ export function Header() {
           {/* Services Dropdown */}
           <div
             className="relative"
-            onMouseEnter={() => setServicesDropdownOpen(true)}
-            onMouseLeave={() => setServicesDropdownOpen(false)}
+            onMouseEnter={handleMouseEnterDropdown}
+            onMouseLeave={handleMouseLeaveDropdown}
           >
             <button
               className="relative flex items-center gap-1 px-4 py-2 text-sm font-bold uppercase tracking-wide text-slate-gray transition-colors hover:text-primary-navy group"
