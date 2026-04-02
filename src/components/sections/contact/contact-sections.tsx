@@ -198,24 +198,24 @@ export function LocationsSection() {
       title: t('frankfurtTitle'),
       address: t('frankfurtAddress'),
       phone: t('frankfurtPhone'),
-      mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2556.2977482947447!2d8.707901776264788!3d50.174309971796215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd0f1e8f1e1e1f%3A0x8f1e1e1f1e1e1e1!2sJulius-Brecht-Stra%C3%9Fe%203%2C%2060433%20Frankfurt%20am%20Main%2C%20Germany!5e0!3m2!1sen!2s!4v1709520100000!5m2!1sen!2s',
+      mapUrl: 'https://maps.google.com/maps?q=Julius-Brecht-Str.+3,+60433+Frankfurt+am+Main,+Germany&t=&z=15&ie=UTF8&iwloc=&output=embed',
     },
     {
       title: t('hannoverTitle'),
       address: t('hannoverAddress'),
       phone: t('hannoverPhone'),
-      mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.7045033891806!2d9.812451176943892!3d52.334459272009494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b00b6c2a2a2a2b%3A0x2a2a2a2b2a2a2a2!2sGrosser%20Hillen%2022%2C%2030559%20Hannover%2C%20Germany!5e0!3m2!1sen!2s!4v1709520200000!5m2!1sen!2s',
+      mapUrl: 'https://maps.google.com/maps?q=Grosser+Hillen+22,+30559+Hannover,+Germany&t=&z=15&ie=UTF8&iwloc=&output=embed',
     },
     {
       title: t('wilhelmshavenTitle'),
       address: t('wilhelmshavenAddress'),
       phone: t('wilhelmshavenPhone'),
-      mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2396.8044884891806!2d8.112451276943892!3d53.51445947200949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b6c8e1a1a1a1a2%3A0x1a1a1a1a1a1a1a1!2sAm%20Priel%209%2C%2026388%20Wilhelmshaven%2C%20Germany!5e0!3m2!1sen!2s!4v1709520300000!5m2!1sen!2s',
+      mapUrl: 'https://maps.google.com/maps?q=Am+Priel+9,+26388+Wilhelmshaven,+Germany&t=&z=15&ie=UTF8&iwloc=&output=embed',
     },
     {
       title: t('vietnamTitle'),
       address: t('vietnamAddress'),
-      mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.489092864942!2d106.70004197590332!3d10.776889359271547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f4b3330bcc9%3A0xd1756a7ca80d18d!2s72%20L%C3%AA%20Th%C3%A1nh%20T%C3%B4n%2C%20B%E1%BA%BFn%20Ngh%C3%A9%2C%20Qu%E1%BA%ADn%201%2C%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam!5e0!3m2!1sen!2s!4v1709520000000!5m2!1sen!2s',
+      mapUrl: 'https://maps.google.com/maps?q=72+Le+Thanh+Ton,+Ben+Nghe,+District+1,+Ho+Chi+Minh+City,+Vietnam&t=&z=15&ie=UTF8&iwloc=&output=embed',
     },
   ]
 
