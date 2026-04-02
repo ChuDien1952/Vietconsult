@@ -306,8 +306,67 @@
     },
     "recruitment": {
       "title": "Tuyển dụng & Tuyển chọn",
+      "subtitle": "Tìm kiếm ứng viên có mục tiêu và tuyển chọn chuyên nghiệp các chuyên gia có trình độ tại Việt Nam theo yêu cầu cá nhân của bạn",
       "description": "Tìm kiếm ứng viên có mục tiêu và tuyển chọn chuyên nghiệp các chuyên gia có trình độ tại Việt Nam",
-      "link": "/services/rekrutierung-auswahl"
+      "link": "/services/rekrutierung-auswahl",
+      "cta": "Tìm lao động chuyên môn ngay",
+      "ctaSecondary": "Quay lại Dịch vụ",
+      "ctaButton": "Tìm ứng viên ngay",
+      "ctaSecondaryButton": "Tất cả dịch vụ",
+      "process": {
+        "title": "Quy trình tuyển dụng của chúng tôi",
+        "subtitle": "Lựa chọn có hệ thống để đạt thành công tối đa",
+        "step1": {
+          "title": "Phân tích nhu cầu & Hồ sơ yêu cầu",
+          "description": "Chúng tôi phân tích chi tiết yêu cầu của bạn, tạo hồ sơ năng lực chính xác và cùng xác định tiêu chí ứng viên lý tưởng cho doanh nghiệp của bạn."
+        },
+        "step2": {
+          "title": "Tìm kiếm ứng viên tại Việt Nam",
+          "description": "Thông qua mạng lưới đã thiết lập và sự hiện diện tại địa phương ở Việt Nam, chúng tôi xác định có mục tiêu các ứng viên phù hợp qua các trường đại học, trường nghề và cơ sở đối tác."
+        },
+        "step3": {
+          "title": "Sàng lọc & Đánh giá chuyên nghiệp",
+          "description": "Quy trình lựa chọn nhiều cấp độ với các bài kiểm tra chuyên môn, đánh giá năng lực ngôn ngữ, kiểm tra tâm lý phù hợp và phỏng vấn có cấu trúc đảm bảo chất lượng cao nhất."
+        },
+        "step4": {
+          "title": "Giới thiệu & Ghép đôi",
+          "description": "Bạn nhận được hồ sơ ứng viên chi tiết với tất cả trình độ chuyên môn liên quan, tiến hành phỏng vấn cá nhân và đưa ra quyết định lựa chọn cuối cùng."
+        }
+      },
+      "features": {
+        "title": "Lợi ích khi tuyển dụng với chúng tôi",
+        "subtitle": "Chất lượng và hiệu quả trong từng bước",
+        "feature1": {
+          "title": "Chuyên môn địa phương tại Việt Nam",
+          "description": "Văn phòng riêng tại TP. Hồ Chí Minh và Hà Nội với đội ngũ tuyển dụng giàu kinh nghiệm tại chỗ để tiếp cận trực tiếp các tài năng hàng đầu."
+        },
+        "feature2": {
+          "title": "Sàng lọc ứng viên toàn diện",
+          "description": "Quy trình lựa chọn nhiều cấp độ với các bài kiểm tra chuyên môn, ngôn ngữ và phẩm chất cá nhân đảm bảo chất lượng cao nhất."
+        },
+        "feature3": {
+          "title": "Chuyên môn hóa theo ngành",
+          "description": "Chuyên môn trong y tá, y khoa, kỹ thuật, công nghiệp và CNTT với chiến lược tuyển dụng và mạng lưới chuyên biệt cho từng ngành."
+        },
+        "feature4": {
+          "title": "Quy trình minh bạch",
+          "description": "Tài liệu đầy đủ, cập nhật thường xuyên và minh bạch hoàn toàn về tất cả các bước tuyển dụng."
+        },
+        "feature5": {
+          "title": "Trung gian tuân thủ pháp luật",
+          "description": "Mọi quy trình tuân thủ tiêu chuẩn Đức và quốc tế, được chứng nhận KDA theo hướng dẫn tuyển dụng đạo đức."
+        },
+        "feature6": {
+          "title": "Tiết kiệm thời gian & Hiệu quả",
+          "description": "Chúng tôi đảm nhận toàn bộ quy trình tuyển dụng và chỉ giới thiệu cho bạn các ứng viên đã được sàng lọc trước hàng đầu."
+        }
+      },
+      "cta": {
+        "title": "Sẵn sàng cho lao động chuyên môn có trình độ?",
+        "subtitle": "Bắt đầu quy trình tuyển dụng cá nhân của bạn với VIETconsult ngay và hưởng lợi từ chuyên môn nhiều năm của chúng tôi.",
+        "button": "Tư vấn miễn phí",
+        "buttonSecondary": "Khám phá thêm dịch vụ"
+      }
     },
     "languageTraining": {
       "title": "Đào tạo ngôn ngữ & văn hóa",
@@ -375,13 +434,131 @@
     },
     "recognition": {
       "title": "Công nhận",
+      "subtitle": "Hỗ trợ chuyên nghiệp trong việc công nhận nghề nghiệp và bằng cấp tại Đức cho tất cả các nghề được quy định",
       "description": "Hỗ trợ công nhận nghề nghiệp và bằng cấp tại Đức",
-      "link": "/services/anerkennung"
+      "link": "/services/anerkennung",
+      "cta": "Tìm hiểu thêm về Công nhận",
+      "ctaSecondary": "Quay lại Dịch vụ",
+      "ctaButton": "Nộp đơn công nhận ngay",
+      "ctaSecondaryButton": "Tất cả dịch vụ",
+      "process": {
+        "title": "Quy trình công nhận",
+        "subtitle": "Từng bước đến công nhận đầy đủ",
+        "step1": {
+          "title": "Kiểm tra tài liệu & Tư vấn",
+          "description": "Phân tích tất cả bằng cấp nước ngoài, kiểm tra khả năng công nhận, xác định cơ quan thẩm quyền và phát triển chiến lược công nhận cá nhân."
+        },
+        "step2": {
+          "title": "Nộp đơn & Liên hệ cơ quan",
+          "description": "Tổng hợp đầy đủ tất cả tài liệu cần thiết, dịch chuyên nghiệp, chứng nhận và nộp đơn tại các cơ quan công nhận có thẩm quyền."
+        },
+        "step3": {
+          "title": "Bù đắp thiếu hụt & Đào tạo",
+          "description": "Tổ chức các khóa học thích ứng, kiểm tra kiến thức hoặc kiểm tra năng lực để khắc phục các khoảng trống trình độ đã xác định."
+        },
+        "step4": {
+          "title": "Công nhận đầy đủ & Giấy phép hành nghề",
+          "description": "Đồng hành đến khi có công nhận đầy đủ, nhận được giấy phép hành nghề và đăng ký tại các phòng nghề nghiệp để hành nghề không hạn chế."
+        }
+      },
+      "features": {
+        "title": "Chuyên môn về Công nhận",
+        "subtitle": "Thành công của bạn là mục tiêu của chúng tôi",
+        "feature1": {
+          "title": "Tư vấn toàn diện",
+          "description": "Phân tích cá nhân trình độ của bạn với đánh giá chi tiết về cơ hội công nhận và quy trình minh bạch."
+        },
+        "feature2": {
+          "title": "Chuyên môn về Cơ quan",
+          "description": "Kinh nghiệm nhiều năm với các cơ quan công nhận Đức, mối quan hệ đã thiết lập và hiểu biết về tất cả các quy trình để xử lý hiệu quả."
+        },
+        "feature3": {
+          "title": "Tài liệu đầy đủ",
+          "description": "Chuẩn bị chuyên nghiệp tất cả tài liệu, dịch được chứng nhận, công chứng và chứng minh đầy đủ."
+        },
+        "feature4": {
+          "title": "Biện pháp đào tạo",
+          "description": "Tổ chức các khóa học thích ứng, khóa học chuẩn bị cho kỳ thi kiến thức và giới thiệu các tổ chức giáo dục phù hợp."
+        },
+        "feature5": {
+          "title": "Chuyên môn hóa nghề được quy định",
+          "description": "Chuyên môn trong y tá, y khoa, kỹ sư và các nghề được quản lý khác với quy trình công nhận cụ thể."
+        },
+        "feature6": {
+          "title": "Xử lý kịp thời",
+          "description": "Giám sát chủ động quy trình công nhận, phản ứng nhanh với các yêu cầu và giảm thiểu thời gian xử lý."
+        }
+      },
+      "cta": {
+        "title": "Công nhận đầy đủ cho lao động chuyên môn của bạn",
+        "subtitle": "Chúng tôi biết tất cả yêu cầu và quy trình. Hãy cùng nhau đảm bảo công nhận nghề nghiệp cho ứng viên của bạn.",
+        "button": "Bắt đầu tư vấn công nhận",
+        "buttonSecondary": "Khám phá thêm dịch vụ"
+      }
     },
     "relocation": {
       "title": "Di chuyển & Tích hợp",
+      "subtitle": "Đồng hành toàn diện khi nhập cảnh, tìm nhà ở và tích hợp dài hạn trong doanh nghiệp và tại Đức",
       "description": "Hỗ trợ nhập cảnh và tích hợp dài hạn vào doanh nghiệp",
-      "link": "/services/relocation-integration"
+      "link": "/services/relocation-integration",
+      "cta": "Tìm hiểu thêm về Tích hợp",
+      "ctaSecondary": "Quay lại Dịch vụ",
+      "ctaButton": "Yêu cầu tích hợp ngay",
+      "ctaSecondaryButton": "Tất cả dịch vụ",
+      "process": {
+        "title": "Quy trình tích hợp của chúng tôi",
+        "subtitle": "Được chăm sóc tốt ngay từ ngày đầu tiên",
+        "step1": {
+          "title": "Quản lý Visa & Nhập cảnh",
+          "description": "Hỗ trợ đầy đủ về đơn xin visa, hẹn lịch, chuẩn bị tài liệu, thủ tục nhập cảnh và đón tiếp tại sân bay ở Đức."
+        },
+        "step2": {
+          "title": "Chuyển đổi & Tìm nhà ở",
+          "description": "Tìm kiếm chỗ ở phù hợp, thương lượng với chủ nhà, hợp đồng thuê nhà, chuyển đổi dịch vụ và hỗ trợ đăng ký tại cơ quan thẩm quyền."
+        },
+        "step3": {
+          "title": "Hội nhập vào Doanh nghiệp",
+          "description": "Đồng hành những ngày làm việc đầu tiên, giới thiệu công việc, nâng cao nhận thức văn hóa của đội ngũ và các cuộc họp phản hồi định kỳ."
+        },
+        "step4": {
+          "title": "Hỗ trợ Dài hạn & Giải quyết Xung đột",
+          "description": "Liên lạc thường xuyên, hỗ trợ trong tình huống hàng ngày, trung gian văn hóa và giải quyết xung đột chuyên nghiệp để tích hợp bền vững."
+        }
+      },
+      "features": {
+        "title": "Chương trình tích hợp của chúng tôi",
+        "subtitle": "Thành công qua hỗ trợ toàn diện",
+        "feature1": {
+          "title": "Hỗ trợ Nhập cảnh",
+          "description": "Hỗ trợ đầy đủ về thủ tục visa, vận chuyển, đón tiếp tại sân bay và định hướng ban đầu tại Đức."
+        },
+        "feature2": {
+          "title": "Dịch vụ Tìm nhà ở",
+          "description": "Hỗ trợ tìm kiếm nhà ở, thương lượng với chủ nhà, hợp đồng thuê và giải pháp chuyển tiếp tạm thời khi cần."
+        },
+        "feature3": {
+          "title": "Hội nhập vào Doanh nghiệp",
+          "description": "Đồng hành những ngày làm việc đầu tiên, giới thiệu công việc, nâng cao nhận thức văn hóa của đội ngũ và các cuộc họp phản hồi định kỳ."
+        },
+        "feature4": {
+          "title": "Tích hợp Văn hóa",
+          "description": "Kết nối với cộng đồng người Việt, các hoạt động giải trí địa phương, sự kiện văn hóa và tích hợp xã hội để có sức khỏe dài hạn."
+        },
+        "feature5": {
+          "title": "Đoàn tụ Gia đình",
+          "description": "Hỗ trợ đoàn tụ gia đình, tìm kiếm chỗ ở mẫu giáo và trường học, tích hợp toàn bộ gia đình để có tình trạng sống ổn định."
+        },
+        "feature6": {
+          "title": "Quản lý Xung đột",
+          "description": "Trung gian chuyên nghiệp trong các thách thức, hiểu lầm văn hóa hoặc xung đột nghề nghiệp để có giải pháp bền vững."
+        }
+      },
+      "cta": {
+        "title": "Tích hợp bền vững đảm bảo thành công",
+        "subtitle": "Lao động chuyên môn được tích hợp tốt có động lực hơn, năng suất hơn và gắn bó lâu dài. Đầu tư vào đồng hành chuyên nghiệp.",
+        "button": "Yêu cầu chương trình tích hợp",
+        "buttonSecondary": "Khám phá thêm dịch vụ"
+      }
     }
   },
   "contact": {

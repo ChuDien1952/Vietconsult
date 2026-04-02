@@ -306,8 +306,67 @@
     },
     "recruitment": {
       "title": "Recruitment & Selection",
+      "subtitle": "Targeted candidate search and professional selection of qualified professionals in Vietnam according to your individual requirements",
       "description": "Targeted candidate search and professional selection of qualified professionals in Vietnam",
-      "link": "/services/rekrutierung-auswahl"
+      "link": "/services/rekrutierung-auswahl",
+      "cta": "Find professionals now",
+      "ctaSecondary": "Back to Services",
+      "ctaButton": "Find candidates now",
+      "ctaSecondaryButton": "All Services",
+      "process": {
+        "title": "Our Recruitment Process",
+        "subtitle": "Systematic selection for maximum success",
+        "step1": {
+          "title": "Needs Analysis & Requirements Profile",
+          "description": "We analyze your requirements in detail, create a precise competency profile, and jointly define the ideal candidate criteria for your company."
+        },
+        "step2": {
+          "title": "Candidate Search in Vietnam",
+          "description": "Through our established network and local presence in Vietnam, we specifically identify suitable candidates via universities, vocational schools, and partner institutions."
+        },
+        "step3": {
+          "title": "Professional Screening & Assessment",
+          "description": "Multi-stage selection processes with technical tests, language assessments, psychological aptitude tests, and structured interviews ensure highest quality."
+        },
+        "step4": {
+          "title": "Presentation & Matching",
+          "description": "You receive detailed candidate profiles with all relevant qualifications, conduct personal interviews, and make the final selection decision."
+        }
+      },
+      "features": {
+        "title": "Your Recruitment Advantages",
+        "subtitle": "Quality and efficiency in every step",
+        "feature1": {
+          "title": "Local Expertise in Vietnam",
+          "description": "Own offices in Ho Chi Minh City and Hanoi with experienced recruitment team on-site for direct access to top talents."
+        },
+        "feature2": {
+          "title": "Comprehensive Candidate Screening",
+          "description": "Multi-stage selection processes with technical, linguistic, and personal aptitude tests guarantee highest quality."
+        },
+        "feature3": {
+          "title": "Industry Specialization",
+          "description": "Expertise in nursing, medicine, technology, industry, and IT with industry-specific recruitment strategies and networks."
+        },
+        "feature4": {
+          "title": "Transparent Process",
+          "description": "Complete documentation, regular updates, and full transparency about all recruitment steps."
+        },
+        "feature5": {
+          "title": "Legally Compliant Placement",
+          "description": "All processes comply with German and international standards, KDA-certified according to ethical recruitment guidelines."
+        },
+        "feature6": {
+          "title": "Time Savings & Efficiency",
+          "description": "We handle the entire recruitment process and present you only pre-qualified top candidates."
+        }
+      },
+      "cta": {
+        "title": "Ready for qualified professionals?",
+        "subtitle": "Start your individual recruitment process with VIETconsult now and benefit from our many years of expertise.",
+        "button": "Free consultation",
+        "buttonSecondary": "Discover more services"
+      }
     },
     "languageTraining": {
       "title": "Language & Cultural Training",
@@ -375,13 +434,131 @@
     },
     "recognition": {
       "title": "Recognition",
+      "subtitle": "Professional support for professional recognition and qualification in Germany for all regulated professions",
       "description": "Support with professional recognition and qualification in Germany",
-      "link": "/services/anerkennung"
+      "link": "/services/anerkennung",
+      "cta": "Learn more about Recognition",
+      "ctaSecondary": "Back to Services",
+      "ctaButton": "Apply for recognition now",
+      "ctaSecondaryButton": "All Services",
+      "process": {
+        "title": "The Recognition Process",
+        "subtitle": "Step by step to full recognition",
+        "step1": {
+          "title": "Document Review & Consultation",
+          "description": "Analysis of all foreign qualifications, examination of recognizability, identification of responsible authorities, and development of an individual recognition strategy."
+        },
+        "step2": {
+          "title": "Application & Authority Communication",
+          "description": "Complete compilation of all required documents, professional translations, certifications, and submission to the responsible recognition bodies."
+        },
+        "step3": {
+          "title": "Deficit Compensation & Qualification",
+          "description": "Organization of adaptation courses, knowledge tests, or aptitude tests to close identified qualification gaps."
+        },
+        "step4": {
+          "title": "Full Recognition & Professional License",
+          "description": "Accompaniment until full recognition, obtaining professional license, and registration with professional chambers for unrestricted practice."
+        }
+      },
+      "features": {
+        "title": "Recognition Expertise",
+        "subtitle": "Your success is our goal",
+        "feature1": {
+          "title": "Comprehensive Consultation",
+          "description": "Individual analysis of your qualifications with detailed assessment of recognition chances and transparent process flow."
+        },
+        "feature2": {
+          "title": "Authority Expertise",
+          "description": "Many years of experience with German recognition bodies, established contacts, and knowledge of all procedural paths for efficient processing."
+        },
+        "feature3": {
+          "title": "Complete Documentation",
+          "description": "Professional preparation of all documents, certified translations, certifications, and complete documentation."
+        },
+        "feature4": {
+          "title": "Qualification Measures",
+          "description": "Organization of adaptation courses, preparatory courses for knowledge tests, and placement with suitable education providers."
+        },
+        "feature5": {
+          "title": "Specialization in Regulated Professions",
+          "description": "Expertise in nursing, medicine, engineering, and other regulated professions with specific recognition procedures."
+        },
+        "feature6": {
+          "title": "Timely Processing",
+          "description": "Proactive monitoring of the recognition process, quick response to inquiries, and minimization of processing time."
+        }
+      },
+      "cta": {
+        "title": "Full recognition for your professionals",
+        "subtitle": "We know all requirements and processes. Let us together ensure the professional recognition of your candidates.",
+        "button": "Start recognition consultation",
+        "buttonSecondary": "Discover more services"
+      }
     },
     "relocation": {
       "title": "Relocation & Integration",
+      "subtitle": "Comprehensive support for arrival, housing search, and long-term integration in the company and in Germany",
       "description": "Assistance with arrival and long-term integration in the company",
-      "link": "/services/relocation-integration"
+      "link": "/services/relocation-integration",
+      "cta": "Learn more about Integration",
+      "ctaSecondary": "Back to Services",
+      "ctaButton": "Request integration now",
+      "ctaSecondaryButton": "All Services",
+      "process": {
+        "title": "Our Integration Process",
+        "subtitle": "Well cared for from day one",
+        "step1": {
+          "title": "Visa & Entry Management",
+          "description": "Complete support with visa applications, appointment scheduling, document preparation, entry formalities, and airport pickup in Germany."
+        },
+        "step2": {
+          "title": "Relocation & Housing Search",
+          "description": "Finding suitable accommodation, negotiating with landlords, rental contracts, service relocation, and assistance with registration at authorities."
+        },
+        "step3": {
+          "title": "Onboarding in the Company",
+          "description": "Accompanying the first working days, induction, cultural sensitization of the team, and regular feedback meetings."
+        },
+        "step4": {
+          "title": "Long-term Support & Conflict Resolution",
+          "description": "Regular contact, support in everyday situations, cultural mediation, and professional conflict resolution for sustainable integration."
+        }
+      },
+      "features": {
+        "title": "Our Integration Program",
+        "subtitle": "Success through comprehensive support",
+        "feature1": {
+          "title": "Arrival Support",
+          "description": "Complete support with visa procedures, transport, airport pickup, and initial orientation in Germany."
+        },
+        "feature2": {
+          "title": "Housing Services",
+          "description": "Assistance with housing search, negotiating with landlords, rental contracts, and temporary transitional solutions when needed."
+        },
+        "feature3": {
+          "title": "Company Onboarding",
+          "description": "Accompanying the first working days, induction, cultural sensitization of the team, and regular feedback meetings."
+        },
+        "feature4": {
+          "title": "Cultural Integration",
+          "description": "Networking with Vietnamese community, local leisure activities, cultural events, and social integration for long-term well-being."
+        },
+        "feature5": {
+          "title": "Family Reunification",
+          "description": "Support with family reunification, kindergarten and school placement search, integration of the entire family for stable living situation."
+        },
+        "feature6": {
+          "title": "Conflict Management",
+          "description": "Professional mediation in challenges, cultural misunderstandings, or professional conflicts for sustainable solutions."
+        }
+      },
+      "cta": {
+        "title": "Sustainable integration guarantees success",
+        "subtitle": "Well-integrated professionals are more motivated, productive, and stay longer. Invest in professional support.",
+        "button": "Request integration program",
+        "buttonSecondary": "Discover more services"
+      }
     }
   },
   "contact": {
