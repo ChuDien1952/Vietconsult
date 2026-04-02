@@ -229,8 +229,8 @@ export function TeamGallerySection() {
           {/* Office Germany */}
           <motion.div variants={fadeInUp} className="group relative overflow-hidden rounded-2xl border-3 border-black shadow-bold">
             <Image
-              src="/images/about-us/office-germany.webp"
-              alt="Office in Germany"
+              src="/images/about-us/company-culture.webp"
+              alt="Office Team in Germany"
               width={400}
               height={300}
               className="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-110"
