@@ -31,8 +31,7 @@ export function Footer() {
           <div>
             <h3 className="mb-4 text-2xl font-bold text-white">VIETconsult</h3>
             <p className="text-sm leading-6">
-              Ganzheitliche Lösungen für Fachkräfte aus Vietnam. Von der
-              Rekrutierung bis zur Integration.
+              {t('description')}
             </p>
           </div>
 
@@ -77,7 +76,7 @@ export function Footer() {
           {/* Contact Info */}
           <div>
             <h4 className="mb-4 text-sm font-semibold uppercase text-white">
-              Kontakt
+              {t('contact')}
             </h4>
             <ul className="space-y-3 text-sm">
               <li>
