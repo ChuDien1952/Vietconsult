@@ -199,6 +199,8 @@ export function MissionVisionSection() {
 
 // Team Gallery Section
 export function TeamGallerySection() {
+  const t = useTranslations('aboutUs.teamGallery')
+
   return (
     <section className="relative bg-white py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -210,10 +212,10 @@ export function TeamGallerySection() {
           className="mb-12 text-center"
         >
           <h2 className="text-3xl font-bold tracking-tight text-dark-charcoal sm:text-4xl lg:text-5xl">
-            Unser Team in Aktion
+            {t('title')}
           </h2>
           <p className="mt-4 text-lg text-slate-gray">
-            Einblicke in unsere Arbeit und Zusammenarbeit
+            {t('subtitle')}
           </p>
         </motion.div>
 
@@ -235,15 +237,15 @@ export function TeamGallerySection() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-dark-charcoal/80 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6">
-              <h3 className="text-xl font-bold text-white">Deutschland</h3>
-              <p className="text-sm text-gray-300">Unsere Standorte</p>
+              <h3 className="text-xl font-bold text-white">{t('germanyTitle')}</h3>
+              <p className="text-sm text-gray-300">{t('germanyDescription')}</p>
             </div>
           </motion.div>
 
           {/* Office Vietnam */}
           <motion.div variants={fadeInUp} className="group relative overflow-hidden rounded-2xl border-3 border-black shadow-bold">
             <Image
-              src="/images/about-us/office-vietnam.webp"
+              src="/images/about-us/office-work.webp"
               alt="Office in Vietnam"
               width={400}
               height={300}
@@ -251,8 +253,8 @@ export function TeamGallerySection() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-dark-charcoal/80 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6">
-              <h3 className="text-xl font-bold text-white">Vietnam</h3>
-              <p className="text-sm text-gray-300">Rekrutierung & Bildung</p>
+              <h3 className="text-xl font-bold text-white">{t('vietnamTitle')}</h3>
+              <p className="text-sm text-gray-300">{t('vietnamDescription')}</p>
             </div>
           </motion.div>
 
@@ -267,8 +269,8 @@ export function TeamGallerySection() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-dark-charcoal/80 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6">
-              <h3 className="text-xl font-bold text-white">Zusammenarbeit</h3>
-              <p className="text-sm text-gray-300">Internationale Teams</p>
+              <h3 className="text-xl font-bold text-white">{t('collaborationTitle')}</h3>
+              <p className="text-sm text-gray-300">{t('collaborationDescription')}</p>
             </div>
           </motion.div>
         </motion.div>

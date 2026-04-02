@@ -211,6 +211,16 @@
       "reason4": "Growing educational infrastructure",
       "reason5": "Demographic advantage with young average age",
       "reason6": "Close cooperation between Vietnam and Germany"
+    },
+    "teamGallery": {
+      "title": "Our Team in Action",
+      "subtitle": "Insights into our work and collaboration",
+      "germanyTitle": "Germany",
+      "germanyDescription": "Our Locations",
+      "vietnamTitle": "Vietnam",
+      "vietnamDescription": "Recruitment & Education",
+      "collaborationTitle": "Collaboration",
+      "collaborationDescription": "International Teams"
     }
   },
   "advantages": {

@@ -211,6 +211,16 @@
       "reason4": "Wachsende Bildungsinfrastruktur",
       "reason5": "Demografischer Vorteil mit jungem Durchschnittsalter",
       "reason6": "Enge Zusammenarbeit zwischen Vietnam und Deutschland"
+    },
+    "teamGallery": {
+      "title": "Unser Team in Aktion",
+      "subtitle": "Einblicke in unsere Arbeit und Zusammenarbeit",
+      "germanyTitle": "Deutschland",
+      "germanyDescription": "Unsere Standorte",
+      "vietnamTitle": "Vietnam",
+      "vietnamDescription": "Rekrutierung & Bildung",
+      "collaborationTitle": "Zusammenarbeit",
+      "collaborationDescription": "Internationale Teams"
     }
   },
   "advantages": {
