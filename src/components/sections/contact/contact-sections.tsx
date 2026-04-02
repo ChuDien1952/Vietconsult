@@ -198,20 +198,24 @@ export function LocationsSection() {
       title: t('frankfurtTitle'),
       address: t('frankfurtAddress'),
       phone: t('frankfurtPhone'),
+      mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2556.2977144847976!2d8.709901476892573!3d50.17431097152564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd0f1c5c8e1b1b%3A0x1c8e1b1b1c8e1b1b!2sJulius-Brecht-Stra%C3%9Fe%203%2C%2060433%20Frankfurt%20am%20Main%2C%20Germany!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s',
     },
     {
       title: t('hannoverTitle'),
       address: t('hannoverAddress'),
       phone: t('hannoverPhone'),
+      mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.7044884891806!2d9.814451276943892!3d52.33445947200949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b00b6c5c8e1b1b%3A0x1c8e1b1b1c8e1b1b!2sGrosser%20Hillen%2022%2C%2030559%20Hannover%2C%20Germany!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s',
     },
     {
       title: t('wilhelmshavenTitle'),
       address: t('wilhelmshavenAddress'),
       phone: t('wilhelmshavenPhone'),
+      mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2396.8044884891806!2d8.114451276943892!3d53.51445947200949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b6c8e1b1b1c8e1%3A0x1c8e1b1b1c8e1b1b!2sAm%20Priel%209%2C%2026388%20Wilhelmshaven%2C%20Germany!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s',
     },
     {
       title: t('vietnamTitle'),
       address: t('vietnamAddress'),
+      mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4890707475446!2d106.70024631476882!3d10.776889992320164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f4b3330bcc9%3A0x5a981a5d4c4e1b1b!2s72%20L%C3%AA%20Th%C3%A1nh%20T%C3%B4n%2C%20B%E1%BA%BFn%20Ngh%C3%A9%2C%20Qu%E1%BA%ADn%201%2C%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s',
     },
   ]
 
@@ -242,27 +246,44 @@ export function LocationsSection() {
           whileInView="visible"
           viewport={{ once: true }}
           variants={stagger}
-          className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4"
+          className="grid grid-cols-1 gap-8 sm:grid-cols-2"
         >
           {locations.map((location, index) => (
             <motion.div key={index} variants={fadeInUp}>
-              <div className="group h-full rounded-2xl border-3 border-black bg-white p-6 shadow-bold transition-all duration-300 hover:-translate-y-2 hover:shadow-bold-hover">
-                <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full border-2 border-black bg-primary-gold transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12">
-                  <MapPin className="h-7 w-7 text-black" />
+              <div className="group h-full rounded-2xl border-3 border-black bg-white overflow-hidden shadow-bold transition-all duration-300 hover:shadow-bold-hover">
+                {/* Google Map Embed */}
+                <div className="relative h-64 w-full overflow-hidden">
+                  <iframe
+                    src={location.mapUrl}
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="absolute inset-0"
+                  />
                 </div>
-                <h3 className="mb-3 text-lg font-bold text-dark-charcoal">{location.title}</h3>
-                <p className="mb-3 text-sm text-slate-gray">{location.address}</p>
-                {location.phone && (
-                  <div className="flex items-center gap-2 text-sm text-slate-gray">
-                    <Phone className="h-4 w-4" />
-                    <a
-                      href={`tel:${location.phone}`}
-                      className="transition-colors duration-300 hover:text-primary-gold"
-                    >
-                      {location.phone}
-                    </a>
+
+                {/* Location Info */}
+                <div className="p-6">
+                  <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full border-2 border-black bg-primary-gold transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12">
+                    <MapPin className="h-7 w-7 text-black" />
                   </div>
-                )}
+                  <h3 className="mb-3 text-lg font-bold text-dark-charcoal">{location.title}</h3>
+                  <p className="mb-3 text-sm text-slate-gray">{location.address}</p>
+                  {location.phone && (
+                    <div className="flex items-center gap-2 text-sm text-slate-gray">
+                      <Phone className="h-4 w-4" />
+                      <a
+                        href={`tel:${location.phone}`}
+                        className="transition-colors duration-300 hover:text-primary-gold"
+                      >
+                        {location.phone}
+                      </a>
+                    </div>
+                  )}
+                </div>
               </div>
             </motion.div>
           ))}
