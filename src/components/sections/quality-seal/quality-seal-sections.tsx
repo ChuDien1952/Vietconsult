@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import {
@@ -70,25 +71,52 @@ export function IntroSection() {
   const t = useTranslations('qualitySeal.intro')
 
   return (
-    <section className="bg-white py-16 lg:py-24">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={fadeInUp}
-          className="mx-auto max-w-3xl text-center"
-        >
-          <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full border-3 border-black bg-primary-gold/10">
-            <Shield className="h-10 w-10 text-primary-gold" />
-          </div>
-          <h2 className="text-3xl font-bold tracking-tight text-dark-charcoal sm:text-4xl lg:text-5xl">
-            {t('title')}
-          </h2>
-          <p className="mt-6 text-lg leading-8 text-slate-gray">
-            {t('description')}
-          </p>
-        </motion.div>
+    <section className="relative bg-white py-16 lg:py-24 overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,_rgba(255,188,0,0.03)_0%,_transparent_50%)]" />
+
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16 items-center">
+          {/* Image Column */}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="relative order-2 lg:order-1"
+          >
+            <div className="relative overflow-hidden rounded-2xl border-3 border-black shadow-bold">
+              <Image
+                src="/images/quality-seal/quality-certificate.webp"
+                alt="Quality Certificate and Standards"
+                width={600}
+                height={400}
+                className="h-full w-full object-cover"
+              />
+            </div>
+            {/* Decorative gold border */}
+            <div className="absolute -bottom-6 -right-6 -z-10 h-full w-full rounded-2xl border-3 border-primary-gold" />
+          </motion.div>
+
+          {/* Content Column */}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="order-1 lg:order-2"
+          >
+            <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-full border-3 border-black bg-primary-gold/10">
+              <Shield className="h-10 w-10 text-primary-gold" />
+            </div>
+            <h2 className="text-h3 font-bold tracking-tight text-dark-charcoal lg:text-h2">
+              {t('title')}
+            </h2>
+            <p className="mt-6 text-body-lg leading-8 text-slate-gray lg:text-xl">
+              {t('description')}
+            </p>
+          </motion.div>
+        </div>
       </div>
     </section>
   )
@@ -198,27 +226,54 @@ export function ComplianceSection() {
   const t = useTranslations('qualitySeal.compliance')
 
   return (
-    <section className="bg-white py-16 lg:py-24">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={fadeInUp}
-          className="relative mx-auto max-w-4xl"
-        >
-          <div className="group rounded-2xl border-3 border-black bg-primary-gold/5 p-8 shadow-bold transition-all duration-300 hover:-translate-y-2 hover:shadow-bold-hover lg:p-12">
-            <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-full border-2 border-black bg-primary-gold">
-              <CheckCircle2 className="h-8 w-8 text-white" />
+    <section className="relative bg-white py-16 lg:py-24 overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,_rgba(32,44,88,0.02)_0%,_transparent_50%)]" />
+      <div className="absolute left-0 bottom-1/4 h-96 w-96 rounded-full bg-primary-gold/5 blur-3xl animate-pulse" />
+
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16 items-center">
+          {/* Content Column */}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+          >
+            <div className="rounded-2xl border-3 border-black bg-primary-gold/5 p-8 shadow-bold lg:p-12">
+              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-full border-2 border-black bg-primary-gold">
+                <CheckCircle2 className="h-8 w-8 text-white" />
+              </div>
+              <h2 className="text-h3 font-bold text-dark-charcoal lg:text-h2">
+                {t('title')}
+              </h2>
+              <p className="mt-6 text-body-lg leading-8 text-slate-gray">
+                {t('description')}
+              </p>
             </div>
-            <h2 className="text-2xl font-bold text-dark-charcoal sm:text-3xl lg:text-4xl">
-              {t('title')}
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-slate-gray">
-              {t('description')}
-            </p>
-          </div>
-        </motion.div>
+          </motion.div>
+
+          {/* Image Column */}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="relative"
+          >
+            <div className="relative overflow-hidden rounded-2xl border-3 border-black shadow-bold">
+              <Image
+                src="/images/quality-seal/professional-standards.webp"
+                alt="Professional Standards and Compliance"
+                width={600}
+                height={400}
+                className="h-full w-full object-cover"
+              />
+            </div>
+            {/* Decorative gold border */}
+            <div className="absolute -bottom-6 -right-6 -z-10 h-full w-full rounded-2xl border-3 border-primary-gold" />
+          </motion.div>
+        </div>
       </div>
     </section>
   )
