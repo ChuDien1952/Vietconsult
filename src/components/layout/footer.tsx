@@ -23,6 +23,7 @@ export function Footer() {
   const legalLinks = [
     { name: t('imprint'), href: `/${locale}/impressum` },
     { name: t('privacy'), href: `/${locale}/datenschutz` },
+    { name: t('careers'), href: `/${locale}/careers` },
   ]
 
   return (

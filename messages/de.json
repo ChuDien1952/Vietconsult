@@ -613,6 +613,7 @@
     "legal": "Rechtliches",
     "imprint": "Impressum",
     "privacy": "Datenschutz",
+    "careers": "Karriere",
     "copyright": "© 2026 VIETconsult. Alle Rechte vorbehalten."
   },
   "impressum": {
@@ -777,6 +778,117 @@
     "changes": {
       "title": "Änderungen der Datenschutzerklärung",
       "description": "Wir behalten uns vor, diese Datenschutzerklärung gelegentlich anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen umzusetzen. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung."
+    }
+  },
+  "careers": {
+    "pageTitle": "Karriere bei VIETconsult",
+    "pageSubtitle": "Werden Sie Teil unseres internationalen Teams",
+    "breadcrumb": "Karriere",
+    "intro": {
+      "title": "Arbeiten bei VIETconsult",
+      "description": "Bei VIETconsult arbeiten wir täglich daran, Menschen aus verschiedenen Kulturen zusammenzubringen und erfolgreiche internationale Karrieren zu ermöglichen. Werden Sie Teil unseres engagierten Teams und gestalten Sie mit uns die Zukunft der internationalen Fachkräftegewinnung."
+    },
+    "whyUs": {
+      "title": "Warum VIETconsult?",
+      "reasons": [
+        "Internationales Arbeitsumfeld mit Standorten in Deutschland und Vietnam",
+        "Sinnstiftende Tätigkeit mit echtem gesellschaftlichen Impact",
+        "Flache Hierarchien und kurze Entscheidungswege",
+        "Flexible Arbeitszeiten und Homeoffice-Möglichkeiten",
+        "Fort- und Weiterbildungsmöglichkeiten",
+        "Modernes Arbeitsumfeld und digitale Tools"
+      ]
+    },
+    "positions": {
+      "title": "Offene Positionen",
+      "subtitle": "Finden Sie Ihre nächste Herausforderung",
+      "list": [
+        {
+          "title": "Recruiter (m/w/d) - Schwerpunkt Vietnam",
+          "location": "Frankfurt am Main",
+          "type": "Vollzeit",
+          "description": "Sie sind verantwortlich für die Rekrutierung von Fachkräften aus Vietnam. Idealerweise sprechen Sie Vietnamesisch und haben Erfahrung im internationalen Recruiting."
+        },
+        {
+          "title": "HR Manager (m/w/d) International",
+          "location": "Frankfurt am Main / Ho Chi Minh City",
+          "type": "Vollzeit",
+          "description": "Koordination und Leitung unserer internationalen HR-Prozesse zwischen Deutschland und Vietnam. Sehr gute Deutsch- und Englischkenntnisse erforderlich."
+        },
+        {
+          "title": "Sprachtrainer (m/w/d) Deutsch",
+          "location": "Ho Chi Minh City, Vietnam",
+          "type": "Vollzeit / Teilzeit",
+          "description": "Unterrichten Sie Deutsch für vietnamesische Fachkräfte in unserer eigenen Sprachschule in Vietnam. DaF-Zertifikat von Vorteil."
+        },
+        {
+          "title": "Kundenberater (m/w/d) Pflegebereich",
+          "location": "Frankfurt am Main / Hannover",
+          "type": "Vollzeit",
+          "description": "Beratung deutscher Pflegeeinrichtungen bei der Rekrutierung von Pflegefachkräften aus Vietnam. Erfahrung im Pflegebereich wünschenswert."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Ihre Benefits",
+      "list": [
+        {
+          "title": "Wettbewerbsfähiges Gehalt",
+          "description": "Attraktive Vergütung plus Bonussystem"
+        },
+        {
+          "title": "Flexible Arbeitszeiten",
+          "description": "Work-Life-Balance durch flexible Arbeitszeitmodelle"
+        },
+        {
+          "title": "Homeoffice",
+          "description": "Möglichkeit zum mobilen Arbeiten"
+        },
+        {
+          "title": "Weiterbildung",
+          "description": "Individuelle Fort- und Weiterbildungsprogramme"
+        },
+        {
+          "title": "Internationales Umfeld",
+          "description": "Arbeit in einem multikulturellen Team"
+        },
+        {
+          "title": "Moderne Ausstattung",
+          "description": "Zeitgemäße IT-Ausstattung und Büros"
+        }
+      ]
+    },
+    "application": {
+      "title": "Bewerbungsprozess",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Bewerbung einreichen",
+          "description": "Senden Sie uns Ihre vollständigen Bewerbungsunterlagen per E-Mail"
+        },
+        {
+          "number": "02",
+          "title": "Erstgespräch",
+          "description": "Telefonisches oder virtuelles Kennenlernen"
+        },
+        {
+          "number": "03",
+          "title": "Persönliches Interview",
+          "description": "Ausführliches Gespräch in unserem Büro oder online"
+        },
+        {
+          "number": "04",
+          "title": "Vertragsangebot",
+          "description": "Bei beidseitigem Interesse erhalten Sie ein Angebot"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Initiativbewerbung",
+      "description": "Sie haben keine passende Position gefunden? Senden Sie uns gerne eine Initiativbewerbung!",
+      "button": "Jetzt bewerben",
+      "email": "karriere@vietconsult.com",
+      "documents": "Bitte senden Sie Ihre Bewerbungsunterlagen (Lebenslauf, Anschreiben, Zeugnisse) an:"
     }
   }
 }

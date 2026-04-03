@@ -613,6 +613,7 @@
     "legal": "Pháp lý",
     "imprint": "Thông tin pháp lý",
     "privacy": "Bảo mật",
+    "careers": "Tuyển dụng",
     "copyright": "© 2026 VIETconsult. Bảo lưu mọi quyền."
   },
   "impressum": {
@@ -777,6 +778,83 @@
     "changes": {
       "title": "Thay đổi Chính sách Bảo mật",
       "description": "Chúng tôi có quyền điều chỉnh chính sách bảo mật này thỉnh thoảng để nó luôn tuân thủ các yêu cầu pháp lý hiện hành hoặc để thực hiện các thay đổi đối với dịch vụ của chúng tôi. Lần truy cập tiếp theo của bạn sẽ tuân theo chính sách bảo mật mới."
+    }
+  },
+  "careers": {
+    "pageTitle": "Tuyển dụng tại VIETconsult",
+    "pageSubtitle": "Tham gia đội ngũ quốc tế của chúng tôi",
+    "breadcrumb": "Tuyển dụng",
+    "intro": {
+      "title": "Làm việc tại VIETconsult",
+      "description": "Tại VIETconsult, chúng tôi làm việc hàng ngày để kết nối mọi người từ các nền văn hóa khác nhau và tạo điều kiện cho sự nghiệp quốc tế thành công. Hãy tham gia đội ngũ tận tâm của chúng tôi và cùng nhau định hình tương lai của tuyển dụng nhân lực quốc tế."
+    },
+    "whyUs": {
+      "title": "Tại sao chọn VIETconsult?",
+      "reasons": [
+        "Môi trường làm việc quốc tế với văn phòng tại Đức và Việt Nam",
+        "Công việc ý nghĩa với tác động xã hội thực sự",
+        "Cơ cấu tổ chức phẳng và quy trình ra quyết định nhanh",
+        "Giờ làm việc linh hoạt và làm việc từ xa",
+        "Cơ hội đào tạo và phát triển",
+        "Môi trường làm việc hiện đại và công cụ số hóa"
+      ]
+    },
+    "positions": {
+      "title": "Vị trí tuyển dụng",
+      "subtitle": "Tìm thách thức tiếp theo của bạn",
+      "list": [
+        {
+          "title": "Nhân viên tuyển dụng - Tập trung Việt Nam",
+          "location": "Frankfurt am Main",
+          "type": "Toàn thời gian",
+          "description": "Bạn chịu trách nhiệm tuyển dụng nhân lực từ Việt Nam. Ưu tiên biết tiếng Việt và có kinh nghiệm tuyển dụng quốc tế."
+        },
+        {
+          "title": "Quản lý nhân sự quốc tế",
+          "location": "Frankfurt am Main / TP Hồ Chí Minh",
+          "type": "Toàn thời gian",
+          "description": "Điều phối và quản lý các quy trình nhân sự quốc tế giữa Đức và Việt Nam. Yêu cầu tiếng Đức và tiếng Anh tốt."
+        },
+        {
+          "title": "Giáo viên tiếng Đức",
+          "location": "TP Hồ Chí Minh, Việt Nam",
+          "type": "Toàn thời gian / Bán thời gian",
+          "description": "Giảng dạy tiếng Đức cho nhân lực Việt Nam tại trường ngôn ngữ của chúng tôi ở Việt Nam. Ưu tiên có chứng chỉ DaF."
+        },
+        {
+          "title": "Tư vấn khách hàng - Lĩnh vực y tế",
+          "location": "Frankfurt am Main / Hannover",
+          "type": "Toàn thời gian",
+          "description": "Tư vấn cho các cơ sở chăm sóc sức khỏe Đức trong việc tuyển dụng điều dưỡng từ Việt Nam. Ưu tiên có kinh nghiệm y tế."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Quyền lợi của bạn",
+      "list": [
+        {"title": "Lương cạnh tranh", "description": "Mức lương hấp dẫn cộng hệ thống thưởng"},
+        {"title": "Giờ làm linh hoạt", "description": "Cân bằng công việc-cuộc sống với mô hình làm việc linh hoạt"},
+        {"title": "Làm việc từ xa", "description": "Khả năng làm việc từ xa"},
+        {"title": "Đào tạo", "description": "Chương trình đào tạo và phát triển cá nhân"},
+        {"title": "Môi trường quốc tế", "description": "Làm việc trong đội ngũ đa văn hóa"},
+        {"title": "Trang thiết bị hiện đại", "description": "Trang thiết bị IT và văn phòng hiện đại"}
+      ]
+    },
+    "application": {
+      "title": "Quy trình ứng tuyển",
+      "steps": [
+        {"number": "01", "title": "Nộp hồ sơ", "description": "Gửi hồ sơ đầy đủ qua email"},
+        {"number": "02", "title": "Phỏng vấn ban đầu", "description": "Gặp gỡ qua điện thoại hoặc trực tuyến"},
+        {"number": "03", "title": "Phỏng vấn trực tiếp", "description": "Trò chuyện chi tiết tại văn phòng hoặc online"},
+        {"number": "04", "title": "Đề nghị hợp đồng", "description": "Nếu cùng quan tâm, bạn sẽ nhận được đề nghị"}
+      ]
+    },
+    "cta": {
+      "title": "Ứng tuyển tự do",
+      "description": "Không tìm thấy vị trí phù hợp? Hãy gửi hồ sơ ứng tuyển tự do cho chúng tôi!",
+      "button": "Ứng tuyển ngay",
+      "email": "karriere@vietconsult.com",
+      "documents": "Vui lòng gửi hồ sơ ứng tuyển (CV, thư xin việc, bằng cấp) đến:"
     }
   }
 }

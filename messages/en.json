@@ -613,6 +613,7 @@
     "legal": "Legal",
     "imprint": "Imprint",
     "privacy": "Privacy",
+    "careers": "Careers",
     "copyright": "© 2026 VIETconsult. All rights reserved."
   },
   "impressum": {
@@ -777,6 +778,83 @@
     "changes": {
       "title": "Changes to the Privacy Policy",
       "description": "We reserve the right to occasionally adjust this privacy policy so that it always complies with current legal requirements or to implement changes to our services. Your next visit will then be subject to the new privacy policy."
+    }
+  },
+  "careers": {
+    "pageTitle": "Careers at VIETconsult",
+    "pageSubtitle": "Join our international team",
+    "breadcrumb": "Careers",
+    "intro": {
+      "title": "Working at VIETconsult",
+      "description": "At VIETconsult, we work daily to bring people from different cultures together and enable successful international careers. Join our dedicated team and help us shape the future of international skilled worker recruitment."
+    },
+    "whyUs": {
+      "title": "Why VIETconsult?",
+      "reasons": [
+        "International work environment with locations in Germany and Vietnam",
+        "Meaningful work with real social impact",
+        "Flat hierarchies and short decision-making processes",
+        "Flexible working hours and home office options",
+        "Training and development opportunities",
+        "Modern work environment and digital tools"
+      ]
+    },
+    "positions": {
+      "title": "Open Positions",
+      "subtitle": "Find your next challenge",
+      "list": [
+        {
+          "title": "Recruiter - Focus Vietnam",
+          "location": "Frankfurt am Main",
+          "type": "Full-time",
+          "description": "You are responsible for recruiting skilled workers from Vietnam. Ideally you speak Vietnamese and have experience in international recruiting."
+        },
+        {
+          "title": "HR Manager International",
+          "location": "Frankfurt am Main / Ho Chi Minh City",
+          "type": "Full-time",
+          "description": "Coordination and management of our international HR processes between Germany and Vietnam. Very good German and English skills required."
+        },
+        {
+          "title": "German Language Trainer",
+          "location": "Ho Chi Minh City, Vietnam",
+          "type": "Full-time / Part-time",
+          "description": "Teach German to Vietnamese skilled workers in our own language school in Vietnam. DaF certificate advantageous."
+        },
+        {
+          "title": "Client Consultant Healthcare",
+          "location": "Frankfurt am Main / Hannover",
+          "type": "Full-time",
+          "description": "Advising German care facilities in recruiting nursing professionals from Vietnam. Experience in healthcare desirable."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Your Benefits",
+      "list": [
+        {"title": "Competitive Salary", "description": "Attractive compensation plus bonus system"},
+        {"title": "Flexible Hours", "description": "Work-life balance through flexible working time models"},
+        {"title": "Home Office", "description": "Possibility for remote work"},
+        {"title": "Training", "description": "Individual training and development programs"},
+        {"title": "International Environment", "description": "Work in a multicultural team"},
+        {"title": "Modern Equipment", "description": "Contemporary IT equipment and offices"}
+      ]
+    },
+    "application": {
+      "title": "Application Process",
+      "steps": [
+        {"number": "01", "title": "Submit Application", "description": "Send us your complete application documents by email"},
+        {"number": "02", "title": "Initial Interview", "description": "Phone or virtual introduction"},
+        {"number": "03", "title": "Personal Interview", "description": "Detailed conversation in our office or online"},
+        {"number": "04", "title": "Contract Offer", "description": "If mutually interested, you will receive an offer"}
+      ]
+    },
+    "cta": {
+      "title": "Speculative Application",
+      "description": "Didn't find a suitable position? Feel free to send us a speculative application!",
+      "button": "Apply now",
+      "email": "karriere@vietconsult.com",
+      "documents": "Please send your application documents (CV, cover letter, certificates) to:"
     }
   }
 }
