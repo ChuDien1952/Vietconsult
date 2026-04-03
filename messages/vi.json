@@ -614,5 +614,66 @@
     "imprint": "Thông tin pháp lý",
     "privacy": "Bảo mật",
     "copyright": "© 2026 VIETconsult. Bảo lưu mọi quyền."
+  },
+  "impressum": {
+    "pageTitle": "Thông tin pháp lý",
+    "pageSubtitle": "Thông tin pháp lý theo § 5 TMG",
+    "breadcrumb": "Thông tin pháp lý",
+    "company": {
+      "title": "Thông tin theo § 5 TMG",
+      "name": "VIETconsult GmbH",
+      "address": "Julius-Brecht-Straße 3",
+      "city": "60433 Frankfurt am Main",
+      "country": "Đức"
+    },
+    "registration": {
+      "title": "Đăng ký thương mại",
+      "court": "Tòa án Quận Frankfurt am Main",
+      "number": "HRB 122 378",
+      "vatId": "Mã số thuế VAT: DE 259 708 490"
+    },
+    "contact": {
+      "title": "Liên hệ",
+      "phone": "Điện thoại: +49 (0)69 8700746-80",
+      "fax": "Fax: +49 (0)69 8700746-85",
+      "mobile": "Di động: +49 (0)175 3889388 / +84 (0)70 3889388",
+      "email": "Email: contact@vietconsult.com"
+    },
+    "representative": {
+      "title": "Đại diện bởi",
+      "name": "Giám đốc điều hành: Phuong Nam Dinh",
+      "address": "Julius-Brecht-Straße 3, 60433 Frankfurt am Main"
+    },
+    "branches": {
+      "title": "Chi nhánh",
+      "hannover": "Hannover: Grosser Hillen 22, 30559 Hannover",
+      "frankfurt": "Frankfurt (Main): Julius-Brecht-Straße 3, 60433 Frankfurt am Main",
+      "nordwest": "Tây Bắc: Am Priel 9, 26388 Wilhelmshaven"
+    },
+    "bank": {
+      "title": "Thông tin ngân hàng",
+      "name": "Deutsche Bank AG, Đức",
+      "iban": "IBAN: DE06 28270024 0012877700",
+      "bic": "BIC: DEUTDEDB282"
+    },
+    "liability": {
+      "title": "Tuyên bố miễn trừ trách nhiệm",
+      "content": {
+        "title": "Trách nhiệm về nội dung",
+        "description": "Nội dung trang web của chúng tôi được tạo ra với sự cẩn thận tối đa. Tuy nhiên, chúng tôi không thể đảm bảo tính chính xác, đầy đủ và kịp thời của nội dung. Là nhà cung cấp dịch vụ, chúng tôi chịu trách nhiệm về nội dung của riêng mình trên các trang này theo § 7 khoản 1 TMG theo luật chung."
+      },
+      "links": {
+        "title": "Trách nhiệm về liên kết",
+        "description": "Trang web của chúng tôi chứa các liên kết đến các trang web bên thứ ba mà chúng tôi không có ảnh hưởng đến nội dung của họ. Do đó, chúng tôi không thể chịu trách nhiệm cho nội dung bên ngoài này. Nhà cung cấp hoặc người vận hành tương ứng của các trang luôn chịu trách nhiệm về nội dung của các trang được liên kết."
+      },
+      "copyright": {
+        "title": "Bản quyền",
+        "description": "Nội dung và tác phẩm được tạo bởi người vận hành trang web trên các trang này tuân theo luật bản quyền của Đức. Việc sao chép, chỉnh sửa, phân phối và mọi hình thức khai thác ngoài giới hạn của luật bản quyền đều cần có sự đồng ý bằng văn bản của tác giả hoặc người sáng tạo tương ứng."
+      }
+    },
+    "dispute": {
+      "title": "Giải quyết tranh chấp người tiêu dùng",
+      "description": "Chúng tôi không sẵn lòng cũng như không bắt buộc phải tham gia vào các thủ tục giải quyết tranh chấp trước hội đồng trọng tài người tiêu dùng."
+    }
   }
 }

@@ -614,5 +614,66 @@
     "imprint": "Impressum",
     "privacy": "Datenschutz",
     "copyright": "© 2026 VIETconsult. Alle Rechte vorbehalten."
+  },
+  "impressum": {
+    "pageTitle": "Impressum",
+    "pageSubtitle": "Rechtliche Angaben gemäß § 5 TMG",
+    "breadcrumb": "Impressum",
+    "company": {
+      "title": "Angaben gemäß § 5 TMG",
+      "name": "VIETconsult GmbH",
+      "address": "Julius-Brecht-Straße 3",
+      "city": "60433 Frankfurt am Main",
+      "country": "Deutschland"
+    },
+    "registration": {
+      "title": "Handelsregister",
+      "court": "Amtsgericht Frankfurt am Main",
+      "number": "HRB 122 378",
+      "vatId": "USt-IdNr.: DE 259 708 490"
+    },
+    "contact": {
+      "title": "Kontakt",
+      "phone": "Telefon: +49 (0)69 8700746-80",
+      "fax": "Fax: +49 (0)69 8700746-85",
+      "mobile": "Mobil: +49 (0)175 3889388 / +84 (0)70 3889388",
+      "email": "E-Mail: contact@vietconsult.com"
+    },
+    "representative": {
+      "title": "Vertreten durch",
+      "name": "Geschäftsführer: Phuong Nam Dinh",
+      "address": "Julius-Brecht-Straße 3, 60433 Frankfurt am Main"
+    },
+    "branches": {
+      "title": "Niederlassungen",
+      "hannover": "Hannover: Grosser Hillen 22, 30559 Hannover",
+      "frankfurt": "Frankfurt (Main): Julius-Brecht-Straße 3, 60433 Frankfurt am Main",
+      "nordwest": "NordWest: Am Priel 9, 26388 Wilhelmshaven"
+    },
+    "bank": {
+      "title": "Bankverbindung",
+      "name": "Deutsche Bank AG, Deutschland",
+      "iban": "IBAN: DE06 28270024 0012877700",
+      "bic": "BIC: DEUTDEDB282"
+    },
+    "liability": {
+      "title": "Haftungsausschluss",
+      "content": {
+        "title": "Haftung für Inhalte",
+        "description": "Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich."
+      },
+      "links": {
+        "title": "Haftung für Links",
+        "description": "Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich."
+      },
+      "copyright": {
+        "title": "Urheberrecht",
+        "description": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers."
+      }
+    },
+    "dispute": {
+      "title": "Verbraucherstreitbeilegung",
+      "description": "Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."
+    }
   }
 }

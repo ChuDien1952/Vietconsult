@@ -614,5 +614,66 @@
     "imprint": "Imprint",
     "privacy": "Privacy",
     "copyright": "© 2026 VIETconsult. All rights reserved."
+  },
+  "impressum": {
+    "pageTitle": "Legal Notice",
+    "pageSubtitle": "Legal information according to § 5 TMG",
+    "breadcrumb": "Legal Notice",
+    "company": {
+      "title": "Information according to § 5 TMG",
+      "name": "VIETconsult GmbH",
+      "address": "Julius-Brecht-Straße 3",
+      "city": "60433 Frankfurt am Main",
+      "country": "Germany"
+    },
+    "registration": {
+      "title": "Commercial Register",
+      "court": "District Court Frankfurt am Main",
+      "number": "HRB 122 378",
+      "vatId": "VAT ID: DE 259 708 490"
+    },
+    "contact": {
+      "title": "Contact",
+      "phone": "Phone: +49 (0)69 8700746-80",
+      "fax": "Fax: +49 (0)69 8700746-85",
+      "mobile": "Mobile: +49 (0)175 3889388 / +84 (0)70 3889388",
+      "email": "Email: contact@vietconsult.com"
+    },
+    "representative": {
+      "title": "Represented by",
+      "name": "Managing Director: Phuong Nam Dinh",
+      "address": "Julius-Brecht-Straße 3, 60433 Frankfurt am Main"
+    },
+    "branches": {
+      "title": "Branch Offices",
+      "hannover": "Hannover: Grosser Hillen 22, 30559 Hannover",
+      "frankfurt": "Frankfurt (Main): Julius-Brecht-Straße 3, 60433 Frankfurt am Main",
+      "nordwest": "NordWest: Am Priel 9, 26388 Wilhelmshaven"
+    },
+    "bank": {
+      "title": "Bank Details",
+      "name": "Deutsche Bank AG, Germany",
+      "iban": "IBAN: DE06 28270024 0012877700",
+      "bic": "BIC: DEUTDEDB282"
+    },
+    "liability": {
+      "title": "Liability Disclaimer",
+      "content": {
+        "title": "Liability for Content",
+        "description": "The contents of our pages have been created with the utmost care. However, we cannot guarantee the accuracy, completeness and timeliness of the content. As a service provider, we are responsible for our own content on these pages in accordance with § 7 para.1 TMG under general laws."
+      },
+      "links": {
+        "title": "Liability for Links",
+        "description": "Our offer contains links to external third-party websites over whose content we have no influence. Therefore, we cannot accept any liability for this external content. The respective provider or operator of the pages is always responsible for the content of the linked pages."
+      },
+      "copyright": {
+        "title": "Copyright",
+        "description": "The content and works created by the site operators on these pages are subject to German copyright law. The reproduction, editing, distribution and any kind of exploitation outside the limits of copyright require the written consent of the respective author or creator."
+      }
+    },
+    "dispute": {
+      "title": "Consumer Dispute Resolution",
+      "description": "We are neither willing nor obliged to participate in dispute resolution proceedings before a consumer arbitration board."
+    }
   }
 }
