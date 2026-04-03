@@ -675,5 +675,108 @@
       "title": "Consumer Dispute Resolution",
       "description": "We are neither willing nor obliged to participate in dispute resolution proceedings before a consumer arbitration board."
     }
+  },
+  "datenschutz": {
+    "pageTitle": "Privacy Policy",
+    "pageSubtitle": "Information on the handling of personal data",
+    "breadcrumb": "Privacy",
+    "intro": {
+      "title": "Privacy at VIETconsult",
+      "description": "The protection of your personal data is of particular concern to us. We therefore process your data exclusively on the basis of legal regulations (GDPR, TKG 2003). In this privacy policy, we inform you about the most important aspects of data processing on our website."
+    },
+    "controller": {
+      "title": "Responsible Party",
+      "company": "VIETconsult GmbH",
+      "address": "Julius-Brecht-Straße 3",
+      "city": "60433 Frankfurt am Main",
+      "country": "Germany",
+      "phone": "Phone: +49 (0)69 8700746-80",
+      "email": "Email: contact@vietconsult.com"
+    },
+    "dataCollection": {
+      "title": "Data Collection on Our Website",
+      "automatic": {
+        "title": "Automatic Data Collection",
+        "description": "When you visit our website, information of a general nature is automatically collected. This information (server log files) includes the type of web browser, the operating system used, the domain name of your Internet service provider and similar. This is exclusively information that does not allow any conclusions to be drawn about your person."
+      },
+      "forms": {
+        "title": "Contact Form",
+        "description": "If you send us inquiries via the contact form, your details from the inquiry form, including the contact details you provided there, will be stored by us for the purpose of processing the inquiry and in case of follow-up questions. We do not pass on this data without your consent."
+      }
+    },
+    "legalBasis": {
+      "title": "Legal Basis for Processing",
+      "gdpr6_1a": "Art. 6 (1) lit. a GDPR - Consent",
+      "gdpr6_1b": "Art. 6 (1) lit. b GDPR - Contract Fulfillment",
+      "gdpr6_1f": "Art. 6 (1) lit. f GDPR - Legitimate Interests",
+      "description": "The processing of personal data is based on the above-mentioned legal bases."
+    },
+    "userRights": {
+      "title": "Your Rights",
+      "description": "You generally have the rights to information, correction, deletion, restriction, data portability, revocation and objection. If you believe that the processing of your data violates data protection law or your data protection claims have been violated in any other way, you can complain to the supervisory authority.",
+      "rights": [
+        "Right to information about your stored data",
+        "Right to correction of incorrect data",
+        "Right to deletion of your data",
+        "Right to restriction of processing",
+        "Right to data portability",
+        "Right of revocation of consent given",
+        "Right to complain to the supervisory authority"
+      ]
+    },
+    "cookies": {
+      "title": "Cookies",
+      "description": "Our website uses cookies. Cookies are small text files that are stored in the Internet browser or by the Internet browser on a user's computer system. When a user visits a website, a cookie can be stored on the user's operating system.",
+      "types": {
+        "title": "Types of Cookies",
+        "session": "Session cookies - temporary, deleted after browser closure",
+        "persistent": "Persistent cookies - remain stored across multiple visits",
+        "functional": "Functional cookies - enable additional features",
+        "analytics": "Analytics cookies - to improve our offering"
+      },
+      "control": "You can set your browser to inform you about the setting of cookies and decide individually about their acceptance or exclude the acceptance of cookies for certain cases or in general."
+    },
+    "ssl": {
+      "title": "SSL/TLS Encryption",
+      "description": "For security reasons and to protect the transmission of confidential content, this site uses SSL/TLS encryption. You can recognize an encrypted connection by the browser's address line changing from 'http://' to 'https://' and by the lock symbol in your browser line."
+    },
+    "thirdParty": {
+      "title": "Third-Party Services",
+      "description": "Our website uses various third-party services. Each service is subject to its own privacy policies:",
+      "services": [
+        "Google Maps - Map Service",
+        "OpenStreetMap - Map Service",
+        "YouTube - Video Service",
+        "Vimeo - Video Service",
+        "Google reCAPTCHA - Spam Protection",
+        "Matomo - Web Analytics (local, anonymized)"
+      ]
+    },
+    "analytics": {
+      "title": "Web Analytics",
+      "matomo": {
+        "title": "Matomo (formerly Piwik)",
+        "description": "This website uses Matomo, an open-source software for statistical evaluation of visitor access. Matomo uses cookies. The information generated by the cookie about your use of this website is stored on our server. Your IP address is anonymized immediately after processing and before storage."
+      }
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "If you would like to receive the newsletter offered on the website, we require an email address from you as well as information that allows us to verify that you are the owner of the specified email address and agree to receive the newsletter.",
+      "unsubscribe": "You can revoke your consent at any time. A link to unsubscribe can be found in each newsletter."
+    },
+    "retention": {
+      "title": "Storage Duration",
+      "description": "We store personal data only for as long as is necessary to fulfill the respective purpose or legal retention periods exist. After the purpose or expiration of the deadlines, the corresponding data is routinely deleted."
+    },
+    "contact": {
+      "title": "Contact Data Protection Officer",
+      "description": "If you have any questions about data protection, you can contact us at any time:",
+      "email": "Email: contact@vietconsult.com",
+      "phone": "Phone: +49 (0)69 8700746-80"
+    },
+    "changes": {
+      "title": "Changes to the Privacy Policy",
+      "description": "We reserve the right to occasionally adjust this privacy policy so that it always complies with current legal requirements or to implement changes to our services. Your next visit will then be subject to the new privacy policy."
+    }
   }
 }

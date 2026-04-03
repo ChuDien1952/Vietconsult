@@ -675,5 +675,108 @@
       "title": "Verbraucherstreitbeilegung",
       "description": "Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."
     }
+  },
+  "datenschutz": {
+    "pageTitle": "Datenschutzerklärung",
+    "pageSubtitle": "Informationen zum Umgang mit personenbezogenen Daten",
+    "breadcrumb": "Datenschutz",
+    "intro": {
+      "title": "Datenschutz bei VIETconsult",
+      "description": "Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen. Wir verarbeiten Ihre Daten daher ausschließlich auf Grundlage der gesetzlichen Bestimmungen (DSGVO, TKG 2003). In dieser Datenschutzerklärung informieren wir Sie über die wichtigsten Aspekte der Datenverarbeitung im Rahmen unserer Website."
+    },
+    "controller": {
+      "title": "Verantwortliche Stelle",
+      "company": "VIETconsult GmbH",
+      "address": "Julius-Brecht-Straße 3",
+      "city": "60433 Frankfurt am Main",
+      "country": "Deutschland",
+      "phone": "Telefon: +49 (0)69 8700746-80",
+      "email": "E-Mail: contact@vietconsult.com"
+    },
+    "dataCollection": {
+      "title": "Datenerfassung auf unserer Website",
+      "automatic": {
+        "title": "Automatische Datenerfassung",
+        "description": "Beim Besuch unserer Website werden automatisch Informationen allgemeiner Natur erfasst. Diese Informationen (Server-Logfiles) beinhalten etwa die Art des Webbrowsers, das verwendete Betriebssystem, den Domainnamen Ihres Internet Service Providers und ähnliches. Hierbei handelt es sich ausschließlich um Informationen, welche keine Rückschlüsse auf Ihre Person zulassen."
+      },
+      "forms": {
+        "title": "Kontaktformular",
+        "description": "Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter."
+      }
+    },
+    "legalBasis": {
+      "title": "Rechtsgrundlage der Verarbeitung",
+      "gdpr6_1a": "Art. 6 Abs. 1 lit. a DSGVO - Einwilligung",
+      "gdpr6_1b": "Art. 6 Abs. 1 lit. b DSGVO - Vertragserfüllung",
+      "gdpr6_1f": "Art. 6 Abs. 1 lit. f DSGVO - Berechtigte Interessen",
+      "description": "Die Verarbeitung personenbezogener Daten erfolgt auf Grundlage der oben genannten Rechtsgrundlagen."
+    },
+    "userRights": {
+      "title": "Ihre Rechte",
+      "description": "Ihnen stehen grundsätzlich die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerruf und Widerspruch zu. Wenn Sie glauben, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verstößt oder Ihre datenschutzrechtlichen Ansprüche sonst in einer Weise verletzt worden sind, können Sie sich bei der Aufsichtsbehörde beschweren.",
+      "rights": [
+        "Recht auf Auskunft über Ihre gespeicherten Daten",
+        "Recht auf Berichtigung unrichtiger Daten",
+        "Recht auf Löschung Ihrer Daten",
+        "Recht auf Einschränkung der Verarbeitung",
+        "Recht auf Datenübertragbarkeit",
+        "Widerrufsrecht bei erteilter Einwilligung",
+        "Beschwerderecht bei der Aufsichtsbehörde"
+      ]
+    },
+    "cookies": {
+      "title": "Cookies",
+      "description": "Unsere Website verwendet Cookies. Cookies sind kleine Textdateien, die im Internetbrowser bzw. vom Internetbrowser auf dem Computersystem eines Nutzers gespeichert werden. Ruft ein Nutzer eine Website auf, so kann ein Cookie auf dem Betriebssystem des Nutzers gespeichert werden.",
+      "types": {
+        "title": "Arten von Cookies",
+        "session": "Session-Cookies - temporär, werden nach Browser-Schließung gelöscht",
+        "persistent": "Persistente Cookies - bleiben über mehrere Besuche gespeichert",
+        "functional": "Funktionale Cookies - ermöglichen zusätzliche Funktionen",
+        "analytics": "Analyse-Cookies - zur Verbesserung unseres Angebots"
+      },
+      "control": "Sie können Ihren Browser so einstellen, dass Sie über das Setzen von Cookies informiert werden und einzeln über deren Annahme entscheiden oder die Annahme von Cookies für bestimmte Fälle oder generell ausschließen."
+    },
+    "ssl": {
+      "title": "SSL/TLS-Verschlüsselung",
+      "description": "Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte eine SSL/TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von 'http://' auf 'https://' wechselt und an dem Schloss-Symbol in Ihrer Browserzeile."
+    },
+    "thirdParty": {
+      "title": "Dienste von Drittanbietern",
+      "description": "Unsere Website nutzt verschiedene Dienste von Drittanbietern. Jeder Dienst unterliegt seinen eigenen Datenschutzbestimmungen:",
+      "services": [
+        "Google Maps - Kartendienst",
+        "OpenStreetMap - Kartendienst",
+        "YouTube - Videodienst",
+        "Vimeo - Videodienst",
+        "Google reCAPTCHA - Spam-Schutz",
+        "Matomo - Webanalyse (lokal, anonymisiert)"
+      ]
+    },
+    "analytics": {
+      "title": "Web-Analyse",
+      "matomo": {
+        "title": "Matomo (ehemals Piwik)",
+        "description": "Diese Website benutzt Matomo, eine Open-Source-Software zur statistischen Auswertung der Besucherzugriffe. Matomo verwendet Cookies. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieser Website werden auf unserem Server gespeichert. Ihre IP-Adresse wird unmittelbar nach der Verarbeitung und vor deren Speicherung anonymisiert."
+      }
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Wenn Sie den auf der Website angebotenen Newsletter beziehen möchten, benötigen wir von Ihnen eine E-Mail-Adresse sowie Informationen, welche uns die Überprüfung gestatten, dass Sie der Inhaber der angegebenen E-Mail-Adresse sind und mit dem Empfang des Newsletters einverstanden sind.",
+      "unsubscribe": "Sie können Ihre Einwilligung jederzeit widerrufen. Ein Link zur Abmeldung findet sich in jedem Newsletter."
+    },
+    "retention": {
+      "title": "Speicherdauer",
+      "description": "Wir speichern personenbezogene Daten nur so lange, wie dies zur Erfüllung des jeweiligen Zwecks erforderlich ist oder gesetzliche Aufbewahrungsfristen bestehen. Nach Wegfall des Zwecks bzw. Ablauf der Fristen werden die entsprechenden Daten routinemäßig gelöscht."
+    },
+    "contact": {
+      "title": "Kontakt zum Datenschutzbeauftragten",
+      "description": "Bei Fragen zum Datenschutz können Sie sich jederzeit an uns wenden:",
+      "email": "E-Mail: contact@vietconsult.com",
+      "phone": "Telefon: +49 (0)69 8700746-80"
+    },
+    "changes": {
+      "title": "Änderungen der Datenschutzerklärung",
+      "description": "Wir behalten uns vor, diese Datenschutzerklärung gelegentlich anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen umzusetzen. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung."
+    }
   }
 }

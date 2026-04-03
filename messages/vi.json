@@ -675,5 +675,108 @@
       "title": "Giải quyết tranh chấp người tiêu dùng",
       "description": "Chúng tôi không sẵn lòng cũng như không bắt buộc phải tham gia vào các thủ tục giải quyết tranh chấp trước hội đồng trọng tài người tiêu dùng."
     }
+  },
+  "datenschutz": {
+    "pageTitle": "Chính sách bảo mật",
+    "pageSubtitle": "Thông tin về việc xử lý dữ liệu cá nhân",
+    "breadcrumb": "Bảo mật",
+    "intro": {
+      "title": "Bảo mật tại VIETconsult",
+      "description": "Việc bảo vệ dữ liệu cá nhân của bạn là mối quan tâm đặc biệt của chúng tôi. Do đó, chúng tôi chỉ xử lý dữ liệu của bạn dựa trên các quy định pháp luật (GDPR, TKG 2003). Trong chính sách bảo mật này, chúng tôi thông báo cho bạn về các khía cạnh quan trọng nhất của việc xử lý dữ liệu trong phạm vi trang web của chúng tôi."
+    },
+    "controller": {
+      "title": "Bên chịu trách nhiệm",
+      "company": "VIETconsult GmbH",
+      "address": "Julius-Brecht-Straße 3",
+      "city": "60433 Frankfurt am Main",
+      "country": "Đức",
+      "phone": "Điện thoại: +49 (0)69 8700746-80",
+      "email": "Email: contact@vietconsult.com"
+    },
+    "dataCollection": {
+      "title": "Thu thập dữ liệu trên trang web",
+      "automatic": {
+        "title": "Thu thập dữ liệu tự động",
+        "description": "Khi bạn truy cập trang web của chúng tôi, thông tin có tính chất chung sẽ được thu thập tự động. Thông tin này (tệp nhật ký máy chủ) bao gồm loại trình duyệt web, hệ điều hành được sử dụng, tên miền của nhà cung cấp dịch vụ Internet của bạn và tương tự. Đây chỉ là thông tin không cho phép rút ra bất kỳ kết luận nào về con người bạn."
+      },
+      "forms": {
+        "title": "Biểu mẫu liên hệ",
+        "description": "Nếu bạn gửi yêu cầu cho chúng tôi qua biểu mẫu liên hệ, thông tin chi tiết của bạn từ biểu mẫu yêu cầu, bao gồm thông tin liên hệ mà bạn cung cấp ở đó, sẽ được chúng tôi lưu trữ cho mục đích xử lý yêu cầu và trong trường hợp có câu hỏi tiếp theo. Chúng tôi không chuyển dữ liệu này mà không có sự đồng ý của bạn."
+      }
+    },
+    "legalBasis": {
+      "title": "Cơ sở pháp lý cho việc xử lý",
+      "gdpr6_1a": "Điều 6 (1) lit. a GDPR - Sự đồng ý",
+      "gdpr6_1b": "Điều 6 (1) lit. b GDPR - Thực hiện hợp đồng",
+      "gdpr6_1f": "Điều 6 (1) lit. f GDPR - Lợi ích hợp pháp",
+      "description": "Việc xử lý dữ liệu cá nhân dựa trên các cơ sở pháp lý nêu trên."
+    },
+    "userRights": {
+      "title": "Quyền của bạn",
+      "description": "Bạn thường có quyền về thông tin, sửa chữa, xóa, hạn chế, chuyển giao dữ liệu, thu hồi và phản đối. Nếu bạn tin rằng việc xử lý dữ liệu của bạn vi phạm luật bảo vệ dữ liệu hoặc các yêu cầu bảo vệ dữ liệu của bạn đã bị vi phạm theo bất kỳ cách nào khác, bạn có thể khiếu nại với cơ quan giám sát.",
+      "rights": [
+        "Quyền được biết thông tin về dữ liệu được lưu trữ của bạn",
+        "Quyền sửa chữa dữ liệu không chính xác",
+        "Quyền xóa dữ liệu của bạn",
+        "Quyền hạn chế xử lý",
+        "Quyền chuyển giao dữ liệu",
+        "Quyền thu hồi sự đồng ý đã cho",
+        "Quyền khiếu nại với cơ quan giám sát"
+      ]
+    },
+    "cookies": {
+      "title": "Cookies",
+      "description": "Trang web của chúng tôi sử dụng cookies. Cookies là các tệp văn bản nhỏ được lưu trữ trong trình duyệt Internet hoặc bởi trình duyệt Internet trên hệ thống máy tính của người dùng. Khi người dùng truy cập một trang web, cookie có thể được lưu trữ trên hệ điều hành của người dùng.",
+      "types": {
+        "title": "Các loại Cookies",
+        "session": "Session cookies - tạm thời, bị xóa sau khi đóng trình duyệt",
+        "persistent": "Persistent cookies - được lưu trữ qua nhiều lần truy cập",
+        "functional": "Functional cookies - cho phép các tính năng bổ sung",
+        "analytics": "Analytics cookies - để cải thiện dịch vụ của chúng tôi"
+      },
+      "control": "Bạn có thể cài đặt trình duyệt của mình để thông báo cho bạn về việc thiết lập cookies và quyết định riêng lẻ về việc chấp nhận chúng hoặc loại trừ việc chấp nhận cookies cho các trường hợp nhất định hoặc nói chung."
+    },
+    "ssl": {
+      "title": "Mã hóa SSL/TLS",
+      "description": "Vì lý do bảo mật và để bảo vệ việc truyền tải nội dung bí mật, trang web này sử dụng mã hóa SSL/TLS. Bạn có thể nhận ra kết nối được mã hóa bằng cách dòng địa chỉ của trình duyệt thay đổi từ 'http://' thành 'https://' và bằng biểu tượng khóa trong dòng trình duyệt của bạn."
+    },
+    "thirdParty": {
+      "title": "Dịch vụ của bên thứ ba",
+      "description": "Trang web của chúng tôi sử dụng nhiều dịch vụ của bên thứ ba. Mỗi dịch vụ tuân theo chính sách bảo mật riêng của nó:",
+      "services": [
+        "Google Maps - Dịch vụ bản đồ",
+        "OpenStreetMap - Dịch vụ bản đồ",
+        "YouTube - Dịch vụ video",
+        "Vimeo - Dịch vụ video",
+        "Google reCAPTCHA - Bảo vệ chống spam",
+        "Matomo - Phân tích web (cục bộ, ẩn danh)"
+      ]
+    },
+    "analytics": {
+      "title": "Phân tích web",
+      "matomo": {
+        "title": "Matomo (trước đây là Piwik)",
+        "description": "Trang web này sử dụng Matomo, một phần mềm mã nguồn mở để đánh giá thống kê lượng truy cập của khách truy cập. Matomo sử dụng cookies. Thông tin được tạo bởi cookie về việc sử dụng trang web này của bạn được lưu trữ trên máy chủ của chúng tôi. Địa chỉ IP của bạn được ẩn danh ngay lập tức sau khi xử lý và trước khi lưu trữ."
+      }
+    },
+    "newsletter": {
+      "title": "Bản tin",
+      "description": "Nếu bạn muốn nhận bản tin được cung cấp trên trang web, chúng tôi yêu cầu địa chỉ email của bạn cũng như thông tin cho phép chúng tôi xác minh rằng bạn là chủ sở hữu của địa chỉ email được chỉ định và đồng ý nhận bản tin.",
+      "unsubscribe": "Bạn có thể thu hồi sự đồng ý của mình bất cứ lúc nào. Liên kết hủy đăng ký có thể được tìm thấy trong mỗi bản tin."
+    },
+    "retention": {
+      "title": "Thời gian lưu trữ",
+      "description": "Chúng tôi chỉ lưu trữ dữ liệu cá nhân miễn là cần thiết để hoàn thành mục đích tương ứng hoặc tồn tại thời hạn lưu giữ theo luật định. Sau khi mục đích hoặc hết thời hạn, dữ liệu tương ứng sẽ được xóa thường xuyên."
+    },
+    "contact": {
+      "title": "Liên hệ với Cán bộ Bảo vệ Dữ liệu",
+      "description": "Nếu bạn có bất kỳ câu hỏi nào về bảo vệ dữ liệu, bạn có thể liên hệ với chúng tôi bất cứ lúc nào:",
+      "email": "Email: contact@vietconsult.com",
+      "phone": "Điện thoại: +49 (0)69 8700746-80"
+    },
+    "changes": {
+      "title": "Thay đổi Chính sách Bảo mật",
+      "description": "Chúng tôi có quyền điều chỉnh chính sách bảo mật này thỉnh thoảng để nó luôn tuân thủ các yêu cầu pháp lý hiện hành hoặc để thực hiện các thay đổi đối với dịch vụ của chúng tôi. Lần truy cập tiếp theo của bạn sẽ tuân theo chính sách bảo mật mới."
+    }
   }
 }
