@@ -44,4 +44,11 @@
     font-weight: 700;
     color: var(--dark-charcoal);
   }
+
+  /* Prevent horizontal scroll on all devices */
+  html,
+  body {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
 }

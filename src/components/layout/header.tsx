@@ -183,22 +183,13 @@ export function Header() {
               </Link>
             ))}
 
-            {/* Mobile Services Link */}
-            <Link
-              href={`/${locale}/services`}
-              onClick={() => setMobileMenuOpen(false)}
-              className="block rounded-lg border-2 border-transparent px-4 py-3 text-base font-bold uppercase tracking-wide text-slate-gray transition-colors hover:border-primary-gold hover:bg-light-gray"
-            >
-              {t('services')}
-            </Link>
-
             {/* Mobile Services Dropdown */}
-            <div className="rounded-lg border-2 border-black bg-dark-charcoal">
+            <div className="rounded-lg border-2 border-black bg-primary-navy">
               <button
                 onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
                 className="flex w-full items-center justify-between px-4 py-3 text-base font-bold uppercase tracking-wide text-white"
               >
-                {t('services')} - Chi tiết
+                {t('services')}
                 <ChevronDown className={`h-5 w-5 transition-transform duration-200 ${servicesDropdownOpen ? 'rotate-180' : ''}`} />
               </button>
 
