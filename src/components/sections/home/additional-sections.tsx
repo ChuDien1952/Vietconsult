@@ -145,7 +145,7 @@ export function ProcessSection() {
                   {/* Number badge - Tap to zoom on mobile, hover on desktop */}
                   <motion.div
                     onClick={() => setActiveStep(activeStep === step.number ? null : step.number)}
-                    className={`group relative flex h-32 w-32 md:h-44 md:w-56 flex-shrink-0 items-center justify-center overflow-hidden cursor-pointer ${
+                    className={`group relative flex h-32 w-32 md:h-44 md:w-56 flex-shrink-0 items-center justify-center overflow-hidden rounded-[50%] cursor-pointer ${
                       index % 2 === 0
                         ? 'md:order-2 md:ml-auto md:mr-8'
                         : 'md:order-1 md:ml-8'
@@ -195,16 +195,12 @@ export function ProcessSection() {
                     </span>
                   </motion.div>
 
-                  {/* Content Card - inverse scaling on tap/hover */}
+                  {/* Content Card - static on mobile, inverse scaling on desktop hover only */}
                   <motion.div
                     className={`flex-1 rounded-xl border-3 border-black bg-white p-6 shadow-bold transition-all duration-[5000ms] ease-out hover:shadow-bold-hover ${
-                      activeStep === step.number
-                        ? 'scale-[0.2]'
-                        : 'group-hover:scale-[0.2]'
-                    } ${
                       index % 2 === 0
-                        ? `md:pr-8 ${activeStep === step.number ? 'translate-x-32' : 'group-hover:translate-x-32'}`
-                        : `md:pl-8 ${activeStep === step.number ? '-translate-x-32' : 'group-hover:-translate-x-32'}`
+                        ? 'md:pr-8 md:group-hover:scale-[0.2] md:group-hover:translate-x-32'
+                        : 'md:pl-8 md:group-hover:scale-[0.2] md:group-hover:-translate-x-32'
                     }`}
                   >
                     <h3 className="text-xl font-bold text-dark-charcoal lg:text-2xl">
