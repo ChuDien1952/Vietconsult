@@ -1,5 +1,6 @@
 'use client'
 
+import { useState } from 'react'
 import { useTranslations, useLocale } from 'next-intl'
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
@@ -72,6 +73,7 @@ export function PartnersSection() {
 // 4-Step Process Section
 export function ProcessSection() {
   const t = useTranslations('home.process')
+  const [activeStep, setActiveStep] = useState<number | null>(null)
 
   const steps = [
     {
@@ -140,48 +142,69 @@ export function ProcessSection() {
                 } md:w-1/2`}
               >
                 <div className="flex items-start gap-6 md:gap-8">
-                  {/* Number badge - Small scale initial, zoom on desktop hover only */}
+                  {/* Number badge - Tap to zoom on mobile, hover on desktop */}
                   <motion.div
-                    className={`group relative flex h-32 w-32 md:h-44 md:w-56 flex-shrink-0 items-center justify-center overflow-hidden ${
+                    onClick={() => setActiveStep(activeStep === step.number ? null : step.number)}
+                    className={`group relative flex h-32 w-32 md:h-44 md:w-56 flex-shrink-0 items-center justify-center overflow-hidden cursor-pointer ${
                       index % 2 === 0
                         ? 'md:order-2 md:ml-auto md:mr-8'
                         : 'md:order-1 md:ml-8'
                     }`}
                   >
-                    {/* Minimal halo effect (20%) - desktop only */}
-                    <div className="absolute inset-0 rounded-[50%] bg-gradient-to-br from-white/10 via-transparent to-transparent blur-xl opacity-20 group-hover:opacity-0 transition-opacity duration-[5000ms]" />
+                    {/* Minimal halo effect */}
+                    <div className={`absolute inset-0 rounded-[50%] bg-gradient-to-br from-white/10 via-transparent to-transparent blur-xl transition-opacity duration-[5000ms] ${
+                      activeStep === step.number ? 'opacity-0' : 'opacity-20 group-hover:opacity-0'
+                    }`} />
 
-                    {/* Oval border - small initial scale, zoom on hover (desktop only) */}
-                    <div className="absolute inset-0 rounded-[50%] border-3 border-black shadow-bold scale-[0.2] md:group-hover:scale-100 transition-all duration-[5000ms] ease-out" />
+                    {/* Oval border - tap to zoom on mobile, hover on desktop */}
+                    <div className={`absolute inset-0 rounded-[50%] border-3 border-black shadow-bold transition-all duration-[5000ms] ease-out ${
+                      activeStep === step.number ? 'scale-100' : 'scale-[0.2] md:group-hover:scale-100'
+                    }`} />
 
-                    {/* Image container - small initial scale, zoom on hover (desktop only) */}
-                    <div className="absolute inset-0 rounded-[50%] scale-[0.2] md:group-hover:scale-100 transition-all duration-[5000ms] ease-out overflow-hidden">
+                    {/* Image container - tap to zoom on mobile, hover on desktop */}
+                    <div className={`absolute inset-0 rounded-[50%] transition-all duration-[5000ms] ease-out overflow-hidden ${
+                      activeStep === step.number ? 'scale-100' : 'scale-[0.2] md:group-hover:scale-100'
+                    }`}>
                       <Image
                         src={step.image}
                         alt={`Step ${step.number} - ${step.title}`}
                         fill
-                        className="object-cover blur-sm grayscale opacity-60 brightness-105 group-hover:blur-none group-hover:grayscale-0 group-hover:opacity-100 group-hover:brightness-100 transition-all duration-[5000ms] ease-out"
+                        className={`object-cover transition-all duration-[5000ms] ease-out ${
+                          activeStep === step.number
+                            ? 'blur-none grayscale-0 opacity-100 brightness-100'
+                            : 'blur-sm grayscale opacity-60 brightness-105 group-hover:blur-none group-hover:grayscale-0 group-hover:opacity-100 group-hover:brightness-100'
+                        }`}
                         sizes="(max-width: 768px) 128px, 224px"
                         priority={index < 2}
                       />
                       {/* Ethereal glow overlay */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-white/30 via-transparent to-transparent opacity-60 group-hover:opacity-0 transition-opacity duration-[5000ms]" />
+                      <div className={`absolute inset-0 bg-gradient-to-t from-white/30 via-transparent to-transparent transition-opacity duration-[5000ms] ${
+                        activeStep === step.number ? 'opacity-0' : 'opacity-60 group-hover:opacity-0'
+                      }`} />
                       {/* Subtle vignette */}
                       <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
                       {/* Color tint */}
-                      <div className={`absolute inset-0 bg-gradient-to-br ${step.color} opacity-20 mix-blend-overlay group-hover:opacity-5 transition-opacity duration-[5000ms]`} />
+                      <div className={`absolute inset-0 bg-gradient-to-br ${step.color} mix-blend-overlay transition-opacity duration-[5000ms] ${
+                        activeStep === step.number ? 'opacity-5' : 'opacity-20 group-hover:opacity-5'
+                      }`} />
                     </div>
-                    <span className="relative z-10 text-5xl md:text-7xl font-bold text-white drop-shadow-[0_5px_20px_rgba(0,0,0,0.9)] scale-[0.2] md:group-hover:scale-100 transition-transform duration-[5000ms] ease-out">
+                    <span className={`relative z-10 text-5xl md:text-7xl font-bold text-white drop-shadow-[0_5px_20px_rgba(0,0,0,0.9)] transition-transform duration-[5000ms] ease-out ${
+                      activeStep === step.number ? 'scale-100' : 'scale-[0.2] md:group-hover:scale-100'
+                    }`}>
                       {step.number}
                     </span>
                   </motion.div>
 
-                  {/* Content Card - inverse scaling on desktop hover only */}
+                  {/* Content Card - inverse scaling on tap/hover */}
                   <motion.div
-                    className={`flex-1 rounded-xl border-3 border-black bg-white p-6 shadow-bold group-hover:scale-[0.2] transition-all duration-[5000ms] ease-out hover:shadow-bold-hover ${
+                    className={`flex-1 rounded-xl border-3 border-black bg-white p-6 shadow-bold transition-all duration-[5000ms] ease-out hover:shadow-bold-hover ${
+                      activeStep === step.number
+                        ? 'scale-[0.2]'
+                        : 'group-hover:scale-[0.2]'
+                    } ${
                       index % 2 === 0
-                        ? 'md:pr-8 group-hover:translate-x-32'
-                        : 'md:pl-8 group-hover:-translate-x-32'
+                        ? `md:pr-8 ${activeStep === step.number ? 'translate-x-32' : 'group-hover:translate-x-32'}`
+                        : `md:pl-8 ${activeStep === step.number ? '-translate-x-32' : 'group-hover:-translate-x-32'}`
                     }`}
                   >
                     <h3 className="text-xl font-bold text-dark-charcoal lg:text-2xl">
