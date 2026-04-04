@@ -140,48 +140,48 @@ export function ProcessSection() {
                 } md:w-1/2`}
               >
                 <div className="flex items-start gap-6 md:gap-8">
-                  {/* Number badge with ultra-dramatic 5-second zoom animation */}
+                  {/* Number badge - Full display on mobile, zoom animation on desktop */}
                   <motion.div
-                    className={`group relative flex h-36 w-44 md:h-44 md:w-56 flex-shrink-0 items-center justify-center overflow-visible ${
+                    className={`group relative flex h-32 w-32 md:h-44 md:w-56 flex-shrink-0 items-center justify-center overflow-hidden ${
                       index % 2 === 0
                         ? 'md:order-2 md:ml-auto md:mr-8'
                         : 'md:order-1 md:ml-8'
                     }`}
                   >
-                    {/* Minimal halo effect (20%) */}
-                    <div className="absolute inset-0 rounded-[50%] bg-gradient-to-br from-white/10 via-transparent to-transparent blur-xl opacity-20 group-hover:opacity-0 transition-opacity duration-[5000ms]" />
+                    {/* Minimal halo effect (20%) - desktop only */}
+                    <div className="absolute inset-0 rounded-[50%] bg-gradient-to-br from-white/10 via-transparent to-transparent blur-xl opacity-0 md:opacity-20 md:group-hover:opacity-0 transition-opacity duration-[5000ms]" />
 
-                    {/* Oval border - scales with image */}
-                    <div className="absolute inset-0 rounded-[50%] border-3 border-black shadow-bold scale-[0.2] group-hover:scale-100 transition-all duration-[5000ms] ease-out" />
+                    {/* Oval border - full scale on mobile, animated on desktop */}
+                    <div className="absolute inset-0 rounded-[50%] border-3 border-black shadow-bold scale-100 md:scale-[0.2] md:group-hover:scale-100 transition-all duration-[5000ms] ease-out" />
 
-                    {/* Image container - scales separately */}
-                    <div className="absolute inset-0 rounded-[50%] scale-[0.2] group-hover:scale-100 transition-all duration-[5000ms] ease-out overflow-hidden">
+                    {/* Image container - full scale on mobile, animated on desktop */}
+                    <div className="absolute inset-0 rounded-[50%] scale-100 md:scale-[0.2] md:group-hover:scale-100 transition-all duration-[5000ms] ease-out overflow-hidden">
                       <Image
                         src={step.image}
                         alt={`Step ${step.number} - ${step.title}`}
                         fill
-                        className="object-cover blur-sm grayscale opacity-60 brightness-105 group-hover:blur-none group-hover:grayscale-0 group-hover:opacity-100 group-hover:brightness-100 transition-all duration-[5000ms] ease-out"
-                        sizes="(max-width: 768px) 176px, 224px"
+                        className="object-cover md:blur-sm md:grayscale md:opacity-60 md:brightness-105 md:group-hover:blur-none md:group-hover:grayscale-0 md:group-hover:opacity-100 md:group-hover:brightness-100 transition-all duration-[5000ms] ease-out"
+                        sizes="(max-width: 768px) 128px, 224px"
                         priority={index < 2}
                       />
-                      {/* Ethereal glow overlay */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-white/30 via-transparent to-transparent opacity-60 group-hover:opacity-0 transition-opacity duration-[5000ms]" />
+                      {/* Ethereal glow overlay - desktop only */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-white/30 via-transparent to-transparent opacity-0 md:opacity-60 md:group-hover:opacity-0 transition-opacity duration-[5000ms]" />
                       {/* Subtle vignette */}
                       <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
-                      {/* Color tint */}
-                      <div className={`absolute inset-0 bg-gradient-to-br ${step.color} opacity-20 mix-blend-overlay group-hover:opacity-5 transition-opacity duration-[5000ms]`} />
+                      {/* Color tint - desktop only */}
+                      <div className={`absolute inset-0 bg-gradient-to-br ${step.color} opacity-0 md:opacity-20 mix-blend-overlay md:group-hover:opacity-5 transition-opacity duration-[5000ms]`} />
                     </div>
-                    <span className="relative z-10 text-6xl md:text-7xl font-bold text-white drop-shadow-[0_5px_20px_rgba(0,0,0,0.9)] scale-[0.2] group-hover:scale-100 transition-transform duration-[5000ms] ease-out">
+                    <span className="relative z-10 text-5xl md:text-7xl font-bold text-white drop-shadow-[0_5px_20px_rgba(0,0,0,0.9)] scale-100 md:scale-[0.2] md:group-hover:scale-100 transition-transform duration-[5000ms] ease-out">
                       {step.number}
                     </span>
                   </motion.div>
 
-                  {/* Content Card - inverse scaling + adjusts position to avoid overlap */}
+                  {/* Content Card - no animation on mobile, inverse scaling on desktop */}
                   <motion.div
-                    className={`flex-1 rounded-xl border-3 border-black bg-white p-6 shadow-bold scale-100 group-hover:scale-[0.2] transition-all duration-[5000ms] ease-out hover:shadow-bold-hover ${
+                    className={`flex-1 rounded-xl border-3 border-black bg-white p-6 shadow-bold scale-100 md:group-hover:scale-[0.2] transition-all duration-[5000ms] ease-out hover:shadow-bold-hover ${
                       index % 2 === 0
-                        ? 'md:pr-8 translate-x-0 group-hover:translate-x-32'
-                        : 'md:pl-8 translate-x-0 group-hover:-translate-x-32'
+                        ? 'md:pr-8 translate-x-0 md:group-hover:translate-x-32'
+                        : 'md:pl-8 translate-x-0 md:group-hover:-translate-x-32'
                     }`}
                   >
                     <h3 className="text-xl font-bold text-dark-charcoal lg:text-2xl">
