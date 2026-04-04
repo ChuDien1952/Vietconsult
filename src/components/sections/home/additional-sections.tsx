@@ -145,25 +145,29 @@ export function ProcessSection() {
                   {/* Number badge - Tap to zoom on mobile, hover on desktop */}
                   <motion.div
                     onClick={() => setActiveStep(activeStep === step.number ? null : step.number)}
-                    className={`group relative flex h-32 w-32 md:h-44 md:w-56 flex-shrink-0 items-center justify-center overflow-hidden rounded-[50%] cursor-pointer ${
+                    className={`group relative flex h-32 w-32 md:h-44 md:w-56 flex-shrink-0 items-center justify-center cursor-pointer ${
                       index % 2 === 0
                         ? 'md:order-2 md:ml-auto md:mr-8'
                         : 'md:order-1 md:ml-8'
                     }`}
                   >
-                    {/* Minimal halo effect */}
-                    <div className={`absolute inset-0 rounded-[50%] bg-gradient-to-br from-white/10 via-transparent to-transparent blur-xl transition-opacity duration-[5000ms] ${
+                    {/* Minimal halo effect - outside oval */}
+                    <div className={`absolute inset-0 rounded-[50%] bg-gradient-to-br from-white/10 via-transparent to-transparent blur-xl transition-opacity duration-[5000ms] pointer-events-none ${
                       activeStep === step.number ? 'opacity-0' : 'opacity-20 group-hover:opacity-0'
                     }`} />
 
                     {/* Oval border - tap to zoom on mobile, hover on desktop */}
-                    <div className={`absolute inset-0 rounded-[50%] border-3 border-black shadow-bold transition-all duration-[5000ms] ease-out ${
-                      activeStep === step.number ? 'scale-100' : 'scale-[0.2] md:group-hover:scale-100'
+                    <div className={`absolute rounded-[50%] border-3 border-black shadow-bold transition-all duration-[5000ms] ease-out pointer-events-none ${
+                      activeStep === step.number
+                        ? 'inset-0'
+                        : 'inset-[40%] md:group-hover:inset-0'
                     }`} />
 
                     {/* Image container - tap to zoom on mobile, hover on desktop */}
-                    <div className={`absolute inset-0 rounded-[50%] transition-all duration-[5000ms] ease-out overflow-hidden ${
-                      activeStep === step.number ? 'scale-100' : 'scale-[0.2] md:group-hover:scale-100'
+                    <div className={`absolute rounded-[50%] transition-all duration-[5000ms] ease-out overflow-hidden ${
+                      activeStep === step.number
+                        ? 'inset-0'
+                        : 'inset-[40%] md:group-hover:inset-0'
                     }`}>
                       <Image
                         src={step.image}
@@ -188,8 +192,8 @@ export function ProcessSection() {
                         activeStep === step.number ? 'opacity-5' : 'opacity-20 group-hover:opacity-5'
                       }`} />
                     </div>
-                    <span className={`relative z-10 text-5xl md:text-7xl font-bold text-white drop-shadow-[0_5px_20px_rgba(0,0,0,0.9)] transition-transform duration-[5000ms] ease-out ${
-                      activeStep === step.number ? 'scale-100' : 'scale-[0.2] md:group-hover:scale-100'
+                    <span className={`relative z-10 text-5xl md:text-7xl font-bold text-white drop-shadow-[0_5px_20px_rgba(0,0,0,0.9)] transition-all duration-[5000ms] ease-out ${
+                      activeStep === step.number ? 'opacity-100 scale-100' : 'opacity-0 scale-0 md:group-hover:opacity-100 md:group-hover:scale-100'
                     }`}>
                       {step.number}
                     </span>
