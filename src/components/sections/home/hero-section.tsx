@@ -100,10 +100,10 @@ export function HeroSection() {
               {/* Main Heading - Extra Large */}
               <motion.h1
                 variants={fadeInLeft}
-                className="text-5xl font-bold leading-tight text-white sm:text-6xl lg:text-7xl xl:text-8xl"
+                className="text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl break-words hyphens-auto"
               >
-                <span className="block">{t('titleLine1')}</span>
-                <span className="mt-2 block bg-gradient-gold bg-clip-text text-transparent">
+                <span className="block break-words">{t('titleLine1')}</span>
+                <span className="mt-2 block break-words bg-gradient-gold bg-clip-text text-transparent">
                   {t('titleLine2')}
                 </span>
               </motion.h1>
